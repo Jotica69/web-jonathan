@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Proyectos &amp; Soluciones AI - Jonathan Chávez</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Theme Config -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#2b8cee",
+            "primary-dark": "#1a6bbd",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "surface-dark": "#1c2633",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+          backdropBlur: {
+            xs: '2px',
+          }
+        },
+      },
+    }
+  </script>
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark selection:bg-primary selection:text-white">
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 glass-panel border-b border-white/5 top-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center gap-2">
+          <img src="logo.png" alt="Logo JC" class="w-10 h-10 object-contain rounded">
+          <span class="text-white font-bold text-lg tracking-wide">Jonathan Chávez</span>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-8">
+            <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              href="index.html">Inicio</a>
+            <a class="bg-primary/10 text-primary px-3 py-2 rounded-md text-sm font-medium border border-primary/20"
+              href="projects.html">Proyectos</a>
+            <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              href="index.html#solutions">Servicios</a>
+            <a class="bg-white text-background-dark px-4 py-2 rounded-md text-sm font-bold hover:bg-gray-200 transition-colors"
+              href="contact.html">Contactar</a>
+          </div>
+        </div>
+        <div class="-mr-2 flex md:hidden">
+          <button
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-white/10 focus:outline-none"
+            type="button" aria-label="Menu">
+            <span class="material-icons-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden bg-background-dark/95 backdrop-blur-xl border-b border-white/5">
+      <div class="px-4 pt-2 pb-6 space-y-2">
+        <a href="index.html"
+          class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-white/5">Inicio</a>
+        <a href="projects.html"
+          class="block px-3 py-2 rounded-md text-base font-medium text-white bg-white/5">Proyectos</a>
+        <a href="index.html#solutions"
+          class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-white/5">Servicios</a>
+        <a href="contact.html"
+          class="block px-3 py-2 rounded-md text-base font-medium text-primary bg-primary/10 border border-primary/20">Contactar</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="relative pt-32 pb-16 lg:pt-48 lg:pb-32 overflow-hidden">
+    <!-- Abstract Background Elements -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+      <div class="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px]"></div>
+      <div class="absolute bottom-[0%] left-[-10%] w-[600px] h-[600px] bg-blue-900/10 rounded-full blur-[100px]"></div>
+      <!-- Grid Pattern -->
+      <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
+      <div class="absolute inset-0"
+        style="background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px); background-size: 50px 50px;">
+      </div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div
+        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-6 uppercase tracking-wider">
+        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        Portafolio 2024
+      </div>
+      <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+        Proyectos y Soluciones <br />
+        <span class="text-gradient-primary">que Ejecutan</span>
+      </h1>
+      <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400 font-light">
+        Transformando datos complejos en decisiones automatizadas. Especialista en orquestación de flujos de trabajo AI
+        y visualización de datos de alto impacto.
+      </p>
+      <div class="mt-10 flex justify-center gap-4">
+        <a class="px-8 py-4 rounded-lg bg-primary hover:bg-blue-600 text-white font-semibold transition-all shadow-lg shadow-primary/25 flex items-center gap-2"
+          href="#case-studies">
+          Ver Casos de Estudio
+          <span class="material-icons-outlined text-sm">arrow_downward</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Key Solutions Showcase (Horizontal Scroll / Grid) -->
+  <section class="py-16 bg-background-dark relative border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold text-white">Soluciones Core</h2>
+        <p class="text-gray-400 mt-2">Arquitectura técnica diseñada para escalabilidad empresarial.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1: Gemelos Digitales -->
+        <div class="group glass-card p-6 rounded-xl relative overflow-hidden">
+          <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+            <span class="material-icons-outlined text-6xl text-primary">view_in_ar</span>
+          </div>
+          <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 text-primary">
+            <span class="material-icons-outlined">view_in_ar</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Gemelos Digitales</h3>
+          <p class="text-sm text-gray-400 mb-4 h-10">Réplicas virtuales para simulación y monitoreo en tiempo real.</p>
+          <div class="space-y-3 pt-4 border-t border-white/5">
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-gray-500">Tech Stack</span>
+              <span class="text-gray-300 font-mono">Unity, IoT Hub</span>
+            </div>
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-gray-500">Impacto</span>
+              <span class="text-green-400 font-bold">+40% Prevención</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2: Dashboards Predictivos -->
+        <div class="group glass-card p-6 rounded-xl relative overflow-hidden">
+          <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+            <span class="material-icons-outlined text-6xl text-primary">insights</span>
+          </div>
+          <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 text-primary">
+            <span class="material-icons-outlined">insights</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Dashboards Predictivos</h3>
+          <p class="text-sm text-gray-400 mb-4 h-10">Visualización de datos con modelos de forecast integrados.</p>
+          <div class="space-y-3 pt-4 border-t border-white/5">
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-gray-500">Tech Stack</span>
+              <span class="text-gray-300 font-mono">PowerBI, Python</span>
+            </div>
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-gray-500">Impacto</span>
+              <span class="text-green-400 font-bold">20hrs/sem Ahorro</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3: Automatización BD -->
+        <div class="group glass-card p-6 rounded-xl relative overflow-hidden">
+          <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+            <span class="material-icons-outlined text-6xl text-primary">storage</span>
+          </div>
+          <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 text-primary">
+            <span class="material-icons-outlined">storage</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Automatización BD</h3>
+          <p class="text-sm text-gray-400 mb-4 h-10">Pipelines ETL autónomos y limpieza de datos.</p>
+          <div class="space-y-3 pt-4 border-t border-white/5">
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-gray-500">Tech Stack</span>
+              <span class="text-gray-300 font-mono">SQL, Airflow</span>
+            </div>
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-gray-500">Impacto</span>
+              <span class="text-green-400 font-bold">99.9% Integridad</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4: Recorridos Virtuales 3D -->
+        <div class="group glass-card p-6 rounded-xl relative overflow-hidden">
+          <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+            <span class="material-icons-outlined text-6xl text-primary">3d_rotation</span>
+          </div>
+          <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 text-primary">
+            <span class="material-icons-outlined">3d_rotation</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Recorridos 3D</h3>
+          <p class="text-sm text-gray-400 mb-4 h-10">Experiencias inmersivas para real estate e industria.</p>
+          <div class="space-y-3 pt-4 border-t border-white/5">
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-gray-500">Tech Stack</span>
+              <span class="text-gray-300 font-mono">Three.js, WebGL</span>
+            </div>
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-gray-500">Impacto</span>
+              <span class="text-green-400 font-bold">+200% Engagement</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Visual Process Break -->
+  <section class="py-20 bg-background-dark border-t border-white/5 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="lg:w-1/3">
+          <h2 class="text-3xl font-bold text-white mb-4">El Proceso de <br /><span class="text-primary">Ingeniería de
+              Datos</span></h2>
+          <p class="text-gray-400 mb-6">Un flujo continuo desde la ingestión de datos crudos hasta la visualización
+            accionable. Cada paso está optimizado para velocidad y precisión.</p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <span class="material-icons-outlined text-primary mt-1">check_circle</span>
+              <div>
+                <h4 class="text-white font-medium">Extracción Inteligente</h4>
+                <p class="text-sm text-gray-500">Conexión a APIs y Legacy Systems.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-icons-outlined text-primary mt-1">check_circle</span>
+              <div>
+                <h4 class="text-white font-medium">Procesamiento Neural</h4>
+                <p class="text-sm text-gray-500">Limpieza y enriquecimiento con ML.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-icons-outlined text-primary mt-1">check_circle</span>
+              <div>
+                <h4 class="text-white font-medium">Visualización Interactiva</h4>
+                <p class="text-sm text-gray-500">Dashboards que cuentan historias.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:w-2/3 w-full relative">
+          <div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full opacity-20"></div>
+          <!-- Abstract representation of a flow chart dashboard -->
+          <div
+            class="glass-panel p-2 rounded-xl relative z-10 transform lg:rotate-1 hover:rotate-0 transition-transform duration-500">
+            <div class="bg-background-dark rounded-lg overflow-hidden border border-white/5">
+              <div class="grid grid-cols-12 gap-0.5 bg-gray-800">
+                <!-- Fake Header -->
+                <div class="col-span-12 bg-surface-dark p-3 flex justify-between items-center border-b border-white/5">
+                  <div class="flex gap-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                  </div>
+                  <div class="text-xs font-mono text-gray-500">pipeline_v2.json</div>
+                </div>
+                <!-- Fake Content -->
+                <div class="col-span-12 p-6 bg-background-dark relative">
+                  <img alt="Data visualization dashboard screen with graphs and charts"
+                    class="w-full h-full object-cover rounded opacity-80"
+                    data-alt="Abstract data dashboard showing charts and analytics"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQq9pS1AFkk94cHIlFNTQxj05PhY870Ik9AKteWORtJoHm2dn-MYJ73wp_dWuf1qm7_BwudWwS0pT4NVhtwcRd_ljHtRbEj-O9Xr9HwOCUs5BA8O1vpccj0jiqyzRnPJGkFZDTG2A8BOm3DrmBei4C3KjHxUmN1rLcWF2v4VasY0SsR57ADcoW6F5RsXsRTdoAZ3_xEEmrwxeV-NyQGy6BUSxn_NQL4IVISrSRGPs_h-ZYa1hGNSAbFaSla4LBdc7eKzTqRB2jYaI" />
+                  <!-- Overlay nodes -->
+                  <div
+                    class="absolute top-1/4 left-1/4 w-32 h-16 bg-surface-dark/90 backdrop-blur border border-primary/50 rounded-lg p-2 shadow-lg flex items-center gap-2">
+                    <div class="w-8 h-8 rounded bg-primary/20 flex items-center justify-center text-primary"><span
+                        class="material-icons-outlined text-sm">api</span></div>
+                    <div class="text-xs text-white">API Source<br /><span
+                        class="text-green-400 text-[10px]">Connected</span></div>
+                  </div>
+                  <div
+                    class="absolute bottom-1/3 right-1/4 w-32 h-16 bg-surface-dark/90 backdrop-blur border border-primary/50 rounded-lg p-2 shadow-lg flex items-center gap-2">
+                    <div class="w-8 h-8 rounded bg-primary/20 flex items-center justify-center text-primary"><span
+                        class="material-icons-outlined text-sm">analytics</span></div>
+                    <div class="text-xs text-white">ML Model<br /><span
+                        class="text-blue-400 text-[10px]">Processing</span></div>
+                  </div>
+                  <!-- Connecting Line SVG -->
+                  <svg class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: -1;">
+                    <path class="animate-pulse" d="M 200 150 C 300 150, 400 300, 500 300" fill="none" stroke="#2b8cee"
+                      stroke-dasharray="5,5" stroke-width="2"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Case Studies Grid -->
+  <section class="py-24 bg-background-dark relative" id="case-studies">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+        <div>
+          <h2 class="text-4xl font-bold text-white mb-2">Casos de Estudio</h2>
+          <p class="text-gray-400">Proyectos recientes que definen el estándar.</p>
+        </div>
+        <div class="mt-4 md:mt-0">
+          <button class="text-primary hover:text-white transition-colors flex items-center gap-2 text-sm font-medium">
+            Ver todo el archivo <span class="material-icons-outlined text-base">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Project 1 -->
+        <div
+          class="group relative rounded-2xl overflow-hidden bg-surface-dark border border-white/5 hover:border-primary/30 transition-all duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img alt="Electronic circuit board glowing blue"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+              data-alt="Futuristic electronic circuit board closeup"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHVNxP68YfYKGljuS0olSuWrSvFsUbonLdK7RE3MJna9DgdJ9GS6TDYDEVY8lBCgteLrV_sDOCv_9cAzhLajXgzTKX5OqXGbMh37V7FXq-2pIYmM4hnr8D5rMKr3ffH__iS97y3y0-p9hO7PWJAj9bRZWrjyUEw9jEPP436sEFBm-8TC7qjaPW87PHdhBhlJzjRI0wTnEtOCp6K86Cxve9S-FbuyZ5syw40EfMkaH-6B8Zuft4TahEV9CNm4zNayF7RUeyi7KasH8" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface-dark via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 rounded-full bg-black/50 backdrop-blur text-xs font-mono text-white border border-white/10">Industria
+                4.0</span>
+            </div>
+          </div>
+          <div class="p-8 relative">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-2xl font-bold text-white group-hover:text-primary transition-colors">Sistema Predictivo de
+                Mantenimiento</h3>
+              <a class="w-10 h-10 rounded-full bg-white/5 hover:bg-primary flex items-center justify-center transition-colors text-white"
+                href="#">
+                <span class="material-icons-outlined text-sm">arrow_outward</span>
+              </a>
+            </div>
+            <div class="grid grid-cols-1 gap-4 mb-6">
+              <div class="p-3 rounded-lg bg-white/5 border border-white/5">
+                <p class="text-xs text-gray-500 uppercase tracking-wide mb-1">El Problema</p>
+                <p class="text-sm text-gray-300">Tiempos de inactividad no planificados costando $50k/hora en la línea
+                  de producción.</p>
+              </div>
+              <div class="p-3 rounded-lg bg-primary/10 border border-primary/20">
+                <p class="text-xs text-primary/80 uppercase tracking-wide mb-1">La Solución</p>
+                <p class="text-sm text-white">Algoritmo de detección de anomalías en tiempo real conectado a sensores
+                  IoT.</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded text-[10px] font-mono bg-white/5 text-gray-400">Python</span>
+              <span class="px-2 py-1 rounded text-[10px] font-mono bg-white/5 text-gray-400">TensorFlow</span>
+              <span class="px-2 py-1 rounded text-[10px] font-mono bg-white/5 text-gray-400">MQTT</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div
+          class="group relative rounded-2xl overflow-hidden bg-surface-dark border border-white/5 hover:border-primary/30 transition-all duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img alt="Financial data analytics dashboard on screen"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+              data-alt="Financial analytics dashboard graphs"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRrf3CBA6ZEtbAcbACqoH5KpaoPNCoAB7R0ljeUg2ahtU46R9bpb9XqL3T0KAvaSoOe2FKACZCGMLRl5nzlYX1bFDf-3gQPYPUUuHFH43G-o6WddypNkC5hxnXvuWBAPLhVWzXO0lrHFGqtGxZQoUZ6CmTeYh2KBqzQMMukymg3fVanE5qG4L6Y-vD0Gqd82PEwhQAnHPlWaziShjebO10GrQk7WrxXVbIltxc4oJYSraWJWEM0UZlArT_P9oAo36Rb0sHeX-mNBU" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface-dark via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 rounded-full bg-black/50 backdrop-blur text-xs font-mono text-white border border-white/10">Fintech</span>
+            </div>
+          </div>
+          <div class="p-8 relative">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-2xl font-bold text-white group-hover:text-primary transition-colors">Automatización de
+                Reportes Financieros</h3>
+              <a class="w-10 h-10 rounded-full bg-white/5 hover:bg-primary flex items-center justify-center transition-colors text-white"
+                href="#">
+                <span class="material-icons-outlined text-sm">arrow_outward</span>
+              </a>
+            </div>
+            <div class="grid grid-cols-1 gap-4 mb-6">
+              <div class="p-3 rounded-lg bg-white/5 border border-white/5">
+                <p class="text-xs text-gray-500 uppercase tracking-wide mb-1">El Problema</p>
+                <p class="text-sm text-gray-300">Proceso manual de 40 horas mensuales propenso a errores humanos
+                  críticos.</p>
+              </div>
+              <div class="p-3 rounded-lg bg-primary/10 border border-primary/20">
+                <p class="text-xs text-primary/80 uppercase tracking-wide mb-1">La Solución</p>
+                <p class="text-sm text-white">Pipeline ETL automatizado con validación de datos y dashboard en PowerBI.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded text-[10px] font-mono bg-white/5 text-gray-400">SQL Server</span>
+              <span class="px-2 py-1 rounded text-[10px] font-mono bg-white/5 text-gray-400">Power Automate</span>
+              <span class="px-2 py-1 rounded text-[10px] font-mono bg-white/5 text-gray-400">DAX</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div
+          class="group relative rounded-2xl overflow-hidden bg-surface-dark border border-white/5 hover:border-primary/30 transition-all duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img alt="3D wireframe mesh of a building structure"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+              data-alt="3D wireframe architectural structure"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuALpxhT1JYX4caYcCrotjfyrYBibM8ThP7JKJU-cwi1VA8Xxm3pJgKjanOshNkMM1oVbiK6kX_a9rVtQ7cyFf8mGDhsQDOJbDr4lbz8Pld1MpwYOArynlcKY9-KtwvJMVQxY0UPRdZ4mdpfmGvflfHmVRDb-puLJxT1ttpkg9Nhck3Q4Izojniy9Un8Z-yNaCEGVlnfbShT1RIg67Rk84QillQNpewNHE5EIX4hzpk4YzrhhTedho1ELTUuVlKjjs38bKoiUM6Jpug" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface-dark via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 rounded-full bg-black/50 backdrop-blur text-xs font-mono text-white border border-white/10">Real
+                Estate</span>
+            </div>
+          </div>
+          <div class="p-8 relative">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-2xl font-bold text-white group-hover:text-primary transition-colors">Showroom Virtual
+                Interactivo</h3>
+              <a class="w-10 h-10 rounded-full bg-white/5 hover:bg-primary flex items-center justify-center transition-colors text-white"
+                href="#">
+                <span class="material-icons-outlined text-sm">arrow_outward</span>
+              </a>
+            </div>
+            <div class="grid grid-cols-1 gap-4 mb-6">
+              <div class="p-3 rounded-lg bg-white/5 border border-white/5">
+                <p class="text-xs text-gray-500 uppercase tracking-wide mb-1">El Problema</p>
+                <p class="text-sm text-gray-300">Baja conversión en ventas de propiedades sobre planos (pre-venta).</p>
+              </div>
+              <div class="p-3 rounded-lg bg-primary/10 border border-primary/20">
+                <p class="text-xs text-primary/80 uppercase tracking-wide mb-1">La Solución</p>
+                <p class="text-sm text-white">Experiencia WebGL inmersiva permitiendo personalización de acabados en
+                  tiempo real.</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded text-[10px] font-mono bg-white/5 text-gray-400">Three.js</span>
+              <span class="px-2 py-1 rounded text-[10px] font-mono bg-white/5 text-gray-400">React</span>
+              <span class="px-2 py-1 rounded text-[10px] font-mono bg-white/5 text-gray-400">Blender</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div
+          class="group relative rounded-2xl overflow-hidden bg-surface-dark border border-white/5 hover:border-primary/30 transition-all duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img alt="Data network connections visualization map"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+              data-alt="Network connections map visualization" data-location="Global Server Map"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjJDpifAYqHGq1aB5cxRNY9v0FlACYYgW5tncLYr4aUv-zulcHv5fHWhJGWMwBeLMRphY0JBy41LLsp1_--2Sl3NY7PVW_whqy5Q__Q5uixr8gvQ71hwz2dW_M7-LjuNesJVCxN8dQNK8DCsSfVhdhV91rU0ilXYlnSytj92uel-kiyA8R19vn2Vb-S5H6mZKzYR0gDNloaHXc8GtX6LqEuiGrBrc7t6MUKh-owb_gn5v2Tj22ZVh6PxNjgg9ySQdEFjkIgF-ieJA" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface-dark via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 rounded-full bg-black/50 backdrop-blur text-xs font-mono text-white border border-white/10">Logística</span>
+            </div>
+          </div>
+          <div class="p-8 relative">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-2xl font-bold text-white group-hover:text-primary transition-colors">Optimización de Rutas
+                con AI</h3>
+              <a class="w-10 h-10 rounded-full bg-white/5 hover:bg-primary flex items-center justify-center transition-colors text-white"
+                href="#">
+                <span class="material-icons-outlined text-sm">arrow_outward</span>
+              </a>
+            </div>
+            <div class="grid grid-cols-1 gap-4 mb-6">
+              <div class="p-3 rounded-lg bg-white/5 border border-white/5">
+                <p class="text-xs text-gray-500 uppercase tracking-wide mb-1">El Problema</p>
+                <p class="text-sm text-gray-300">Costos elevados de combustible por rutas ineficientes en flota de
+                  distribución.</p>
+              </div>
+              <div class="p-3 rounded-lg bg-primary/10 border border-primary/20">
+                <p class="text-xs text-primary/80 uppercase tracking-wide mb-1">La Solución</p>
+                <p class="text-sm text-white">Algoritmo genético para cálculo de rutas óptimas dinámicas.</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded text-[10px] font-mono bg-white/5 text-gray-400">Python</span>
+              <span class="px-2 py-1 rounded text-[10px] font-mono bg-white/5 text-gray-400">Google Maps API</span>
+              <span class="px-2 py-1 rounded text-[10px] font-mono bg-white/5 text-gray-400">Pandas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Call to Action Footer -->
+  <footer class="relative bg-background-dark pt-24 pb-12 overflow-hidden border-t border-white/5">
+    <div class="absolute inset-0 bg-primary/5"></div>
+    <div class="absolute -top-[20%] left-[20%] w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px]"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-white mb-6">¿Listo para escalar tus operaciones con datos?</h2>
+      <p class="text-gray-400 text-lg mb-10">
+        Colabora conmigo para diseñar soluciones que no solo analizan el pasado, sino que construyen el futuro de tu
+        negocio.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a class="w-full sm:w-auto px-8 py-4 rounded-lg bg-primary hover:bg-blue-600 text-white font-bold transition-all shadow-lg shadow-primary/20"
+          href="#">
+          Agendar Consultoría
+        </a>
+        <a class="w-full sm:w-auto px-8 py-4 rounded-lg bg-surface-dark hover:bg-surface-dark/80 text-white font-medium border border-white/10 transition-all"
+          href="#">
+          Ver CV / Resume
+        </a>
+      </div>
+      <div
+        class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+        <p>© 2024 Jonathan Chávez. Todos los derechos reservados.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+          <a class="hover:text-primary transition-colors" href="#">GitHub</a>
+          <a class="hover:text-primary transition-colors" href="#">Behance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

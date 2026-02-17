@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jonathan Chávez - Contact &amp; Diagnostic</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#2b8cee",
+                "primary-dark": "#1a6eb0",
+                "background-light": "#f6f7f8",
+                "background-dark": "#101922",
+                "card-dark": "#1A2632",
+                "card-border": "#2b8cee30"
+              },
+              fontFamily: {
+                "display": ["Space Grotesk", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+              backgroundImage: {
+                'grid-pattern': "linear-gradient(to right, #2b8cee0a 1px, transparent 1px), linear-gradient(to bottom, #2b8cee0a 1px, transparent 1px)",
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #101922; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2b3a4a; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2b8cee; 
+        }
+
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(26, 38, 50, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(43, 140, 238, 0.15);
+        }
+        
+        .glow-effect {
+            box-shadow: 0 0 40px -10px rgba(43, 140, 238, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 font-display min-h-screen flex flex-col overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- Background Grid Pattern -->
+<div class="fixed inset-0 bg-grid-pattern bg-[length:40px_40px] pointer-events-none z-0"></div>
+<!-- Main Content Wrapper -->
+<main class="relative z-10 flex-grow flex items-center justify-center p-6 lg:p-12">
+<div class="w-full max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Personal Profile & Branding -->
+<div class="lg:col-span-5 flex flex-col space-y-8 lg:sticky lg:top-12">
+<!-- Profile Header -->
+<div class="space-y-6">
+<div class="relative w-32 h-32 lg:w-40 lg:h-40 rounded-2xl overflow-hidden border-2 border-primary/30 glow-effect">
+<img alt="Professional portrait of Jonathan Chávez in a dark setting" class="w-full h-full object-cover filter brightness-90 contrast-125 hover:scale-105 transition-transform duration-500" data-alt="Professional portrait of a male data analyst in a dark setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA05_6GsX3vHYFz7glALmz208zKuLw6P0K0Tqb_PQ5Wk_Mz7rQ73b_pvmX8RV9cQ-0BmFgKZPyVS645l44E0cDVzlVlXJD9YdxJX5rFsP-zaVwrhELgCZeL3TACo5TDTJiYrBWL8Z4jTV0zOHVV4UT6tXVla93xwRI7XeifupTZ_pc57Q3DrqF683NFTqqoqI-S6MUirBtskopzDl9v79TRAYGahDfSESrBnAvtwLY6LNVbby11dK243ecDJc8a6fhrd1bNcBrj_DM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent"></div>
+</div>
+<div>
+<h1 class="text-4xl lg:text-5xl font-bold tracking-tight text-white mb-2">Jonathan Chávez</h1>
+<p class="text-primary text-xl font-medium tracking-wide">Data Analysis &amp; AI Automation</p>
+</div>
+<div class="h-1 w-20 bg-primary rounded-full"></div>
+<blockquote class="text-2xl lg:text-3xl text-slate-300 leading-tight border-l-4 border-primary/40 pl-6 py-2">
+<span class="text-white font-semibold">"Datos que anticipan.</span><br/>
+<span class="text-primary">Sistemas que ejecutan."</span>
+</blockquote>
+</div>
+<!-- Contact Details Card -->
+<div class="bg-card-dark/50 border border-card-border rounded-xl p-6 space-y-4 backdrop-blur-sm">
+<h3 class="text-sm uppercase tracking-widest text-slate-400 font-semibold mb-4">Contacto Directo</h3>
+<div class="flex items-center group cursor-pointer">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors">
+<span class="material-icons text-primary">location_on</span>
+</div>
+<div>
+<p class="text-xs text-slate-400">Base de Operaciones</p>
+<p class="text-white font-medium">Barrancabermeja, Colombia</p>
+</div>
+</div>
+<div class="flex items-center group cursor-pointer">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors">
+<span class="material-icons text-primary">phone_iphone</span>
+</div>
+<div>
+<p class="text-xs text-slate-400">Línea Directa</p>
+<p class="text-white font-medium hover:text-primary transition-colors">+57 322 366 3275</p>
+</div>
+</div>
+<div class="flex items-center group cursor-pointer">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors">
+<span class="material-icons text-primary">email</span>
+</div>
+<div>
+<p class="text-xs text-slate-400">Email Corporativo</p>
+<p class="text-white font-medium hover:text-primary transition-colors">contacto@jonathanchavez.com</p>
+</div>
+</div>
+</div>
+<!-- Expertise Tags -->
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded text-xs text-slate-300">#Python</span>
+<span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded text-xs text-slate-300">#MachineLearning</span>
+<span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded text-xs text-slate-300">#Automation</span>
+<span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded text-xs text-slate-300">#BigData</span>
+</div>
+</div>
+<!-- Right Column: Diagnostic Form -->
+<div class="lg:col-span-7">
+<div class="glass-panel rounded-2xl p-8 lg:p-10 shadow-2xl relative overflow-hidden">
+<!-- Decorative glow -->
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10">
+<div class="flex items-center justify-between mb-8">
+<div>
+<h2 class="text-2xl lg:text-3xl font-bold text-white mb-2">Diagnóstico de Eficiencia</h2>
+<p class="text-slate-400 text-sm">Calcule su pérdida por obsolescencia tecnológica.</p>
+</div>
+<span class="material-icons text-primary/50 text-5xl">analytics</span>
+</div>
+<!-- Form Steps Indicator -->
+<div class="flex items-center mb-8 space-x-2">
+<div class="h-1 flex-1 bg-primary rounded-full"></div>
+<div class="h-1 flex-1 bg-primary rounded-full"></div>
+<div class="h-1 flex-1 bg-slate-700 rounded-full"></div>
+<span class="ml-2 text-xs font-mono text-primary">PASO 2/3</span>
+</div>
+<form class="space-y-6">
+<!-- Industry Selection -->
+<div class="space-y-2">
+<label class="block text-sm font-medium text-slate-300" for="industry">Sector Industrial</label>
+<div class="relative">
+<select class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white appearance-none focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" id="industry">
+<option disabled="" selected="" value="">Seleccione su industria...</option>
+<option value="retail">Retail &amp; E-commerce</option>
+<option value="logistics">Logística y Transporte</option>
+<option value="manufacturing">Manufactura</option>
+<option value="finance">Finanzas y Banca</option>
+<option value="other">Otro</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
+<span class="material-icons text-sm">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Current Data Method -->
+<div class="space-y-2">
+<label class="block text-sm font-medium text-slate-300">Método Actual de Gestión</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="method" type="radio"/>
+<div class="rounded-lg border border-slate-700 bg-slate-900/30 p-4 hover:bg-slate-800 peer-checked:border-primary peer-checked:bg-primary/10 peer-checked:text-primary transition-all">
+<div class="flex items-center">
+<span class="material-icons mr-2 text-base">table_view</span>
+<span class="text-sm font-medium">Excel / Hojas de Cálculo</span>
+</div>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="method" type="radio"/>
+<div class="rounded-lg border border-slate-700 bg-slate-900/30 p-4 hover:bg-slate-800 peer-checked:border-primary peer-checked:bg-primary/10 peer-checked:text-primary transition-all">
+<div class="flex items-center">
+<span class="material-icons mr-2 text-base">dns</span>
+<span class="text-sm font-medium">Software Legacy / ERP Antiguo</span>
+</div>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="method" type="radio"/>
+<div class="rounded-lg border border-slate-700 bg-slate-900/30 p-4 hover:bg-slate-800 peer-checked:border-primary peer-checked:bg-primary/10 peer-checked:text-primary transition-all">
+<div class="flex items-center">
+<span class="material-icons mr-2 text-base">description</span>
+<span class="text-sm font-medium">Manual / Papel</span>
+</div>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="method" type="radio"/>
+<div class="rounded-lg border border-slate-700 bg-slate-900/30 p-4 hover:bg-slate-800 peer-checked:border-primary peer-checked:bg-primary/10 peer-checked:text-primary transition-all">
+<div class="flex items-center">
+<span class="material-icons mr-2 text-base">cloud_off</span>
+<span class="text-sm font-medium">No Centralizado</span>
+</div>
+</div>
+</label>
+</div>
+</div>
+<!-- Estimated Loss Slider -->
+<div class="space-y-4 pt-2">
+<div class="flex justify-between items-center">
+<label class="text-sm font-medium text-slate-300" for="loss-range">Estimación de Pérdida Mensual (COP)</label>
+<span class="text-primary font-bold text-lg font-mono">&gt; $15M</span>
+</div>
+<input class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-primary" id="loss-range" max="100" min="1" type="range" value="30"/>
+<div class="flex justify-between text-xs text-slate-500 font-mono">
+<span>$1M</span>
+<span>$50M+</span>
+</div>
+</div>
+<!-- Contact Inputs -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+<div class="relative group">
+<input class="peer w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 pt-6 pb-2 text-white placeholder-transparent focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" id="name" placeholder="Su Nombre" type="text"/>
+<label class="absolute left-4 top-4 text-slate-500 text-xs transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary" for="name">Nombre Completo</label>
+</div>
+<div class="relative group">
+<input class="peer w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 pt-6 pb-2 text-white placeholder-transparent focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" id="email" placeholder="Email Corporativo" type="email"/>
+<label class="absolute left-4 top-4 text-slate-500 text-xs transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary" for="email">Email Corporativo</label>
+</div>
+</div>
+<!-- Text Area -->
+<div class="relative group">
+<textarea class="peer w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 pt-6 pb-2 text-white placeholder-transparent focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none" id="details" placeholder="Detalles adicionales" rows="3"></textarea>
+<label class="absolute left-4 top-4 text-slate-500 text-xs transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary" for="details">Breve descripción del problema (Opcional)</label>
+</div>
+<!-- Submit Button -->
+<div class="pt-4">
+<button class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 px-6 rounded-xl shadow-[0_0_20px_rgba(43,140,238,0.3)] hover:shadow-[0_0_30px_rgba(43,140,238,0.5)] transition-all transform hover:-translate-y-0.5 flex items-center justify-center group" type="button">
+<span>GENERAR DIAGNÓSTICO PRELIMINAR</span>
+<span class="material-icons ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<p class="text-center text-xs text-slate-500 mt-4 flex items-center justify-center gap-1">
+<span class="material-icons text-xs">lock</span>
+                                    Sus datos están protegidos y son confidenciales.
+                                </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="relative z-10 border-t border-slate-800 bg-background-dark/80 backdrop-blur text-slate-400 py-8">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="text-sm font-light">
+                © 2023 Jonathan Chávez. <span class="hidden md:inline">|</span> <span class="text-primary font-medium">Optimice su futuro hoy.</span>
+</div>
+<div class="flex items-center space-x-6">
+<a class="hover:text-white transition-colors flex items-center gap-2 group" href="#">
+<span class="uppercase text-xs font-bold tracking-wider group-hover:text-primary transition-colors">LinkedIn</span>
+<i class="material-icons text-lg group-hover:text-primary transition-colors">open_in_new</i>
+</a>
+<a class="hover:text-white transition-colors flex items-center gap-2 group" href="#">
+<span class="uppercase text-xs font-bold tracking-wider group-hover:text-primary transition-colors">WhatsApp</span>
+<i class="material-icons text-lg group-hover:text-primary transition-colors">chat</i>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

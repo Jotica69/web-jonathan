@@ -1,0 +1,10 @@
+node_modules/
+.agent/
+.gemini/
+*.bat
+git_log.txt
+git_bin_test.txt
+git_init_log.txt
+git_init_status.txt
+git_search.txt
+init_repo_debug.bat
