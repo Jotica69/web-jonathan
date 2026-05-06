@@ -1,6 +1,16 @@
+# Dependencies
 node_modules/
+
+# Build output
+.next/
+
+# Agent configs
 .agent/
 .gemini/
+.agents/
+.claude/
+
+# Temp files
 *.bat
 git_log.txt
 git_bin_test.txt
@@ -8,3 +18,4 @@ git_init_log.txt
 git_init_status.txt
 git_search.txt
 init_repo_debug.bat
+skills-lock.json
