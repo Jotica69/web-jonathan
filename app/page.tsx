@@ -4,8 +4,6 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Typewriter } from '@/components/ui/typewriter-text';
 import { GlassEffect, GlassFilter } from '@/components/ui/liquid-glass';
-import DashboardImg from '../Dashboard.jpg'; // can be removed, but kept to prevent diff errors
-
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
