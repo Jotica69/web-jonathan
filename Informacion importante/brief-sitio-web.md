@@ -19,14 +19,14 @@
 | Dominio | jonathan-data.vercel.app 
 
 **Habilidades técnicas:**
-- Desarrollo web (HTML/CSS/JS, Vercel, Supabase)
-- Automatización con IA (EvolutionAPI, agentes, chatbots)
+- **PRINCIPAL:** Automatización con IA (EvolutionAPI, agentes, chatbots, ecosistemas de IA)
+- Desarrollo web (HTML/CSS/JS, Vercel, Supabase, Next.js)
 - Edición de video (DaVinci Resolve)
 - Diseño gráfico (Photoshop, Illustrator)
 - Modelado 3D (Blender)
 - Análisis de datos (Python, Pandas, Streamlit)
 
-**Contexto estratégico:** Jonathan está arrancando como freelance. No tiene clientes recurrentes todavía. El sitio web es su principal herramienta de credibilidad. Debe proyectar competencia técnica sin parecer pretencioso, y ser práctico/accionable, no corporativo abstracto.
+**Contexto estratégico:** Jonathan es especialista en automatizaciones y ecosistemas con IA. Su servicio principal es crear sistemas que ahorran tiempo y dinero a negocios locales. El sitio web debe posicionarlo como el experto en IA de Barrancabermeja. Debe proyectar competencia técnica sin parecer pretencioso, y ser práctico/accionable, no corporativo abstracto.
 
 ---
 
@@ -68,23 +68,32 @@
 > **Fórmula de oferta: Resultado + Rapidez + Certeza.**  
 > Ejemplo: ❌ "Automatizaciones con Python" → ✅ "Ahorrá 20+ horas semanales en procesos manuales en menos de 15 días, con datos centralizados para que puedas escalar tus ventas."
 
-### 🎯 Servicios (enfocados en RESULTADO, no en herramienta)
+### 🎯 Servicio PRINCIPAL: Automatizaciones y Ecosistemas con IA
+
+> **Este es el foco del sitio.** Todo lo demás es complementario.
 
 | # | Resultado | Lo que hago | Tiempo | Para quién |
 |---|-----------|-------------|--------|------------|
-| 1 | **Recuperá 20+ horas por semana** | Automatizo todo lo que hoy hacés a mano: cobranza, pedidos, recordatorios | 15 días | Negocios que facturan en Excel o WhatsApp manual |
-| 2 | **Tus clientes te encuentran y te compran** | Te creo tu página web o landing page | 5-7 días | Negocios sin presencia en Google |
-| 3 | **Vendé más con el mismo Instagram** | Te edito reels que enganchan en 3 segundos | 48h por reel | Negocios con redes descuidadas |
-| 4 | **Tomá decisiones con datos, no con intuición** | Te armo dashboards que te muestran qué se vende, cuándo y a quién | 10-15 días | Negocios que no saben cuánto ganan ni qué producto vende más |
+| 1 | **Recuperá 20+ horas por semana** | Automatizo todo lo que hoy hacés a mano: cobranza, pedidos, recordatorios, seguimiento de clientes | 15 días | Negocios que facturan en Excel o WhatsApp manual |
+| 2 | **Tu negocio atiende clientes 24/7 sin sueldos extra** | Chatbots con IA que responden, califican y cierran ventas por WhatsApp | 10-15 días | Negocios que pierden clientes por no responder rápido |
+| 3 | **Cero tareas repetitivas, cero errores humanos** | Ecosistemas de IA que conectan WhatsApp, hojas de cálculo, CRM y más | 15-20 días | Negocios con procesos manuales que escalan mal |
 
-### 🛠️ Soluciones específicas
+### 🛠️ Soluciones SaaS (productos propios de automatización)
 
 | Solución | El resultado | Cómo funciona | Para quién |
 |----------|-------------|---------------|------------|
-| **QR Menu System** | Tus clientes piden solos, sin mesero, sin errores | Escanean un QR, eligen del menú, el pedido llega directo a cocina | Restaurantes |
 | **Mocia** | Recuperás tu plata más rápido, sin mandar mensajes | Recordatorios automáticos por WhatsApp con IA que escala el tono | Prestamistas |
+| **QR Menu System** | Tus clientes piden solos, sin mesero, sin errores | Escanean un QR, eligen del menú, el pedido llega directo a cocina | Restaurantes |
 | **CRM Simple** | Sabés quién te compra, qué compra y cuándo vuelve | Registro automático de clientes, historial, promos por WhatsApp | Tiendas, retail |
 | **Gestión de Reservas** | Cero llamadas perdidas, clientes confirman solos | Reserva por WhatsApp, confirmación y recordatorio automático | Barberías, consultorios |
+
+### 🔧 Servicios complementarios (secundarios)
+
+| # | Resultado | Lo que hago | Tiempo | Para quién |
+|---|-----------|-------------|--------|------------|
+| 1 | **Tus clientes te encuentran y te compran** | Te creo tu página web o landing page | 5-7 días | Negocios sin presencia en Google |
+| 2 | **Vendé más con el mismo Instagram** | Te edito reels que enganchan en 3 segundos | 48h por reel | Negocios con redes descuidadas |
+| 3 | **Tomá decisiones con datos, no con intuición** | Te armo dashboards que te muestran qué se vende, cuándo y a quién | 10-15 días | Negocios que no saben cuánto ganan ni qué producto vende más |
 
 ---
 
@@ -112,24 +121,27 @@
 ```
 ┌─────────────────────────────────────────────┐
 │  NAVBAR                                    │
-│  Logo · Servicios · Proyectos · Sobre mí · │
-│  Contacto (WhatsApp)                       │
+│  Logo · Automatizaciones · Soluciones ·    │
+│  Proyectos · Sobre mí · Contacto (WhatsApp)│
 ├─────────────────────────────────────────────┤
 │  HERO                                      │
 │  Título: "Automatizo negocios con IA"      │
-│  Subtítulo: Una línea de qué hacés y para  │
-│  quién.                                    │
+│  Subtítulo: Tu negocio atendiendo clientes │
+│  24/7, sin sueldos extra, sin errores.     │
 │  Botones: [WhatsApp] [Ver Proyectos ↓]     │
 ├─────────────────────────────────────────────┤
-│  SERVICIOS                                 │
-│  4 tarjetas (automatización, video, web,   │
-│  datos). Cada una: ícono + título +        │
-│  descripción + "Desde $X" (opcional)       │
+│  AUTOMATIZACIONES (servicio principal)     │
+│  3 tarjetas:                               │
+│  1. Recuperá 20+ horas/semana              │
+│  2. Tu negocio 24/7 sin sueldos extra      │
+│  3. Cero tareas repetitivas, cero errores  │
+│  Cada una: ícono + título + resultado +    │
+│  CTA "¿Te interesa? Escribime"             │
 ├─────────────────────────────────────────────┤
-│  SOLUCIONES SaaS                           │
-│  4 tarjetas (QR Menu, Mocia, CRM, Reservas)│
+│  SOLUCIONES SaaS (productos propios)       │
+│  4 tarjetas (Mocia, QR Menu, CRM, Reservas)│
 │  Cada una: nombre + problema que resuelve  │
-│  + para quién                              │
+│  + para quién + CTA WhatsApp               │
 ├─────────────────────────────────────────────┤
 │  PROYECTOS                                 │
 │  Grid de 4-6 tarjetas con capturas.        │
@@ -137,9 +149,13 @@
 ├─────────────────────────────────────────────┤
 │  PROCESO (Cómo trabajo)                    │
 │  3 pasos simples:                          │
-│  1. Me contás tu idea (WhatsApp)           │
+│  1. Me contás tu problema (WhatsApp)       │
 │  2. Te envío propuesta en 24h              │
 │  3. Entrego y ajusto hasta que estés feliz │
+├─────────────────────────────────────────────┤
+│  SERVICIOS COMPLEMENTARIOS                 │
+│  3 tarjetas (web, video, datos)            │
+│  Menos prominentes que automatizaciones    │
 ├─────────────────────────────────────────────┤
 │  SOBRE MÍ                                  │
 │  Foto (opcional) + párrafo corto.          │
@@ -264,4 +280,4 @@ Estos elementos DEBEN estar en el sitio sí o sí:
 
 ---
 
-> **📌 Resumen para el agente:** Jonathan es un desarrollador/automatizador de 19 años en Barrancabermeja. Su sitio actual habla como una consultora grande, lo cual es contraproducente. Necesita un sitio que hable directo, muestre lo que SABE hacer, liste sus productos SaaS, y tenga WhatsApp como canal principal de contacto. Dark theme, Tailwind CSS, mobile-first. Nada corporativo. Nada falso.
+> **📌 Resumen para el agente:** Jonathan es especialista en automatizaciones y ecosistemas con IA en Barrancabermeja. Su servicio PRINCIPAL es crear sistemas de IA que ahorran tiempo y dinero a negocios locales. El sitio debe posicionarlo como el experto en IA de la región. Necesita un sitio que hable directo, muestre sus automatizaciones y productos SaaS, y tenga WhatsApp como canal principal de contacto. Dark theme, Tailwind CSS, mobile-first. Nada corporativo. Nada falso.

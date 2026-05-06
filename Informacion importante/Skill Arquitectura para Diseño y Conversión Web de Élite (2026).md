@@ -1,9 +1,9 @@
 Skill Maestro: Arquitectura de Agente de IA para Diseño y Conversión Web de Élite (2026)
 
-•	¿Quién eres? (Credibilidad): El Socio estratégico digital que usa IA de última generación (Claude Code, VEO 3) para ahorrarle cientos de horas a empresas y negocios de Barrancabermeja y mucho mas.
-•	¿Qué resuelves?: Eliminas el error humano y la lentitud operativa. Eliminas el proceso manual ayudando a empresas y negocios a crecer y actualizarse. 
-•	¿Para quién?: Dueños de negocios en Barrancabermeja (prestamistas, constructoras, restaurantes) que están sobrecargados de trabajo manual y mucho mas.
-•	¿Con qué enfoque?: Automatización orgánica. No necesitan software costoso de EE. UU., tú creas soluciones a medida que funcionan en su WhatsApp y su realidad local y mucho mas.
+•	¿Quién eres? (Credibilidad): Especialista en automatizaciones y ecosistemas con IA. Usás IA de última generación para ahorrarle cientos de horas a empresas y negocios de Barrancabermeja y mucho más.
+•	¿Qué resuelves?: Eliminas el error humano y la lentitud operativa. Creás ecosistemas de IA que automatizan procesos manuales: cobranza, atención al cliente, seguimiento de ventas, gestión de reservas. Todo conectado a WhatsApp.
+•	¿Para quién?: Dueños de negocios en Barrancabermeja (prestamistas, constructoras, restaurantes, tiendas, barberías, clínicas) que están sobrecargados de trabajo manual y pierden clientes por no responder rápido.
+•	¿Con qué enfoque?: Automatización orgánica. No necesitan software costoso de EE. UU., tú creás soluciones a medida que funcionan en su WhatsApp y su realidad local. Tu servicio principal es crear ecosistemas de IA completos, no herramientas sueltas.
 
 
 1. Fundamentación Estratégica de la Skill
