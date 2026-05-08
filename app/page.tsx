@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { Typewriter } from '@/components/ui/typewriter-text';
 import { GlassEffect, GlassFilter } from '@/components/ui/liquid-glass';
 
 export default function Home() {
@@ -65,35 +64,43 @@ export default function Home() {
         )}
       </nav>
 
-      <section className="relative pt-24 pb-20 lg:pt-32 lg:pb-32 bg-hero-dark overflow-hidden text-left z-0 flex flex-col justify-center min-h-[90vh] lg:min-h-screen">
-        <div className="vertical-lines"></div>
-        <div className="absolute top-1/4 left-0 w-[600px] h-[600px] border-t-2 border-dashed border-white/10 rounded-[100%] pointer-events-none opacity-50"></div>
+      <section className="relative pt-24 pb-20 lg:pt-32 lg:pb-24 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden text-center lg:text-left z-0 flex flex-col justify-center min-h-[90vh] lg:min-h-screen">
+        <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-blue-100/60 rounded-full blur-[100px] pointer-events-none"></div>
+        <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-cyan-100/40 rounded-full blur-[80px] pointer-events-none"></div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-8 mt-12 md:mt-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10 w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-16 mt-8 md:mt-12">
             
             {/* TEXT COLUMN */}
-            <div className="flex-1 max-w-3xl reveal-on-scroll z-20 relative">
-                <div className="inline-block px-4 py-1.5 rounded-[1rem] bg-white/5 border border-white/10 text-brand-light text-sm font-bold mb-8 backdrop-blur-md shadow-lg ring-1 ring-white/5">
-                    Soluciones en Inteligencia Artificial y Automatización
+            <div className="flex-1 max-w-2xl reveal-on-scroll z-20 relative">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-sm font-semibold mb-6 shadow-sm">
+                    <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                    Barrancabermeja, Santander
                 </div>
-                <h2 className="text-4xl md:text-5xl lg:text-[56px] font-extrabold mb-6 text-white tracking-tight leading-[1.1] min-h-[140px] md:min-h-[180px]">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-blue-200">
-                        <Typewriter 
-                            text={["Deje de gestionar procesos y empiece a dominar su mercado con infraestructuras de IA"]} 
-                            speed={30} 
-                            loop={false} 
-                        />
-                    </span>
-                </h2>
+                <h1 className="text-4xl md:text-5xl lg:text-[56px] font-extrabold mb-6 text-slate-900 tracking-tight leading-[1.08]">
+                    Automatizo negocios<br className="hidden sm:block" />
+                    <span className="text-blue-600">con IA en Barrancabermeja</span>
+                </h1>
                 
-                <p className="text-lg md:text-xl text-slate-300 font-medium mb-10 leading-relaxed max-w-2xl">
-                    Mientras su competencia escala con sistemas autónomos, usted sigue perdiendo más de 30 horas semanales en tareas manuales. Es momento de delegar su crecimiento a la tecnología, no a la intuición.
+                <p className="text-lg md:text-xl text-slate-600 font-medium mb-8 leading-relaxed max-w-xl">
+                    Tu negocio atendiendo clientes <strong className="text-slate-900">24/7, sin sueldos extra, sin errores humanos.</strong> Todo conectado a WhatsApp. Empezás a ahorrar tiempo en 15 días.
                 </p>
+
+                <div className="flex items-center gap-3 mb-8 text-sm text-slate-500">
+                    <span className="inline-flex items-center gap-1.5 bg-green-50 text-green-700 px-3 py-1.5 rounded-full font-semibold border border-green-100">
+                        <span className="material-symbols-outlined text-base">check_circle</span> Sin costo hasta que funcione
+                    </span>
+                    <span className="inline-flex items-center gap-1.5">
+                        <span className="material-symbols-outlined text-base text-slate-400">schedule</span> Respondo en &lt;1 hora
+                    </span>
+                </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                    <a href="#contacto" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0071e3] to-cyan-500 text-white px-8 py-4 rounded-full text-base font-bold shadow-[0_10px_30px_rgba(0,113,227,0.3)] hover:scale-105 active:scale-95 transition-all border border-blue-400/30">
-                        <span>Agenda tu Consultoría Gratuita</span>
-                        <span className="material-symbols-outlined text-sm bg-white/20 rounded-full p-1 border border-white/20">arrow_forward</span>
+                    <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-bold shadow-[0_8px_24px_rgba(5,150,105,0.35)] hover:scale-[1.02] active:scale-95 transition-all">
+                        <span className="material-symbols-outlined">chat</span>
+                        <span>Escribime por WhatsApp</span>
+                    </a>
+                    <a href="#automatizaciones" className="inline-flex items-center justify-center gap-2 text-slate-700 hover:text-blue-600 font-semibold px-6 py-4 rounded-full border border-slate-200 hover:border-blue-200 bg-white hover:bg-blue-50 transition-all text-base">
+                        Ver cómo trabajo <span className="material-symbols-outlined text-lg">arrow_downward</span>
                     </a>
                 </div>
             </div>
@@ -394,67 +401,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. ILUSIÓN DE ELECCIÓN (Formulario) */}
-      <section id="contacto" className="py-24 md:py-32 bg-white relative z-10 overflow-hidden">
-        {/* Soft blur accents */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-400/10 rounded-full blur-[120px] pointer-events-none animate-pulse"></div>
-        <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-cyan-400/10 rounded-full blur-[100px] pointer-events-none"></div>
+      {/* 6. CONTACTO — WhatsApp CTA */}
+      <section id="contacto" className="py-24 md:py-32 bg-gradient-to-b from-white to-blue-50 relative z-10 overflow-hidden">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-100/50 rounded-full blur-[120px] pointer-events-none"></div>
         
-        <div className="max-w-[800px] mx-auto px-6 lg:px-8 reveal-on-scroll relative z-20">
-            <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl lg:text-5xl font-semibold mb-6 text-[#1d1d1f] tracking-tighter leading-tight">No le preguntaré si quiere empezar.</h2>
-                <p className="text-xl md:text-2xl text-[#0071e3] font-medium">La pregunta es cómo va a empezar a dominar su mercado.</p>
-            </div>
+        <div className="max-w-[640px] mx-auto px-6 lg:px-8 reveal-on-scroll relative z-20 text-center">
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 tracking-tight">¿Empezamos?</h2>
+            <p className="text-lg md:text-xl text-slate-600 mb-8 font-medium">Contame tu problema por WhatsApp y te envío una propuesta en <strong className="text-slate-900">24 horas</strong>.</p>
             
-            <GlassEffect className="!bg-[#f4f7fc]/80 backdrop-blur-3xl rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-14 shadow-[0_20px_80px_rgba(0,113,227,0.1)] border border-blue-100 ring-1 ring-white/50 relative overflow-hidden">
-                {/* Form internal glow */}
-                <div className="absolute top-[-20%] left-[-10%] w-[400px] h-[400px] bg-white/60 rounded-full blur-[60px] pointer-events-none z-0"></div>
-                
-                <form className="space-y-10 relative z-10">
-                    <div className="space-y-4">
-                        <p className="text-[#1d1d1f] font-bold text-lg max-w-lg mb-2">Seleccione su prioridad de evolución:</p>
-                        <div className="grid grid-cols-1 gap-3">
-                            <label className="flex items-start md:items-center gap-4 p-5 rounded-[1.5rem] border border-blue-100 bg-white/80 cursor-pointer hover:border-[#0071e3]/50 hover:bg-white transition-colors group">
-                                <input type="checkbox" className="w-5 h-5 mt-0.5 md:mt-0 rounded-md border-[#0071e3]/30 text-[#0071e3] focus:ring-[#0071e3]" />
-                                <span className="text-[#1d1d1f] font-medium group-hover:text-[#0071e3] transition-colors leading-snug">Automatizar procesos de ventas, atención y seguimiento con IA</span>
-                            </label>
-                            <label className="flex items-start md:items-center gap-4 p-5 rounded-[1.5rem] border border-blue-100 bg-white/80 cursor-pointer hover:border-[#0071e3]/50 hover:bg-white transition-colors group">
-                                <input type="checkbox" className="w-5 h-5 mt-0.5 md:mt-0 rounded-md border-[#0071e3]/30 text-[#0071e3] focus:ring-[#0071e3]" />
-                                <span className="text-[#1d1d1f] font-medium group-hover:text-[#0071e3] transition-colors leading-snug">Construir presencia web que convierta visitantes en oportunidades</span>
-                            </label>
-                            <label className="flex items-start md:items-center gap-4 p-5 rounded-[1.5rem] border border-blue-100 bg-white/80 cursor-pointer hover:border-[#0071e3]/50 hover:bg-white transition-colors group">
-                                <input type="checkbox" className="w-5 h-5 mt-0.5 md:mt-0 rounded-md border-[#0071e3]/30 text-[#0071e3] focus:ring-[#0071e3]" />
-                                <span className="text-[#1d1d1f] font-medium group-hover:text-[#0071e3] transition-colors leading-snug">Transformar datos dispersos en inteligencia ejecutiva para decisiones</span>
-                            </label>
-                            <label className="flex items-start md:items-center gap-4 p-5 rounded-[1.5rem] border border-[#0071e3]/40 bg-gradient-to-r from-blue-50 to-blue-50/10 cursor-pointer hover:border-[#0071e3] transition-colors group shadow-sm ring-1 ring-[#0071e3]/10">
-                                <input type="checkbox" className="w-5 h-5 mt-0.5 md:mt-0 rounded-md border-[#0071e3] text-[#0071e3] focus:ring-[#0071e3]" />
-                                <span className="text-[#0071e3] font-bold leading-snug">Transformación integral (todas las anteriores)</span>
-                            </label>
-                        </div>
-                    </div>
+            <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-4 bg-green-600 hover:bg-green-700 text-white px-10 py-5 rounded-full text-xl font-bold shadow-[0_12px_40px_rgba(5,150,105,0.35)] hover:scale-[1.02] active:scale-95 transition-all mb-8">
+                <span className="material-symbols-outlined text-2xl">chat</span>
+                Escribime por WhatsApp
+            </a>
+            
+            <p className="text-slate-400 text-sm flex items-center justify-center gap-2 mb-10">
+                <span className="material-symbols-outlined text-base">schedule</span>
+                Respondo en menos de 1 hora
+            </p>
 
-                    <div className="space-y-4">
-                        <p className="text-[#1d1d1f] font-bold text-lg mb-2">Información para su hoja de ruta personalizada:</p>
-                        <div className="space-y-4">
-                            <input type="text" placeholder="Nombre completo" required className="w-full bg-white/90 backdrop-blur-md border border-blue-100 rounded-[1.2rem] px-6 py-4 md:py-5 text-[#1d1d1f] placeholder:text-blue-900/40 focus:border-[#0071e3] focus:ring-4 focus:ring-[#0071e3]/10 transition-all outline-none shadow-sm" />
-                            <input type="email" placeholder="Email corporativo" required className="w-full bg-white/90 backdrop-blur-md border border-blue-100 rounded-[1.2rem] px-6 py-4 md:py-5 text-[#1d1d1f] placeholder:text-blue-900/40 focus:border-[#0071e3] focus:ring-4 focus:ring-[#0071e3]/10 transition-all outline-none shadow-sm" />
-                            <input type="tel" placeholder="WhatsApp directo" required className="w-full bg-white/90 backdrop-blur-md border border-blue-100 rounded-[1.2rem] px-6 py-4 md:py-5 text-[#1d1d1f] placeholder:text-blue-900/40 focus:border-[#0071e3] focus:ring-4 focus:ring-[#0071e3]/10 transition-all outline-none shadow-sm" />
-                        </div>
-                    </div>
-
-                    <div className="space-y-4">
-                        <p className="text-[#1d1d1f] font-bold text-lg mb-2">¿Cuál es el principal cuello de botella que le impide escalar hoy?</p>
-                        <textarea rows={3} placeholder="Describa su mayor reto operativo..." className="w-full bg-white/90 backdrop-blur-md border border-blue-100 rounded-[1.2rem] px-6 py-4 md:py-5 text-[#1d1d1f] placeholder:text-blue-900/40 focus:border-[#0071e3] focus:ring-4 focus:ring-[#0071e3]/10 transition-all outline-none shadow-sm"></textarea>
-                    </div>
-
-                    <div className="pt-2">
-                        <button type="button" className="w-full bg-gradient-to-r from-[#0071e3] to-cyan-500 hover:from-[#0060c2] hover:to-[#009bda] text-white font-bold text-xl py-5 md:py-6 rounded-[1.5rem] transition-all hover:scale-[1.01] active:scale-[0.98] shadow-[0_10px_30px_rgba(0,113,227,0.3)] border border-white/20">
-                            Solicitar mi hoja de ruta personalizada
-                        </button>
-                        <p className="text-center text-[#0071e3]/70 mt-6 font-semibold text-[13px] md:text-sm">Recibirá: Análisis preliminar de su situación actual + propuesta conceptual de intervención sin compromiso.</p>
-                    </div>
-                </form>
-            </GlassEffect>
+            <div className="pt-8 border-t border-slate-200">
+                <p className="text-slate-400 text-sm">O escribime al correo:</p>
+                <a href="mailto:joticachavez69@gmail.com" className="text-blue-600 hover:text-blue-700 font-semibold text-sm">joticachavez69@gmail.com</a>
+            </div>
         </div>
       </section>
 
@@ -471,10 +439,10 @@ export default function Home() {
                         <span className="font-extrabold text-3xl text-slate-800 tracking-tight">Jonathan.Ai</span>
                     </div>
                     <h3 className="text-[#1d1d1f] font-bold text-xl mb-1 tracking-tight">Jonathan Chávez</h3>
-                    <p className="text-[#0071e3]/80 font-semibold mb-5">Estratega en Automatización, IA y Arquitectura Digital</p>
+                    <p className="text-[#0071e3]/80 font-semibold mb-5">Especialista en Automatizaciones y Ecosistemas con IA</p>
                     <div className="space-y-2 text-slate-500 font-medium text-sm">
-                        <p className="flex items-center justify-center md:justify-start gap-2"><span className="material-symbols-outlined text-[18px]">location_on</span> Ubicación: Barrancabermeja, Santander</p>
-                        <p className="flex items-center justify-center md:justify-start gap-2"><span className="material-symbols-outlined text-[18px]">public</span> (Operación 100% remota)</p>
+                        <p className="flex items-center justify-center md:justify-start gap-2"><span className="material-symbols-outlined text-[18px]">location_on</span> Barrancabermeja, Santander</p>
+                        <p className="flex items-center justify-center md:justify-start gap-2"><span className="material-symbols-outlined text-[18px]">public</span> Operación 100% remota</p>
                     </div>
                 </div>
                 <div className="text-center md:text-right">
@@ -486,14 +454,23 @@ export default function Home() {
             
             <div className="border-t border-blue-100/50 pt-16 pb-8 text-center max-w-4xl mx-auto">
                 <p className="mb-12 text-[#1d1d1f] text-xl md:text-2xl leading-relaxed font-semibold tracking-tight">
-                    "No decidir también es una decisión. Es la decisión de seguir perdiendo mercado un año más mientras sus competidores actualizan su operación y capturan las oportunidades que usted aún no ve.<br/><br/>
-                    El mercado no espera. La selección natural tampoco.<br/><br/>
-                    <span className="text-[#0071e3] font-black">Elige con sabiduría.</span>"
+                    "Lo que hoy hacés a mano, mañana se hace solo.<br/>
+                    <span className="text-[#0071e3] font-black">Ahorrá tiempo. Ganá plata. Dejá que la IA trabaje por vos.</span>"
                 </p>
-                <p className="text-xs text-slate-400 font-bold tracking-widest uppercase">&copy; 2026 Jonathan Chávez. Todos los derechos reservados.</p>
+                <p className="text-xs text-slate-400 font-bold tracking-widest uppercase">&copy; 2026 Jonathan Chávez</p>
             </div>
         </div>
       </footer>
+
+      {/* WhatsApp Floating Button */}
+      <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-[100] flex items-center gap-3 group">
+        <span className="bg-white text-slate-700 text-sm font-semibold px-4 py-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
+          ¿Hablamos?
+        </span>
+        <span className="w-14 h-14 md:w-16 md:h-16 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center shadow-[0_8px_30px_rgba(5,150,105,0.4)] hover:scale-110 active:scale-95 transition-all animate-[bounce_2s_ease-in-out_infinite]">
+          <span className="material-symbols-outlined text-2xl md:text-3xl">chat</span>
+        </span>
+      </a>
     </>
   );
 }

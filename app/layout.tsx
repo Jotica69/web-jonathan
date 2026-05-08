@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Jonathan.Ai — Socio Estratégico Digital",
-  description: "Infraestructuras de automatización e inteligencia artificial.",
+  title: "Jonathan Chávez — Automatizaciones con IA",
+  description: "Especialista en automatizaciones y ecosistemas de IA en Barrancabermeja. Ahorrá 20+ horas semanales con WhatsApp y datos centralizados.",
 };
 
 export default function RootLayout({
