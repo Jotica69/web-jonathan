@@ -64,43 +64,43 @@ export default function Home() {
         )}
       </nav>
 
-      <section className="relative pt-24 pb-20 lg:pt-32 lg:pb-24 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden text-center lg:text-left z-0 flex flex-col justify-center min-h-[90vh] lg:min-h-screen">
-        <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-blue-100/60 rounded-full blur-[100px] pointer-events-none"></div>
-        <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-cyan-100/40 rounded-full blur-[80px] pointer-events-none"></div>
+      <section className="relative pt-24 pb-20 lg:pt-32 lg:pb-32 bg-hero-dark overflow-hidden text-left z-0 flex flex-col justify-center min-h-[90vh] lg:min-h-screen">
+        <div className="vertical-lines"></div>
+        <div className="absolute top-1/4 left-0 w-[600px] h-[600px] border-t-2 border-dashed border-white/10 rounded-[100%] pointer-events-none opacity-50"></div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10 w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-16 mt-8 md:mt-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-8 mt-12 md:mt-16">
             
             {/* TEXT COLUMN */}
-            <div className="flex-1 max-w-2xl reveal-on-scroll z-20 relative">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-sm font-semibold mb-6 shadow-sm">
-                    <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+            <div className="flex-1 max-w-3xl reveal-on-scroll z-20 relative">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-[1rem] bg-white/5 border border-white/10 text-blue-300 text-sm font-semibold mb-8 backdrop-blur-md shadow-lg ring-1 ring-white/5">
+                    <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
                     Barrancabermeja, Santander
                 </div>
-                <h1 className="text-4xl md:text-5xl lg:text-[56px] font-extrabold mb-6 text-slate-900 tracking-tight leading-[1.08]">
+                <h1 className="text-4xl md:text-5xl lg:text-[56px] font-extrabold mb-6 text-white tracking-tight leading-[1.08]">
                     Automatizo negocios<br className="hidden sm:block" />
-                    <span className="text-blue-600">con IA en Barrancabermeja</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">con IA en Barrancabermeja</span>
                 </h1>
                 
-                <p className="text-lg md:text-xl text-slate-600 font-medium mb-8 leading-relaxed max-w-xl">
-                    Tu negocio atendiendo clientes <strong className="text-slate-900">24/7, sin sueldos extra, sin errores humanos.</strong> Todo conectado a WhatsApp. Empezás a ahorrar tiempo en 15 días.
+                <p className="text-lg md:text-xl text-slate-300 font-medium mb-8 leading-relaxed max-w-2xl">
+                    Tu negocio atendiendo clientes <strong className="text-white">24/7, sin sueldos extra, sin errores humanos.</strong> Todo conectado a WhatsApp. Empezás a ahorrar tiempo en 15 días.
                 </p>
 
-                <div className="flex items-center gap-3 mb-8 text-sm text-slate-500">
-                    <span className="inline-flex items-center gap-1.5 bg-green-50 text-green-700 px-3 py-1.5 rounded-full font-semibold border border-green-100">
+                <div className="flex items-center gap-4 mb-8 text-sm text-slate-400">
+                    <span className="inline-flex items-center gap-1.5 bg-green-500/10 text-green-300 px-3 py-1.5 rounded-full font-semibold border border-green-500/20">
                         <span className="material-symbols-outlined text-base">check_circle</span> Sin costo hasta que funcione
                     </span>
                     <span className="inline-flex items-center gap-1.5">
-                        <span className="material-symbols-outlined text-base text-slate-400">schedule</span> Respondo en &lt;1 hora
+                        <span className="material-symbols-outlined text-base">schedule</span> Respondo en &lt;1 hora
                     </span>
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                    <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-bold shadow-[0_8px_24px_rgba(5,150,105,0.35)] hover:scale-[1.02] active:scale-95 transition-all">
+                    <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-bold shadow-[0_8px_30px_rgba(5,150,105,0.4)] hover:scale-[1.02] active:scale-95 transition-all">
                         <span className="material-symbols-outlined">chat</span>
                         <span>Escribime por WhatsApp</span>
                     </a>
-                    <a href="#automatizaciones" className="inline-flex items-center justify-center gap-2 text-slate-700 hover:text-blue-600 font-semibold px-6 py-4 rounded-full border border-slate-200 hover:border-blue-200 bg-white hover:bg-blue-50 transition-all text-base">
-                        Ver cómo trabajo <span className="material-symbols-outlined text-lg">arrow_downward</span>
+                    <a href="#features" className="inline-flex items-center justify-center gap-2 text-slate-300 hover:text-white font-semibold px-6 py-4 rounded-full border border-white/10 hover:border-white/20 transition-all text-base">
+                        Ver servicios <span className="material-symbols-outlined text-lg">arrow_downward</span>
                     </a>
                 </div>
             </div>
