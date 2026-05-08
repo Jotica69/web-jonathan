@@ -35,14 +35,15 @@ export default function Home() {
                     <span className="material-symbols-outlined text-brand-light text-xl md:text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>widgets</span>
                     <span className="font-bold text-lg md:text-xl tracking-tight text-white">Jonathan.Ai</span>
                 </div>
-                <div className="hidden md:flex items-center space-x-10 lg:space-x-12">
-                    <a className="text-slate-300 hover:text-white font-medium transition-colors text-sm" href="#features">Soluciones</a>
-                    <a className="text-slate-300 hover:text-white font-medium transition-colors text-sm" href="#roadmap">Metodología</a>
-                    <a className="text-slate-300 hover:text-white font-medium transition-colors text-sm" href="#exclusion">Para Quién Es</a>
+                <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
+                    <a className="text-slate-300 hover:text-white font-medium transition-colors text-sm" href="#autoridad">Automatizaciones</a>
+                    <a className="text-slate-300 hover:text-white font-medium transition-colors text-sm" href="#soluciones">Soluciones SaaS</a>
+                    <a className="text-slate-300 hover:text-white font-medium transition-colors text-sm" href="#proyectos">Proyectos</a>
+                    <a className="text-slate-300 hover:text-white font-medium transition-colors text-sm" href="#sobre-mi">Sobre Mí</a>
                 </div>
                 <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
-                    <a className="text-slate-300 hover:text-white font-medium transition-colors text-sm" href="#contacto">Entrar</a>
-                    <a className="bg-white text-slate-900 hover:bg-slate-100 px-5 lg:px-6 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-white/10 transition-all hover:scale-105" href="#contacto">Solicitar Propuesta</a>
+                    <a className="text-slate-300 hover:text-white font-medium transition-colors text-sm" href="#contacto">Contacto</a>
+                    <a className="bg-green-600 text-white hover:bg-green-500 px-5 lg:px-6 py-2.5 rounded-full text-sm font-bold shadow-[0_8px_20px_rgba(5,150,105,0.3)] transition-all hover:scale-105" href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
                 </div>
                 <div className="md:hidden flex items-center">
                     <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-white focus:outline-none p-2 rounded-full hover:bg-white/10 transition-colors">
@@ -55,10 +56,11 @@ export default function Home() {
         {mobileMenuOpen && (
             <div className="md:hidden glass-dark absolute top-full mt-4 w-full left-0 rounded-2xl border border-white/10 shadow-2xl overflow-hidden p-2">
                 <div className="px-2 pt-2 pb-4 space-y-1 bg-[#0b1121]/90 rounded-xl backdrop-blur-2xl">
-                    <a onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors" href="#features">Soluciones</a>
-                    <a onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors" href="#roadmap">Metodología</a>
-                    <a onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors" href="#exclusion">Para Quién Es</a>
-                    <a onClick={() => setMobileMenuOpen(false)} className="block w-full text-center mt-4 bg-white text-slate-900 px-5 py-3 rounded-xl text-sm font-bold shadow-md" href="#contacto">Solicitar Propuesta</a>
+                    <a onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors" href="#autoridad">Automatizaciones</a>
+                    <a onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors" href="#soluciones">Soluciones SaaS</a>
+                    <a onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors" href="#proyectos">Proyectos</a>
+                    <a onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors" href="#sobre-mi">Sobre Mí</a>
+                    <a onClick={() => setMobileMenuOpen(false)} className="block w-full text-center mt-4 bg-green-600 text-white px-5 py-3 rounded-xl text-sm font-bold shadow-md" href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
                 </div>
             </div>
         )}
@@ -82,12 +84,12 @@ export default function Home() {
                 </h1>
                 
                 <p className="text-lg md:text-xl text-slate-300 font-medium mb-8 leading-relaxed max-w-2xl">
-                    Automatizo la cobranza, los pedidos y la atención al cliente de tu negocio <strong className="text-white">con IA.</strong> Ahorrás 20+ horas por semana en menos de 15 días. Sin costo hasta que funcione.
+                    Tu negocio atendiendo clientes <strong className="text-white">24/7</strong>, sin sueldos extra, sin errores humanos. Todo conectado a tu WhatsApp.
                 </p>
 
                 <div className="flex items-center gap-4 mb-8 text-sm text-slate-400">
-                    <span className="inline-flex items-center gap-1.5 bg-green-500/10 text-green-300 px-3 py-1.5 rounded-full font-semibold border border-green-500/20">
-                        <span className="material-symbols-outlined text-base">check_circle</span> Sin costo hasta que funcione
+                    <span className="inline-flex items-center gap-1.5 bg-green-500/10 text-green-300 px-3 py-1.5 rounded-full font-semibold border border-green-500/20 shadow-[0_0_15px_rgba(5,150,105,0.2)]">
+                        <span className="material-symbols-outlined text-base">check_circle</span> Probás 1 semana sin costo
                     </span>
                     <span className="inline-flex items-center gap-1.5">
                         <span className="material-symbols-outlined text-base">schedule</span> Respondo en &lt;1 hora
@@ -95,12 +97,12 @@ export default function Home() {
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                    <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-bold shadow-[0_8px_30px_rgba(5,150,105,0.4)] hover:scale-[1.02] active:scale-95 transition-all">
+                    <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-full text-lg font-bold shadow-[0_8px_30px_rgba(5,150,105,0.4)] hover:scale-[1.02] active:scale-95 transition-all">
                         <span className="material-symbols-outlined">chat</span>
                         <span>Escribime por WhatsApp</span>
                     </a>
-                    <a href="#features" className="inline-flex items-center justify-center gap-2 text-slate-300 hover:text-white font-semibold px-6 py-4 rounded-full border border-white/10 hover:border-white/20 transition-all text-base">
-                        Ver servicios <span className="material-symbols-outlined text-lg">arrow_downward</span>
+                    <a href="#proyectos" className="inline-flex items-center justify-center gap-2 text-slate-300 hover:text-white font-semibold px-6 py-4 rounded-full border border-white/10 hover:border-white/20 transition-all text-base hover:bg-white/5">
+                        Ver proyectos reales <span className="material-symbols-outlined text-lg">arrow_downward</span>
                     </a>
                 </div>
             </div>
@@ -138,11 +140,11 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10">
             <div className="text-center max-w-4xl mx-auto mb-20 reveal-on-scroll">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-8 text-[#1d1d1f] tracking-tighter leading-tight">
-                    ¿Por qué su negocio no escala <br className="hidden md:block" />aunque usted trabaja más horas que nadie?
+                    Lo que hoy hacés a mano, <br className="hidden md:block" />mañana se hace solo.
                 </h2>
                 <div className="text-lg md:text-xl text-[#0071e3] font-medium leading-relaxed space-y-4 max-w-3xl mx-auto">
                     <p className="text-blue-900/70">No es falta de esfuerzo. Es un error de sistema.</p>
-                    <p className="text-blue-900/60 text-base md:text-lg">Si hoy detiene su operación manual, su flujo de ingresos colapsa. Eso no es un negocio. Es dependencia absoluta de su presencia física constante. Usted no construyó una empresa; construyó un empleo con responsabilidad amplificada.</p>
+                    <p className="text-blue-900/60 text-base md:text-lg">Cada hora que gastás en cobrar por WhatsApp, responder dudas repetitivas, hacer seguimiento o tomar pedidos manuales, es una hora que no estás dedicando a hacer crecer tu negocio.</p>
                 </div>
             </div>
 
@@ -304,7 +306,235 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. MECANISMO DE EXCLUSIÓN */}
+      {/* 4. SOLUCIONES SaaS */}
+      <section id="soluciones" className="py-24 md:py-32 overflow-hidden bg-white relative">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#0071e30a_1px,transparent_1px),linear-gradient(to_bottom,#0071e30a_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
+        <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10">
+            <div className="text-center max-w-3xl mx-auto mb-20 reveal-on-scroll">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-[1rem] bg-blue-50 border border-blue-100 text-blue-600 text-sm font-bold mb-6 uppercase tracking-widest">
+                    Productos Propios
+                </div>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#1d1d1f] tracking-tighter">
+                    Soluciones listas para <span className="text-[#0071e3]">conectar y escalar</span>
+                </h2>
+                <p className="text-lg text-slate-600 font-medium">Sistemas completos que resuelven problemas específicos de tu industria desde el día uno. Sin desarrollos eternos ni software costoso.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 reveal-on-scroll">
+                {/* Mocia */}
+                <div className="group relative bg-[#f8fafc] border border-slate-200 hover:border-blue-200 rounded-[2rem] p-8 md:p-10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,113,227,0.08)] overflow-hidden flex flex-col">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full blur-[30px] group-hover:bg-blue-500/10 transition-colors"></div>
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-600 to-[#0071e3] flex items-center justify-center shadow-lg mb-8 relative z-10">
+                        <span className="material-symbols-outlined text-white text-2xl">account_balance_wallet</span>
+                    </div>
+                    <div className="mb-2">
+                        <span className="text-xs font-bold uppercase tracking-widest text-slate-400">Para Prestamistas</span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-[#1d1d1f] mb-4 tracking-tight">Mocia — Cobranza con IA</h3>
+                    <p className="text-slate-600 leading-relaxed font-medium mb-8 flex-1">
+                        Recordatorios automáticos por WhatsApp con inteligencia artificial que adapta el tono según el cliente. <strong className="text-blue-600">Recuperás tu plata más rápido</strong> sin mandar un solo mensaje.
+                    </p>
+                    <a href="https://wa.me/573223663275?text=Me%20interesa%20Mocia" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#0071e3] font-bold hover:text-blue-700 transition-colors group/link w-fit">
+                        Quiero implementar Mocia <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+
+                {/* QR Menu System */}
+                <div className="group relative bg-[#f8fafc] border border-slate-200 hover:border-cyan-200 rounded-[2rem] p-8 md:p-10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(6,182,212,0.08)] overflow-hidden flex flex-col">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 rounded-full blur-[30px] group-hover:bg-cyan-500/10 transition-colors"></div>
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center shadow-lg mb-8 relative z-10">
+                        <span className="material-symbols-outlined text-white text-2xl">qr_code_scanner</span>
+                    </div>
+                    <div className="mb-2">
+                        <span className="text-xs font-bold uppercase tracking-widest text-slate-400">Para Restaurantes</span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-[#1d1d1f] mb-4 tracking-tight">QR Menu System</h3>
+                    <p className="text-slate-600 leading-relaxed font-medium mb-8 flex-1">
+                        Tus clientes piden solos escaneando un QR en la mesa. El pedido llega <strong className="text-cyan-600">directo a cocina o caja</strong>. Cero tiempos de espera, sin mesero, sin errores humanos.
+                    </p>
+                    <a href="https://wa.me/573223663275?text=Me%20interesa%20QR%20Menu" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-cyan-600 font-bold hover:text-cyan-700 transition-colors group/link w-fit">
+                        Quiero QR Menu <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+
+                {/* CRM Simple */}
+                <div className="group relative bg-[#f8fafc] border border-slate-200 hover:border-indigo-200 rounded-[2rem] p-8 md:p-10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(99,102,241,0.08)] overflow-hidden flex flex-col">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 rounded-full blur-[30px] group-hover:bg-indigo-500/10 transition-colors"></div>
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center shadow-lg mb-8 relative z-10">
+                        <span className="material-symbols-outlined text-white text-2xl">insights</span>
+                    </div>
+                    <div className="mb-2">
+                        <span className="text-xs font-bold uppercase tracking-widest text-slate-400">Para Tiendas y Retail</span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-[#1d1d1f] mb-4 tracking-tight">CRM Simple WhatsApp</h3>
+                    <p className="text-slate-600 leading-relaxed font-medium mb-8 flex-1">
+                        Sabés <strong className="text-indigo-600">quién te compra, qué compra y cuándo vuelve</strong>. Historial automático de clientes y envío de promos personalizadas directo por WhatsApp.
+                    </p>
+                    <a href="https://wa.me/573223663275?text=Me%20interesa%20CRM%20Simple" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-indigo-600 font-bold hover:text-indigo-700 transition-colors group/link w-fit">
+                        Quiero implementar CRM <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+
+                {/* Gestión de Reservas */}
+                <div className="group relative bg-[#f8fafc] border border-slate-200 hover:border-teal-200 rounded-[2rem] p-8 md:p-10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(20,184,166,0.08)] overflow-hidden flex flex-col">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-teal-500/5 rounded-full blur-[30px] group-hover:bg-teal-500/10 transition-colors"></div>
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-500 to-emerald-500 flex items-center justify-center shadow-lg mb-8 relative z-10">
+                        <span className="material-symbols-outlined text-white text-2xl">event_available</span>
+                    </div>
+                    <div className="mb-2">
+                        <span className="text-xs font-bold uppercase tracking-widest text-slate-400">Para Clínicas y Barberías</span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-[#1d1d1f] mb-4 tracking-tight">Agendamiento Automático</h3>
+                    <p className="text-slate-600 leading-relaxed font-medium mb-8 flex-1">
+                        Tus clientes reservan por WhatsApp en automático. El sistema envía confirmaciones y <strong className="text-teal-600">recordatorios horas antes</strong>. Cero llamadas perdidas, agenda llena.
+                    </p>
+                    <a href="https://wa.me/573223663275?text=Me%20interesa%20Reservas" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-teal-600 font-bold hover:text-teal-700 transition-colors group/link w-fit">
+                        Quiero automatizar reservas <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      {/* 4.5. SERVICIOS COMPLEMENTARIOS */}
+      <section className="py-20 bg-[#f4f7fc] border-t border-slate-200 relative overflow-hidden">
+        <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10 reveal-on-scroll">
+            <h2 className="text-2xl md:text-3xl font-bold mb-10 text-[#1d1d1f] tracking-tight">Otras formas en las que escalo tu marca:</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <span className="material-symbols-outlined text-[#0071e3] text-3xl mb-4">language</span>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">Webs de Alto Impacto</h3>
+                    <p className="text-slate-600 font-medium text-sm">Páginas y landing pages veloces para que tus clientes te encuentren en Google y compren sin fricción.</p>
+                </div>
+                <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <span className="material-symbols-outlined text-[#9B51E0] text-3xl mb-4">movie_edit</span>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">Edición de Video para Redes</h3>
+                    <p className="text-slate-600 font-medium text-sm">Edición premium de Reels/TikToks que enganchan en 3 segundos. Vendé más con el mismo Instagram.</p>
+                </div>
+                <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <span className="material-symbols-outlined text-cyan-600 text-3xl mb-4">bar_chart</span>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">Dashboards de Datos</h3>
+                    <p className="text-slate-600 font-medium text-sm">Paneles visuales para que sepas exactamente qué se vende, cuándo y a quién. Decisiones con números.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      {/* 5. PROYECTOS (Portafolio) */}
+      <section id="proyectos" className="py-24 md:py-32 bg-[#0b1121] text-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-600/5 rounded-full blur-[150px] pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10">
+            <div className="flex flex-col md:flex-row justify-between items-end mb-16 reveal-on-scroll border-b border-white/10 pb-8">
+                <div>
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tighter mb-4">
+                        Casos de éxito reales
+                    </h2>
+                    <p className="text-slate-400 text-lg font-medium max-w-xl">
+                        No prometemos innovación, construimos infraestructura digital comprobada. Algunos de nuestros proyectos:
+                    </p>
+                </div>
+                <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex items-center gap-2 text-cyan-400 font-bold hover:text-cyan-300 transition-colors uppercase tracking-widest text-sm">
+                    Ver más proyectos <span className="material-symbols-outlined text-base">arrow_forward</span>
+                </a>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 reveal-on-scroll">
+                {/* Project 1 */}
+                <div className="group cursor-pointer">
+                    <div className="w-full aspect-[4/3] bg-[#141b2a] rounded-[2rem] mb-6 relative overflow-hidden border border-white/5 group-hover:border-blue-500/30 transition-colors">
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#0071e3]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-white/30 group-hover:text-white/60 transition-colors">
+                            <span className="material-symbols-outlined text-5xl">precision_manufacturing</span>
+                            <span className="font-bold text-xl tracking-widest uppercase">Mocia SaaS</span>
+                        </div>
+                    </div>
+                    <div className="flex justify-between items-start">
+                        <div>
+                            <h3 className="text-2xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">Mocia — Cobranza Inteligente</h3>
+                            <p className="text-slate-400 font-medium mb-4">SaaS que automatiza cobranzas por WhatsApp usando Inteligencia Artificial.</p>
+                            <div className="flex flex-wrap gap-2">
+                                <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">IA</span>
+                                <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">WhatsApp</span>
+                                <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">Supabase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Project 2 */}
+                <div className="group cursor-pointer">
+                    <div className="w-full aspect-[4/3] bg-[#141b2a] rounded-[2rem] mb-6 relative overflow-hidden border border-white/5 group-hover:border-cyan-500/30 transition-colors">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-white/30 group-hover:text-white/60 transition-colors">
+                            <span className="material-symbols-outlined text-5xl">monitoring</span>
+                            <span className="font-bold text-xl tracking-widest uppercase">Dashboard App</span>
+                        </div>
+                    </div>
+                    <div className="flex justify-between items-start">
+                        <div>
+                            <h3 className="text-2xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">Dashboard Financiero Personal</h3>
+                            <p className="text-slate-400 font-medium mb-4">App de finanzas de alta respuesta con paneles hiper visuales.</p>
+                            <div className="flex flex-wrap gap-2">
+                                <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">Python</span>
+                                <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">FastAPI</span>
+                                <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Project 3 */}
+                <div className="group cursor-pointer">
+                    <div className="w-full aspect-[4/3] bg-[#141b2a] rounded-[2rem] mb-6 relative overflow-hidden border border-white/5 group-hover:border-purple-500/30 transition-colors">
+                        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-white/30 group-hover:text-white/60 transition-colors">
+                            <span className="material-symbols-outlined text-5xl">shopping_cart</span>
+                            <span className="font-bold text-xl tracking-widest uppercase">E-Commerce Web</span>
+                        </div>
+                    </div>
+                    <div className="flex justify-between items-start">
+                        <div>
+                            <h3 className="text-2xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">Tienda de Ropa E-commerce</h3>
+                            <p className="text-slate-400 font-medium mb-4">Catálogo online con carrito, checkout fluido y sistema de alta conversión.</p>
+                            <div className="flex flex-wrap gap-2">
+                                <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">Vercel</span>
+                                <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">Supabase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Project 4 */}
+                <div className="group cursor-pointer">
+                    <div className="w-full aspect-[4/3] bg-[#141b2a] rounded-[2rem] mb-6 relative overflow-hidden border border-white/5 group-hover:border-indigo-500/30 transition-colors">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-white/30 group-hover:text-white/60 transition-colors">
+                            <span className="material-symbols-outlined text-5xl">movie_edit</span>
+                            <span className="font-bold text-xl tracking-widest uppercase">Video Marketing</span>
+                        </div>
+                    </div>
+                    <div className="flex justify-between items-start">
+                        <div>
+                            <h3 className="text-2xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">Reel Viral Marketing Digital</h3>
+                            <p className="text-slate-400 font-medium mb-4">Video editado profesionalmente con +50K vistas potenciales y alto enganche.</p>
+                            <div className="flex flex-wrap gap-2">
+                                <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">DaVinci Resolve</span>
+                                <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">Edición</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="md:hidden mt-10 inline-flex w-full justify-center items-center gap-2 text-cyan-400 font-bold border border-cyan-400/30 py-4 rounded-full uppercase tracking-widest text-sm">
+                Ver más proyectos
+            </a>
+        </div>
+      </section>
+
+      {/* 6. MECANISMO DE EXCLUSIÓN */}
       <section id="exclusion" className="py-24 md:py-32 overflow-hidden bg-[#070b14] relative border-t border-white/5 shadow-[inset_0_20px_40px_rgba(0,0,0,0.4)]">
         {/* Dynamic Dark Background Elements */}
         <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none animate-pulse"></div>
@@ -401,7 +631,41 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. CONTACTO — WhatsApp CTA */}
+      {/* 8. SOBRE MÍ */}
+      <section id="sobre-mi" className="py-20 md:py-28 bg-[#1d1d1f] relative overflow-hidden">
+        <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-[#0071e3]/10 rounded-full blur-[100px] pointer-events-none -translate-y-1/2"></div>
+        <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-cyan-400/10 rounded-full blur-[100px] pointer-events-none -translate-y-1/2"></div>
+
+        <div className="max-w-[1000px] mx-auto px-6 lg:px-8 relative z-10">
+            <div className="bg-[#2d2d30]/30 backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-8 md:p-14 shadow-2xl reveal-on-scroll">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+                    <div className="w-32 h-32 md:w-40 md:h-40 shrink-0 bg-gradient-to-br from-[#0071e3] to-cyan-400 rounded-full flex items-center justify-center p-1 shadow-[0_0_30px_rgba(0,113,227,0.3)]">
+                        <div className="w-full h-full bg-[#1d1d1f] rounded-full flex items-center justify-center border-4 border-[#1d1d1f] overflow-hidden relative">
+                             {/* Placeholder para foto */}
+                             <span className="material-symbols-outlined text-white/20 text-6xl">person</span>
+                        </div>
+                    </div>
+                    <div className="text-center md:text-left flex-1">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold mb-4 uppercase tracking-widest">
+                            El Arquitecto
+                        </div>
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Soy Jonathan Chávez.</h2>
+                        <div className="text-slate-300 text-lg leading-relaxed space-y-4 font-medium">
+                            <p>Vivo en <strong className="text-white">Barrancabermeja</strong>. Creo ecosistemas de IA que le ahorran tiempo y plata a negocios locales.</p>
+                            <p>No soy una consultora abstracta ni una agencia que te vende humo. Soy el que se sienta a entender tu operación y te resuelve todo el dolor técnico mientras vos te dedicás a vender y crecer.</p>
+                        </div>
+                        <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-3">
+                            <span className="px-4 py-2 bg-white/5 rounded-lg text-slate-300 text-sm font-semibold border border-white/10 flex items-center gap-2"><span className="material-symbols-outlined text-sm">smart_toy</span> Automatización</span>
+                            <span className="px-4 py-2 bg-white/5 rounded-lg text-slate-300 text-sm font-semibold border border-white/10 flex items-center gap-2"><span className="material-symbols-outlined text-sm">code</span> Desarrollo Web</span>
+                            <span className="px-4 py-2 bg-white/5 rounded-lg text-slate-300 text-sm font-semibold border border-white/10 flex items-center gap-2"><span className="material-symbols-outlined text-sm">insights</span> Análisis de Datos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      {/* 9. CONTACTO — WhatsApp CTA */}
       <section id="contacto" className="py-24 md:py-32 bg-gradient-to-b from-white to-blue-50 relative z-10 overflow-hidden">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-100/50 rounded-full blur-[120px] pointer-events-none"></div>
         
