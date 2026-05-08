@@ -82,7 +82,7 @@ export default function Home() {
                 </h1>
                 
                 <p className="text-lg md:text-xl text-slate-300 font-medium mb-8 leading-relaxed max-w-2xl">
-                    Tu negocio atendiendo clientes <strong className="text-white">24/7, sin sueldos extra, sin errores humanos.</strong> Todo conectado a WhatsApp. Empezás a ahorrar tiempo en 15 días.
+                    Automatizo la cobranza, los pedidos y la atención al cliente de tu negocio <strong className="text-white">con IA.</strong> Ahorrás 20+ horas por semana en menos de 15 días. Sin costo hasta que funcione.
                 </p>
 
                 <div className="flex items-center gap-4 mb-8 text-sm text-slate-400">
