@@ -39,6 +39,7 @@ export default function Home() {
                     <a className="text-slate-300 hover:text-white font-medium transition-colors text-sm" href="#autoridad">Qué hago</a>
                     <a className="text-slate-300 hover:text-white font-medium transition-colors text-sm" href="/soluciones">Soluciones</a>
                     <a className="text-slate-300 hover:text-white font-medium transition-colors text-sm" href="/proyectos">Proyectos</a>
+                    <a className="text-slate-300 hover:text-white font-medium transition-colors text-sm" href="/testimonios">Testimonios</a>
                     <a className="text-slate-300 hover:text-white font-medium transition-colors text-sm" href="#sobre-mi">Sobre Mí</a>
                 </div>
                 <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
@@ -59,6 +60,7 @@ export default function Home() {
                     <a onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors" href="#autoridad">Qué hago</a>
                     <a onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors" href="/soluciones">Soluciones</a>
                     <a onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors" href="/proyectos">Proyectos</a>
+                    <a onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors" href="/testimonios">Testimonios</a>
                     <a onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors" href="#sobre-mi">Sobre Mí</a>
                     <a onClick={() => setMobileMenuOpen(false)} className="block w-full text-center mt-4 bg-green-600 text-white px-5 py-3 rounded-xl text-sm font-bold shadow-md" href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer">Escribime por WhatsApp</a>
                 </div>
@@ -84,17 +86,8 @@ export default function Home() {
                 </h1>
                 
                 <p className="text-lg md:text-xl text-slate-300 font-medium mb-8 leading-relaxed max-w-2xl">
-                    Creo sistemas con inteligencia artificial que hacen el trabajo repetitivo por vos: cobrar, responder clientes, agendar citas, llevar registros. <strong className="text-white">Vos te enfocás en vender, la IA se encarga del resto.</strong>
+                    Ahorras 20+ horas por semana automatizando procesos manuales en tu negocio. En menos de 15 días.
                 </p>
-
-                <div className="flex items-center gap-4 mb-8 text-sm text-slate-400">
-                    <span className="inline-flex items-center gap-1.5 bg-green-500/10 text-green-300 px-3 py-1.5 rounded-full font-semibold border border-green-500/20 shadow-[0_0_15px_rgba(5,150,105,0.2)]">
-                        <span className="material-symbols-outlined text-base">check_circle</span> Probás 1 semana sin costo
-                    </span>
-                    <span className="inline-flex items-center gap-1.5">
-                        <span className="material-symbols-outlined text-base">schedule</span> Respondo en &lt;1 hora
-                    </span>
-                </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
                     <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-full text-lg font-bold shadow-[0_8px_30px_rgba(5,150,105,0.4)] hover:scale-[1.02] active:scale-95 transition-all">
@@ -140,11 +133,10 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10">
             <div className="text-center max-w-4xl mx-auto mb-20 reveal-on-scroll">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-8 text-[#1d1d1f] tracking-tighter leading-tight">
-                    Lo que hoy hacés a mano, <br className="hidden md:block" />mañana se hace solo.
+                    Lo que hoy haces a mano, <br className="hidden md:block" />mañana se hace solo.
                 </h2>
                 <div className="text-lg md:text-xl text-[#0071e3] font-medium leading-relaxed space-y-4 max-w-3xl mx-auto">
-                    <p className="text-blue-900/70">No es falta de esfuerzo. Es un error de sistema.</p>
-                    <p className="text-blue-900/60 text-base md:text-lg">Cada hora que gastás en cobrar por WhatsApp, responder dudas repetitivas, hacer seguimiento o tomar pedidos manuales, es una hora que no estás dedicando a hacer crecer tu negocio.</p>
+                    <p className="text-blue-900/60 text-base md:text-lg">Las tareas manuales están frenando tu crecimiento. Al implementar sistemas de Inteligencia Artificial, eliminas los cuellos de botella operativos y liberas tiempo para enfocarte en lo que realmente importa: vender y escalar.</p>
                 </div>
             </div>
 
@@ -162,7 +154,7 @@ export default function Home() {
                         
                         <div className="mt-16 relative z-10">
                             <h3 className="text-2xl lg:text-3xl font-bold mb-5 text-[#1d1d1f] tracking-tight">Tiempo que no vuelve</h3>
-                            <p className="text-slate-600 text-base lg:text-[17px] leading-relaxed font-medium">Cada tarea que seguís haciendo a mano — cobrar, responder, anotar pedidos — es tiempo que <span className="text-[#0071e3] font-bold">podrías estar usando para vender más</span>. Y mientras tanto, la competencia ya automatizó.</p>
+                            <p className="text-slate-600 text-base lg:text-[17px] leading-relaxed font-medium">Cada tarea que sigues haciendo a mano es tiempo valioso que <span className="text-[#0071e3] font-bold">podrías estar usando para vender más</span>. Y mientras tanto, la competencia ya automatizó sus procesos.</p>
                         </div>
                     </div>
                 </div>
@@ -179,7 +171,7 @@ export default function Home() {
                         
                         <div className="mt-16 relative z-10">
                             <h3 className="text-2xl lg:text-3xl font-bold mb-5 text-white tracking-tight">Decisiones a ciegas</h3>
-                            <p className="text-slate-300 text-base lg:text-[17px] leading-relaxed font-medium">Si no sabés cuál es tu producto estrella, cuánto vendiste esta semana o cuántos clientes perdiste, estás adivinando. Y adivinar es la forma más cara de gestionar un negocio.</p>
+                            <p className="text-slate-300 text-base lg:text-[17px] leading-relaxed font-medium">Si no sabes cuál es tu producto estrella, cuánto vendiste esta semana o cuántos clientes perdiste, estás adivinando. Y adivinar es la forma más cara de gestionar un negocio.</p>
                         </div>
                     </div>
                 </div>
@@ -195,8 +187,8 @@ export default function Home() {
                         </div>
                         
                         <div className="mt-16 relative z-10">
-                            <h3 className="text-2xl lg:text-3xl font-bold mb-5 text-[#1d1d1f] tracking-tight">Tu negocio depende de vos</h3>
-                            <p className="text-blue-900/70 text-base lg:text-[17px] leading-relaxed font-bold">Si vos no estás presente, ¿tu negocio sigue funcionando? Si la respuesta es no, no tenés una empresa. Tenés un empleo que vos mismo te creaste.</p>
+                            <h3 className="text-2xl lg:text-3xl font-bold mb-5 text-[#1d1d1f] tracking-tight">Tu negocio depende de ti</h3>
+                            <p className="text-blue-900/70 text-base lg:text-[17px] leading-relaxed font-bold">Si tú no estás presente, ¿tu negocio sigue funcionando? Si la respuesta es no, no tienes una empresa estructurada, tienes un empleo que tú mismo te creaste.</p>
                         </div>
                     </div>
                 </div>
@@ -216,8 +208,8 @@ export default function Home() {
                 {/* Content Column (Title & Top Description) */}
                 <div className="flex-1 max-w-2xl reveal-on-scroll relative z-10">
                     <h2 className="text-4xl md:text-5xl lg:text-7xl lg:leading-[1.1] font-semibold mb-8 text-[#1d1d1f] tracking-tighter">
-                        Dejá de apagar incendios. <br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0071e3] to-cyan-500">Automatizá lo que te frena.</span>
+                        Operación sin esfuerzo. <br className="hidden md:block" />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0071e3] to-cyan-500">Sistemas que trabajan por ti.</span>
                     </h2>
                     
                     {/* Graphical element: Modern badge */}
@@ -253,7 +245,7 @@ export default function Home() {
                 <div className="flex flex-col items-center lg:items-start mb-12">
                      <h3 className="text-xl md:text-2xl font-bold tracking-widest text-[#0071e3] uppercase flex items-center gap-4">
                          <span className="w-12 h-1 bg-gradient-to-r from-[#0071e3] to-cyan-400 rounded-full"></span>
-                         Los Pilares del Sistema
+                         Otros Servicios
                      </h3>
                 </div>
                 
@@ -263,13 +255,13 @@ export default function Home() {
                         <div className="absolute top-0 right-0 w-[250px] h-[250px] bg-gradient-to-bl from-[#0071e3]/30 to-transparent rounded-full blur-[50px] pointer-events-none group-hover:scale-110 transition-transform duration-700 z-0"></div>
                         
                         <div className="absolute top-0 left-0 right-0 h-[70%] z-0" style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)' }}>
-                            <Image src="/Ecosistemas de IA Operativa.png" alt="Ecosistemas de IA Operativa" fill className="object-cover object-top group-hover:scale-110 transition-transform duration-1000 opacity-[0.85] mix-blend-multiply" />
+                            <Image src="/Webs de Alta Conversión.png" alt="Webs de Alto Impacto" fill className="object-cover object-top group-hover:scale-110 transition-transform duration-1000 opacity-[0.85] mix-blend-multiply" />
                         </div>
                         
                         {/* Nested Glassmorphism Text Card */}
                         <div className="relative z-10 m-3 mb-3 mt-[180px] md:mt-[220px] p-8 md:p-10 rounded-[2rem] bg-white/60 backdrop-blur-2xl border border-white/80 shadow-[0_8px_32px_rgba(255,255,255,0.4)] flex flex-col justify-end h-full group-hover:bg-white/80 transition-colors duration-500">
-                            <h4 className="text-xl md:text-[24px] font-extrabold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Ecosistemas de IA</h4>
-                            <p className="text-blue-950/80 text-[15px] leading-relaxed font-semibold">Tu negocio atendiendo y cobrando <span className="text-[#0071e3] font-bold">solo, 24/7</span>, sin que vos tengas que estar ahí.</p>
+                            <h4 className="text-xl md:text-[24px] font-extrabold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Webs de Alto Impacto</h4>
+                            <p className="text-blue-950/80 text-[15px] leading-relaxed font-semibold">Páginas rápidas para que tus clientes te encuentren en Google y <span className="text-[#0071e3] font-bold">te compren sin dar tantas vueltas</span>.</p>
                         </div>
                     </GlassEffect>
 
@@ -278,12 +270,12 @@ export default function Home() {
                         <div className="absolute top-0 right-0 w-[250px] h-[250px] bg-gradient-to-bl from-cyan-400/30 to-transparent rounded-full blur-[50px] pointer-events-none group-hover:scale-110 transition-transform duration-700 z-0"></div>
                         
                         <div className="absolute top-0 left-0 right-0 h-[70%] z-0" style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)' }}>
-                            <Image src="/Webs de Alta Conversión.png" alt="Webs de Alta Conversión" fill className="object-cover object-top group-hover:scale-110 transition-transform duration-1000 opacity-[0.85] mix-blend-multiply" />
+                            <Image src="/Ecosistemas de IA Operativa.png" alt="Edición de Video para Redes" fill className="object-cover object-top group-hover:scale-110 transition-transform duration-1000 opacity-[0.85] mix-blend-multiply" />
                         </div>
                         
                         <div className="relative z-10 m-3 mb-3 mt-[180px] md:mt-[220px] p-8 md:p-10 rounded-[2rem] bg-white/60 backdrop-blur-2xl border border-white/80 shadow-[0_8px_32px_rgba(255,255,255,0.4)] flex flex-col justify-end h-full group-hover:bg-white/80 transition-colors duration-500">
-                            <h4 className="text-xl md:text-[24px] font-extrabold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Webs que Venden</h4>
-                            <p className="text-blue-950/80 text-[15px] leading-relaxed font-semibold">Páginas que no solo se ven bien, sino que <span className="text-[#0071e3] font-bold">convierten visitantes en clientes</span> desde el primer clic.</p>
+                            <h4 className="text-xl md:text-[24px] font-extrabold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Edición de Video</h4>
+                            <p className="text-blue-950/80 text-[15px] leading-relaxed font-semibold">Reels y TikToks editados para enganchar. <span className="text-[#0071e3] font-bold">Vende más</span> con el mismo Instagram que ya tienes.</p>
                         </div>
                     </GlassEffect>
 
@@ -292,12 +284,12 @@ export default function Home() {
                         <div className="absolute top-0 right-0 w-[250px] h-[250px] bg-gradient-to-bl from-indigo-400/30 to-transparent rounded-full blur-[50px] pointer-events-none group-hover:scale-110 transition-transform duration-700 z-0"></div>
                         
                         <div className="absolute top-0 left-0 right-0 h-[70%] z-0" style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)' }}>
-                            <Image src="/Inteligencia Ejecutiva.png" alt="Inteligencia Ejecutiva" fill className="object-cover object-top group-hover:scale-110 transition-transform duration-1000 opacity-[0.85] mix-blend-multiply" />
+                            <Image src="/Inteligencia Ejecutiva.png" alt="Análisis de Datos" fill className="object-cover object-top group-hover:scale-110 transition-transform duration-1000 opacity-[0.85] mix-blend-multiply" />
                         </div>
                         
                         <div className="relative z-10 m-3 mb-3 mt-[180px] md:mt-[220px] p-8 md:p-10 rounded-[2rem] bg-white/60 backdrop-blur-2xl border border-white/80 shadow-[0_8px_32px_rgba(255,255,255,0.4)] flex flex-col justify-end h-full group-hover:bg-white/80 transition-colors duration-500">
                             <h4 className="text-xl md:text-[24px] font-extrabold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Análisis de Datos</h4>
-                            <p className="text-blue-950/80 text-[15px] leading-relaxed font-semibold">Paneles claros donde vés <span className="text-[#0071e3] font-bold">qué se vende, cuándo y a quién</span>. Decidís con números, no con intuición.</p>
+                            <p className="text-blue-950/80 text-[15px] leading-relaxed font-semibold">Paneles visuales donde ves <span className="text-[#0071e3] font-bold">qué se vende, cuándo y a quién</span>. Decides con números, no con suposiciones.</p>
                         </div>
                     </GlassEffect>
                 </div>
@@ -309,14 +301,14 @@ export default function Home() {
       {/* CTA BANNERS: Soluciones + Proyectos */}
       <section className="py-16 md:py-20 bg-white relative overflow-hidden">
         <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10 reveal-on-scroll">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* Soluciones Banner */}
                 <a href="/soluciones" className="group relative bg-gradient-to-br from-[#0b1121] to-blue-950 rounded-[2rem] p-8 md:p-10 border border-white/10 overflow-hidden hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between min-h-[200px]">
                     <div className="absolute top-0 right-0 w-40 h-40 bg-blue-500/10 rounded-full blur-[40px] group-hover:bg-blue-500/20 transition-colors"></div>
                     <div>
                         <div className="text-xs font-bold uppercase tracking-widest text-blue-400 mb-3">Productos listos para usar</div>
                         <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-3">Soluciones SaaS</h3>
-                        <p className="text-slate-300 font-medium">Mocia, QR Menu, CRM Simple, Agendamiento. Sistemas que ya funcionan y podés conectar a tu negocio hoy.</p>
+                        <p className="text-slate-300 font-medium">Sistemas listos para automatizar atención, ventas y procesos. Ya funcionan y puedes conectarlos a tu negocio hoy.</p>
                     </div>
                     <span className="inline-flex items-center gap-2 text-cyan-400 font-bold mt-6 group-hover:text-cyan-300 transition-colors">
                         Ver soluciones <span className="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
@@ -329,36 +321,25 @@ export default function Home() {
                     <div>
                         <div className="text-xs font-bold uppercase tracking-widest text-[#0071e3] mb-3">Portafolio</div>
                         <h3 className="text-2xl md:text-3xl font-bold text-[#1d1d1f] tracking-tight mb-3">Proyectos reales</h3>
-                        <p className="text-slate-600 font-medium">Mirá lo que ya construí: desde SaaS de cobranza con IA hasta tiendas online y dashboards financieros.</p>
+                        <p className="text-slate-600 font-medium">Mira lo que ya construí: desde SaaS con Inteligencia Artificial hasta sistemas integrales de datos.</p>
                     </div>
                     <span className="inline-flex items-center gap-2 text-[#0071e3] font-bold mt-6 group-hover:text-blue-700 transition-colors">
                         Ver proyectos <span className="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
                     </span>
                 </a>
-            </div>
-        </div>
-      </section>
 
-      {/* OTROS SERVICIOS */}
-      <section className="py-20 bg-[#f4f7fc] border-t border-slate-200 relative overflow-hidden">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10 reveal-on-scroll">
-            <h2 className="text-2xl md:text-3xl font-bold mb-10 text-[#1d1d1f] tracking-tight">Otros servicios</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                    <span className="material-symbols-outlined text-[#0071e3] text-3xl mb-4">language</span>
-                    <h3 className="text-xl font-bold text-slate-800 mb-2">Webs de Alto Impacto</h3>
-                    <p className="text-slate-600 font-medium text-sm">Páginas y landing pages rápidas para que tus clientes te encuentren en Google y te compren sin dar tantas vueltas.</p>
-                </div>
-                <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                    <span className="material-symbols-outlined text-[#9B51E0] text-3xl mb-4">movie_edit</span>
-                    <h3 className="text-xl font-bold text-slate-800 mb-2">Edición de Video para Redes</h3>
-                    <p className="text-slate-600 font-medium text-sm">Reels y TikToks editados para enganchar en los primeros 3 segundos. Vendé más con el mismo Instagram que ya tenés.</p>
-                </div>
-                <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                    <span className="material-symbols-outlined text-cyan-600 text-3xl mb-4">bar_chart</span>
-                    <h3 className="text-xl font-bold text-slate-800 mb-2">Análisis de Datos</h3>
-                    <p className="text-slate-600 font-medium text-sm">Paneles visuales donde ves qué se vende, cuándo y a quién. Para que tomes decisiones con números, no con suposiciones.</p>
-                </div>
+                {/* Testimonios Banner */}
+                <a href="/testimonios" className="group relative bg-[#0b1121] rounded-[2rem] p-8 md:p-10 border border-[#0071e3]/30 overflow-hidden hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,113,227,0.15)] transition-all duration-500 flex flex-col justify-between min-h-[200px]">
+                    <div className="absolute top-0 right-0 w-40 h-40 bg-cyan-400/10 rounded-full blur-[40px] group-hover:bg-cyan-400/20 transition-colors"></div>
+                    <div>
+                        <div className="text-xs font-bold uppercase tracking-widest text-cyan-400 mb-3">Resultados Reales</div>
+                        <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-3">Testimonios</h3>
+                        <p className="text-slate-400 font-medium">Descubre las experiencias de otros empresarios que ya transformaron sus operaciones con nosotros.</p>
+                    </div>
+                    <span className="inline-flex items-center gap-2 text-cyan-400 font-bold mt-6 group-hover:text-cyan-300 transition-colors">
+                        Leer testimonios <span className="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </span>
+                </a>
             </div>
         </div>
       </section>
@@ -383,7 +364,7 @@ export default function Home() {
                 </h2>
                 
                 <div className="text-[17px] md:text-[19px] text-slate-400 space-y-6 leading-relaxed font-medium max-w-xl">
-                    <p>Si buscás "algo barato" o si creés que la tecnología no es para tu negocio, este servicio no es para vos. Y está perfecto.</p>
+                    <p>Si buscas "algo barato" o si crees que la tecnología no es para tu negocio, este servicio no es para ti. Y está perfecto.</p>
                     <p className="text-slate-300">Trabajo con dueños de negocios que entienden que <span className="text-cyan-400 font-bold drop-shadow-[0_0_15px_rgba(34,211,238,0.4)]">adaptarse no es opcional</span>. Los que quieren dejar de trabajar más horas para ganar lo mismo y empezar a usar la tecnología a su favor.</p>
                 </div>
             </div>
@@ -398,9 +379,9 @@ export default function Home() {
                         <span className="material-symbols-outlined text-blue-400 text-3xl">shield_locked</span>
                     </div>
                     
-                    <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-6 tracking-tight leading-tight">Si no querés cambiar nada en tu forma de trabajar...</h3>
+                    <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-6 tracking-tight leading-tight">Si no quieres cambiar nada en tu forma de trabajar...</h3>
                     <p className="text-slate-400 text-base md:text-lg mb-10 leading-relaxed font-medium">
-                        Entonces esto no es para vos. Sin resentimientos. Pero el mercado no espera a nadie.
+                        Entonces esto no es para ti. Sin resentimientos. Pero el mercado no espera a nadie.
                     </p>
                     
                     <div className="w-full h-px bg-gradient-to-r from-white/10 to-transparent mb-8"></div>
@@ -433,7 +414,7 @@ export default function Home() {
                     <div className="w-16 h-16 rounded-[1.2rem] bg-gradient-to-br from-[#0071e3] to-cyan-400 text-white flex items-center justify-center text-2xl font-bold mb-6 shadow-lg relative z-10">1</div>
                     <div className="text-[10px] uppercase tracking-widest font-bold text-blue-600 mb-3">Fase 1</div>
                     <h4 className="font-semibold text-[#1d1d1f] text-xl mb-4 tracking-tight">Entiendo tu negocio</h4>
-                    <p className="text-blue-900/70 text-[15px] leading-relaxed font-medium">Me sentó con vos, entiendo cómo funciona tu operación y encuentro exactamente dónde estás perdiendo tiempo y plata por hacer las cosas a mano.</p>
+                    <p className="text-blue-900/70 text-[15px] leading-relaxed font-medium">Me siento contigo, entiendo cómo funciona tu operación y encuentro exactamente dónde estás perdiendo tiempo y dinero por hacer las cosas a mano.</p>
                 </GlassEffect>
 
                 <GlassEffect className="p-8 md:p-10 !bg-white/40 backdrop-blur-[40px] border border-white/60 shadow-[0_8px_32px_rgba(0,113,227,0.1)] ring-1 ring-inset ring-white/50 !rounded-[2.5rem] md:!rounded-[3rem] relative flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-500">
@@ -447,7 +428,7 @@ export default function Home() {
                     <div className="w-16 h-16 rounded-[1.2rem] bg-gradient-to-br from-cyan-400 to-blue-500 text-white flex items-center justify-center text-2xl font-bold mb-6 shadow-lg relative z-10">3</div>
                     <div className="text-[10px] uppercase tracking-widest font-bold text-cyan-700 mb-3">Fase 3</div>
                     <h4 className="font-semibold text-[#1d1d1f] text-xl mb-4 tracking-tight">Lo construyo y lo activo</h4>
-                    <p className="text-blue-900/70 text-[15px] leading-relaxed font-medium">Desarrollo todo, lo conecto a tus sistemas, lo pruebo y lo dejo funcionando. Vos no tenés que hacer nada técnico.</p>
+                    <p className="text-blue-900/70 text-[15px] leading-relaxed font-medium">Desarrollo todo, lo conecto a tus sistemas, lo pruebo y lo dejo funcionando. Tú no tienes que hacer nada técnico.</p>
                 </GlassEffect>
 
                 <GlassEffect className="p-8 md:p-10 !bg-white/40 backdrop-blur-[40px] border border-white/60 shadow-[0_8px_32px_rgba(0,113,227,0.1)] ring-1 ring-inset ring-white/50 !rounded-[2.5rem] md:!rounded-[3rem] relative flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-500">
@@ -522,7 +503,7 @@ export default function Home() {
             </p>
 
             <div className="pt-8 border-t border-slate-200">
-                <p className="text-slate-400 text-sm">O escribime al correo:</p>
+                <p className="text-slate-400 text-sm">O escríbeme al correo:</p>
                 <a href="mailto:joticachavez69@gmail.com" className="text-blue-600 hover:text-blue-700 font-semibold text-sm">joticachavez69@gmail.com</a>
             </div>
         </div>
@@ -556,8 +537,8 @@ export default function Home() {
             
             <div className="border-t border-blue-100/50 pt-16 pb-8 text-center max-w-4xl mx-auto">
                 <p className="mb-12 text-[#1d1d1f] text-xl md:text-2xl leading-relaxed font-semibold tracking-tight">
-                    "Lo que hoy hacés a mano, mañana se hace solo.<br/>
-                    <span className="text-[#0071e3] font-black">Ahorrá tiempo. Ganá plata. Dejá que la IA trabaje por vos.</span>"
+                    "Lo que hoy haces a mano, mañana se hace solo.<br/>
+                    <span className="text-[#0071e3] font-black">Ahorra tiempo. Gana dinero. Deja que la IA trabaje por ti.</span>"
                 </p>
                 <p className="text-xs text-slate-400 font-bold tracking-widest uppercase">&copy; 2026 Jonathan Chávez</p>
             </div>

@@ -66,7 +66,7 @@ export default function ProyectosPage() {
                         </div>
                     </div>
                     <h3 className="text-2xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">Mocia — Cobranza Inteligente</h3>
-                    <p className="text-slate-400 font-medium mb-4">Sistema SaaS que automatiza cobranzas por WhatsApp usando Inteligencia Artificial. Recupera la plata de los prestamistas sin que manden un solo mensaje.</p>
+                    <p className="text-slate-400 font-medium mb-4">Sistema SaaS que automatiza cobranzas por WhatsApp usando Inteligencia Artificial. Recupera el dinero de los prestamistas sin que tengan que enviar un solo mensaje.</p>
                     <div className="flex flex-wrap gap-2">
                         <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">IA</span>
                         <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">WhatsApp</span>
@@ -85,32 +85,29 @@ export default function ProyectosPage() {
                         </div>
                     </div>
                     <h3 className="text-2xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">Dashboard Financiero</h3>
-                    <p className="text-slate-400 font-medium mb-4">Aplicación de finanzas personales con paneles visuales que te muestran de un vistazo a dónde se va la plata y cómo optimizar gastos.</p>
+                    <p className="text-slate-400 font-medium mb-4">Aplicación de finanzas personales con paneles visuales que muestran de un vistazo a dónde se va el dinero y cómo optimizar gastos.</p>
                     <div className="flex flex-wrap gap-2">
                         <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">Python</span>
                         <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">FastAPI</span>
                         <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">UI/UX</span>
                     </div>
                 </div>
+            </div>
 
-                {/* Project 3 */}
-                <div className="group cursor-pointer">
-                    <div className="w-full aspect-[4/3] bg-[#141b2a] rounded-[2rem] mb-6 relative overflow-hidden border border-white/5 group-hover:border-purple-500/30 transition-colors">
-                        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-white/30 group-hover:text-white/60 transition-colors">
-                            <span className="material-symbols-outlined text-5xl">shopping_cart</span>
-                            <span className="font-bold text-xl tracking-widest uppercase">E-Commerce</span>
-                        </div>
-                    </div>
-                    <h3 className="text-2xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">Tienda de Ropa Online</h3>
-                    <p className="text-slate-400 font-medium mb-4">Catálogo online con carrito de compras, checkout fluido y diseño que convierte visitantes en compradores.</p>
-                    <div className="flex flex-wrap gap-2">
-                        <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">Vercel</span>
-                        <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">Supabase</span>
-                    </div>
+            <div className="mt-24 mb-12 border-t border-white/10 pt-12">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-[1rem] bg-white/5 border border-white/10 text-cyan-300 text-sm font-bold mb-6 uppercase tracking-widest">
+                    Complementarios
                 </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tighter mb-4">
+                    Otros Proyectos
+                </h2>
+                <p className="text-slate-400 text-lg font-medium max-w-xl">
+                    Trabajos adicionales enfocados en la atracción visual y posicionamiento de marca.
+                </p>
+            </div>
 
-                {/* Project 4 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 reveal-on-scroll">
+                {/* Project 4 - Video Marketing */}
                 <div className="group cursor-pointer">
                     <div className="w-full aspect-[4/3] bg-[#141b2a] rounded-[2rem] mb-6 relative overflow-hidden border border-white/5 group-hover:border-indigo-500/30 transition-colors">
                         <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -120,7 +117,7 @@ export default function ProyectosPage() {
                         </div>
                     </div>
                     <h3 className="text-2xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">Reel Viral — Marketing Digital</h3>
-                    <p className="text-slate-400 font-medium mb-4">Video editado profesionalmente con alto engagement, diseñado para captar atención en los primeros 3 segundos.</p>
+                    <p className="text-slate-400 font-medium mb-4">Video editado profesionalmente con alto engagement, diseñado para captar la atención en los primeros 3 segundos.</p>
                     <div className="flex flex-wrap gap-2">
                         <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">DaVinci Resolve</span>
                         <span className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">Edición</span>
@@ -130,7 +127,7 @@ export default function ProyectosPage() {
 
             {/* CTA Bottom */}
             <div className="text-center mt-16 reveal-on-scroll">
-                <p className="text-slate-400 font-medium mb-6 text-lg">¿Tenés un proyecto similar? Hablemos.</p>
+                <p className="text-slate-400 font-medium mb-6 text-lg">¿Tienes un proyecto similar? Hablemos.</p>
                 <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-full text-lg font-bold shadow-[0_8px_30px_rgba(5,150,105,0.4)] hover:scale-[1.02] active:scale-95 transition-all">
                     <span className="material-symbols-outlined">chat</span>
                     Escribime por WhatsApp

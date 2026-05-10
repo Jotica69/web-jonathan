@@ -47,7 +47,7 @@ export default function SolucionesPage() {
                 Soluciones que ya <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">funcionan</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 font-medium max-w-2xl mx-auto leading-relaxed">
-                Sistemas listos para usar que resuelven problemas reales de negocios como el tuyo. Sin esperar meses de desarrollo. Conectás, probás, y empezás a ahorrar tiempo.
+                Sistemas listos para usar que resuelven problemas reales de negocios como el tuyo. Sin esperar meses de desarrollo. Conectas, pruebas, y empiezas a ahorrar tiempo.
             </p>
         </div>
       </section>
@@ -71,7 +71,7 @@ export default function SolucionesPage() {
                         El sistema le manda recordatorios automáticos a tus clientes por WhatsApp. La IA adapta el tono: si es la primera vez, va suave; si ya se pasó de la fecha, va más directo.
                     </p>
                     <p className="text-slate-800 font-bold mb-8">
-                        <strong className="text-blue-600">Resultado:</strong> Recuperás tu plata más rápido sin tener que mandar un solo mensaje vos mismo.
+                        <strong className="text-blue-600">Resultado:</strong> Recuperas tu dinero más rápido sin tener que enviar un solo mensaje manualmente.
                     </p>
                     <a href="https://wa.me/573223663275?text=Me%20interesa%20Mocia" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#0071e3] font-bold hover:text-blue-700 transition-colors group/link w-fit text-lg">
                         Quiero Mocia para mi negocio <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
@@ -113,7 +113,7 @@ export default function SolucionesPage() {
                         El sistema registra automáticamente quién te compra, qué compra y cuándo fue la última vez. Cuando pasa tiempo sin volver, le manda una promo por WhatsApp para que regrese.
                     </p>
                     <p className="text-slate-800 font-bold mb-8">
-                        <strong className="text-indigo-600">Resultado:</strong> Sabés exactamente quiénes son tus mejores clientes y los hacés volver sin esfuerzo.
+                        <strong className="text-indigo-600">Resultado:</strong> Sabes exactamente quiénes son tus mejores clientes y los haces volver sin esfuerzo.
                     </p>
                     <a href="https://wa.me/573223663275?text=Me%20interesa%20CRM%20Simple" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-indigo-600 font-bold hover:text-indigo-700 transition-colors group/link w-fit text-lg">
                         Quiero implementar CRM <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
