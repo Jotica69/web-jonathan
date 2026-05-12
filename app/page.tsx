@@ -341,32 +341,31 @@ export default function Home() {
                 </div>
 
                 {/* Right side: List of items */}
-                <div className="w-full flex flex-col gap-8">
+                <div className="w-full flex flex-col gap-6 md:gap-8">
                     {/* Proyectos Banner */}
-                    <a href="/proyectos" className="group flex flex-col sm:flex-row items-start sm:items-center justify-between bg-white rounded-[2.5rem] p-8 md:p-10 border border-slate-200 hover:border-[#0071e3]/30 hover:shadow-[0_20px_40px_rgba(0,113,227,0.08)] transition-all duration-300 h-full gap-6">
+                    <a href="/proyectos" className="group flex flex-col sm:flex-row items-start sm:items-center justify-between bg-white/40 backdrop-blur-3xl rounded-[2.5rem] p-8 md:p-10 border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 h-full gap-6">
                         <div className="flex-1">
-                            <div className="w-14 h-14 bg-blue-50 text-[#0071e3] rounded-2xl flex items-center justify-center mb-5 border border-blue-100 group-hover:bg-[#0071e3] group-hover:text-white transition-colors">
-                                <span className="material-symbols-outlined text-2xl">work</span>
+                            <div className="w-14 h-14 rounded-[1.2rem] bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center shadow-sm border border-white/60 mb-5 group-hover:scale-110 transition-transform duration-300">
+                                <span className="material-symbols-outlined text-[#2b8cee] text-2xl">work</span>
                             </div>
-                            <h3 className="text-2xl font-bold text-[#1d1d1f] tracking-tight mb-2 group-hover:text-[#0071e3] transition-colors">Proyectos reales</h3>
-                            <p className="text-slate-500 font-medium text-[15px] leading-relaxed">Mira lo que ya construí: desde SaaS con IA hasta sistemas integrales de datos.</p>
+                            <h3 className="text-2xl font-bold text-[#1d1d1f] tracking-tight mb-2">Proyectos reales</h3>
+                            <p className="text-slate-600 font-medium text-[15px] leading-relaxed">Mira lo que ya construí: desde SaaS con IA hasta sistemas integrales de datos.</p>
                         </div>
-                        <div className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-[#0071e3] group-hover:text-white transition-colors shrink-0 shadow-sm border border-slate-100 group-hover:border-[#0071e3]">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center text-[#2b8cee] shrink-0 shadow-sm border border-white/60 group-hover:bg-[#2b8cee] group-hover:text-white group-hover:border-[#2b8cee] transition-all duration-300">
                             <span className="material-symbols-outlined">arrow_forward</span>
                         </div>
                     </a>
 
                     {/* Testimonios Banner */}
-                    <a href="/testimonios" className="group flex flex-col sm:flex-row items-start sm:items-center justify-between bg-[#0b1121] rounded-[2.5rem] p-8 md:p-10 border border-[#0071e3]/30 hover:shadow-[0_20px_40px_rgba(0,113,227,0.2)] transition-all duration-300 h-full gap-6 relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-400/10 rounded-full blur-[40px] group-hover:bg-cyan-400/20 transition-colors"></div>
-                        <div className="flex-1 relative z-10">
-                            <div className="w-14 h-14 bg-cyan-500/20 text-cyan-400 rounded-2xl flex items-center justify-center mb-5 border border-cyan-500/30 group-hover:bg-cyan-400 group-hover:text-[#0b1121] transition-colors">
-                                <span className="material-symbols-outlined text-2xl">forum</span>
+                    <a href="/testimonios" className="group flex flex-col sm:flex-row items-start sm:items-center justify-between bg-white/40 backdrop-blur-3xl rounded-[2.5rem] p-8 md:p-10 border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 h-full gap-6 relative overflow-hidden">
+                        <div className="flex-1">
+                            <div className="w-14 h-14 rounded-[1.2rem] bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center shadow-sm border border-white/60 mb-5 group-hover:scale-110 transition-transform duration-300">
+                                <span className="material-symbols-outlined text-[#2b8cee] text-2xl">forum</span>
                             </div>
-                            <h3 className="text-2xl font-bold text-white tracking-tight mb-2 group-hover:text-cyan-400 transition-colors">Casos de éxito</h3>
-                            <p className="text-slate-400 font-medium text-[15px] leading-relaxed">Descubre las experiencias de otros empresarios que transformaron sus operaciones.</p>
+                            <h3 className="text-2xl font-bold text-[#1d1d1f] tracking-tight mb-2">Casos de éxito</h3>
+                            <p className="text-slate-600 font-medium text-[15px] leading-relaxed">Descubre las experiencias de otros empresarios que transformaron sus operaciones.</p>
                         </div>
-                        <div className="w-12 h-12 rounded-full bg-white/5 text-white flex items-center justify-center group-hover:bg-cyan-400 group-hover:text-[#0b1121] transition-colors shrink-0 relative z-10 border border-white/10 group-hover:border-cyan-400">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center text-[#2b8cee] shrink-0 shadow-sm border border-white/60 group-hover:bg-[#2b8cee] group-hover:text-white group-hover:border-[#2b8cee] transition-all duration-300">
                             <span className="material-symbols-outlined">arrow_forward</span>
                         </div>
                     </a>
