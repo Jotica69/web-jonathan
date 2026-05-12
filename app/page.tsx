@@ -206,14 +206,6 @@ export default function Home() {
 
       {/* VIDEO SECTION */}
       <section className="relative w-full overflow-hidden bg-[#f4f7fc]">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10 mb-12">
-            <div className="reveal-on-scroll">
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#1d1d1f] tracking-tighter leading-tight text-center">
-                    Operación sin esfuerzo.<br className="hidden md:block" />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2b8cee] to-cyan-500">Sistemas que trabajan por ti.</span>
-                </h2>
-            </div>
-        </div>
         <div className="w-full h-[50vh] md:h-[60vh] lg:h-[500px] relative">
             <video
                 autoPlay
@@ -225,6 +217,17 @@ export default function Home() {
             >
                 <source src="/Video_pagina_alcaldia.mp4" type="video/mp4" />
             </video>
+            {/* Overlay oscuro */}
+            <div className="absolute inset-0 bg-black/50 z-10"></div>
+            {/* Texto centrado sobre el video */}
+            <div className="absolute inset-0 z-20 flex items-center justify-center px-6">
+                <div className="reveal-on-scroll text-center">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tighter leading-tight drop-shadow-lg">
+                        Operación sin esfuerzo.<br className="hidden md:block" />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-200">Sistemas que trabajan por ti.</span>
+                    </h2>
+                </div>
+            </div>
         </div>
       </section>
 
