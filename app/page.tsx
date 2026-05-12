@@ -419,23 +419,36 @@ export default function Home() {
       </section>
 
       {/* 5. EL CAMINO DEFINIDO (Roadmap) */}
-      <section id="roadmap" className="py-24 md:py-32 bg-white relative z-10 overflow-hidden">
+      <section id="roadmap" className="py-24 md:py-32 bg-[#f4f7fc] relative z-10 overflow-hidden">
+        {/* Sutil grid de fondo */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#0071e30a_1px,transparent_1px),linear-gradient(to_bottom,#0071e30a_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
+        
+        {/* Degradados animados sutiles */}
+        <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-[#2b8cee]/8 rounded-full blur-[120px] pointer-events-none animate-blob"></div>
+        <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-cyan-300/8 rounded-full blur-[100px] pointer-events-none animate-blob animation-delay-2000"></div>
+
         <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16 md:mb-24 reveal-on-scroll">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-slate-900 tracking-tighter">Así funciona el proceso</h2>
                 <p className="text-lg md:text-xl text-slate-500 font-medium max-w-2xl mx-auto">4 pasos claros. Sin sorpresas, sin letra pequeña.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 reveal-on-scroll relative">
-                {/* Connecting Line (Only visible on large screens) */}
-                <div className="hidden lg:block absolute top-12 left-[12%] w-[76%] h-[2px] bg-slate-100"></div>
+                {/* Línea conectora animada (solo desktop) */}
+                <div className="hidden lg:block absolute top-[3.25rem] left-[12%] w-[76%] h-[2px] bg-slate-200/60 rounded-full overflow-hidden">
+                    <div className="w-full h-full bg-gradient-to-r from-transparent via-[#2b8cee] to-transparent opacity-60 animate-[shimmer_3s_infinite]"></div>
+                </div>
 
                 {/* Fase 1 */}
-                <div className="relative pt-8 md:pt-0 group" style={{ transitionDelay: '0ms' }}>
-                    <div className="w-12 h-12 rounded-full bg-white border-2 border-slate-100 text-slate-900 flex items-center justify-center text-lg font-bold mx-auto lg:mx-0 relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 shadow-sm">
-                        1
+                <div className="relative pt-10 md:pt-0 group" style={{ transitionDelay: '0ms' }}>
+                    <div className="relative z-10 mx-auto lg:mx-0 lg:absolute lg:top-8 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-fit mb-6 lg:mb-0">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500">
+                            <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                                <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">1</span>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white backdrop-blur-xl rounded-2xl p-8 md:p-10 shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-2 transition-all duration-700 ease-out lg:mt-16 text-center lg:text-left h-full">
-                        <div className="w-14 h-14 rounded-2xl bg-[#2b8cee]/10 flex items-center justify-center mb-6 mx-auto lg:mx-0">
+                    <div className="bg-white/50 backdrop-blur-xl rounded-2xl p-8 md:p-10 border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.04)] hover:bg-white/70 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-3 hover:border-[#2b8cee]/20 transition-all duration-500 ease-out lg:mt-16 text-center lg:text-left h-full">
+                        <div className="w-14 h-14 rounded-2xl bg-[#2b8cee]/10 flex items-center justify-center mb-6 mx-auto lg:mx-0 group-hover:scale-110 group-hover:bg-[#2b8cee]/15 transition-all duration-300">
                             <MessageSquare className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
                         </div>
                         <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 1</div>
@@ -445,12 +458,16 @@ export default function Home() {
                 </div>
 
                 {/* Fase 2 */}
-                <div className="relative pt-8 md:pt-0 group" style={{ transitionDelay: '150ms' }}>
-                    <div className="w-12 h-12 rounded-full bg-white border-2 border-slate-100 text-slate-900 flex items-center justify-center text-lg font-bold mx-auto lg:mx-0 relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 shadow-sm">
-                        2
+                <div className="relative pt-10 md:pt-0 group" style={{ transitionDelay: '150ms' }}>
+                    <div className="relative z-10 mx-auto lg:mx-0 lg:absolute lg:top-8 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-fit mb-6 lg:mb-0">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500">
+                            <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                                <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">2</span>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white backdrop-blur-xl rounded-2xl p-8 md:p-10 shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-2 transition-all duration-700 ease-out lg:mt-16 text-center lg:text-left h-full">
-                        <div className="w-14 h-14 rounded-2xl bg-[#2b8cee]/10 flex items-center justify-center mb-6 mx-auto lg:mx-0">
+                    <div className="bg-white/50 backdrop-blur-xl rounded-2xl p-8 md:p-10 border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.04)] hover:bg-white/70 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-3 hover:border-[#2b8cee]/20 transition-all duration-500 ease-out lg:mt-16 text-center lg:text-left h-full">
+                        <div className="w-14 h-14 rounded-2xl bg-[#2b8cee]/10 flex items-center justify-center mb-6 mx-auto lg:mx-0 group-hover:scale-110 group-hover:bg-[#2b8cee]/15 transition-all duration-300">
                             <Lightbulb className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
                         </div>
                         <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 2</div>
@@ -460,12 +477,16 @@ export default function Home() {
                 </div>
 
                 {/* Fase 3 */}
-                <div className="relative pt-8 md:pt-0 group" style={{ transitionDelay: '300ms' }}>
-                    <div className="w-12 h-12 rounded-full bg-white border-2 border-slate-100 text-slate-900 flex items-center justify-center text-lg font-bold mx-auto lg:mx-0 relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 shadow-sm">
-                        3
+                <div className="relative pt-10 md:pt-0 group" style={{ transitionDelay: '300ms' }}>
+                    <div className="relative z-10 mx-auto lg:mx-0 lg:absolute lg:top-8 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-fit mb-6 lg:mb-0">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500">
+                            <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                                <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">3</span>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white backdrop-blur-xl rounded-2xl p-8 md:p-10 shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-2 transition-all duration-700 ease-out lg:mt-16 text-center lg:text-left h-full">
-                        <div className="w-14 h-14 rounded-2xl bg-[#2b8cee]/10 flex items-center justify-center mb-6 mx-auto lg:mx-0">
+                    <div className="bg-white/50 backdrop-blur-xl rounded-2xl p-8 md:p-10 border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.04)] hover:bg-white/70 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-3 hover:border-[#2b8cee]/20 transition-all duration-500 ease-out lg:mt-16 text-center lg:text-left h-full">
+                        <div className="w-14 h-14 rounded-2xl bg-[#2b8cee]/10 flex items-center justify-center mb-6 mx-auto lg:mx-0 group-hover:scale-110 group-hover:bg-[#2b8cee]/15 transition-all duration-300">
                             <Rocket className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
                         </div>
                         <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 3</div>
@@ -475,12 +496,16 @@ export default function Home() {
                 </div>
 
                 {/* Fase 4 */}
-                <div className="relative pt-8 md:pt-0 group" style={{ transitionDelay: '450ms' }}>
-                    <div className="w-12 h-12 rounded-full bg-white border-2 border-slate-100 text-slate-900 flex items-center justify-center text-lg font-bold mx-auto lg:mx-0 relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 shadow-sm">
-                        4
+                <div className="relative pt-10 md:pt-0 group" style={{ transitionDelay: '450ms' }}>
+                    <div className="relative z-10 mx-auto lg:mx-0 lg:absolute lg:top-8 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-fit mb-6 lg:mb-0">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500">
+                            <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                                <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">4</span>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white backdrop-blur-xl rounded-2xl p-8 md:p-10 shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-2 transition-all duration-700 ease-out lg:mt-16 text-center lg:text-left h-full">
-                        <div className="w-14 h-14 rounded-2xl bg-[#2b8cee]/10 flex items-center justify-center mb-6 mx-auto lg:mx-0">
+                    <div className="bg-white/50 backdrop-blur-xl rounded-2xl p-8 md:p-10 border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.04)] hover:bg-white/70 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-3 hover:border-[#2b8cee]/20 transition-all duration-500 ease-out lg:mt-16 text-center lg:text-left h-full">
+                        <div className="w-14 h-14 rounded-2xl bg-[#2b8cee]/10 flex items-center justify-center mb-6 mx-auto lg:mx-0 group-hover:scale-110 group-hover:bg-[#2b8cee]/15 transition-all duration-300">
                             <TrendingUp className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
                         </div>
                         <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 4</div>
