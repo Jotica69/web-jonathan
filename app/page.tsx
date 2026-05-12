@@ -342,30 +342,40 @@ export default function Home() {
 
                 {/* Right side: List of items */}
                 <div className="w-full flex flex-col gap-6 md:gap-8">
-                    {/* Proyectos Banner */}
-                    <a href="/proyectos" className="group flex flex-col sm:flex-row items-start sm:items-center justify-between bg-white/40 backdrop-blur-3xl rounded-[2.5rem] p-8 md:p-10 border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 h-full gap-6">
-                        <div className="flex-1">
-                            <div className="w-14 h-14 rounded-[1.2rem] bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center shadow-sm border border-white/60 mb-5 group-hover:scale-110 transition-transform duration-300">
-                                <span className="material-symbols-outlined text-[#2b8cee] text-2xl">work</span>
+                    {/* Proyectos Banner — estilo "Tiempo que no vuelve" */}
+                    <a href="/proyectos" className="group relative flex flex-col sm:flex-row items-start sm:items-center justify-between h-full overflow-hidden bg-white/5 backdrop-blur-3xl rounded-[2.5rem] border border-white/20 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/10 transition-all duration-500 p-8 md:p-10 gap-6">
+                        {/* Degradado suave */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-white/60 via-white/30 to-transparent pointer-events-none rounded-[2.5rem]"></div>
+                        {/* Glow azul */}
+                        <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-[40px] group-hover:bg-blue-400/40 transition-all duration-700 pointer-events-none"></div>
+
+                        <div className="flex-1 relative z-10">
+                            <div className="w-16 h-16 rounded-[1.2rem] bg-gradient-to-br from-blue-100 to-white flex items-center justify-center shadow-lg border border-white/50 mb-5 relative z-10">
+                                <span className="material-symbols-outlined text-blue-600 text-3xl">work</span>
                             </div>
-                            <h3 className="text-2xl font-bold text-[#1d1d1f] tracking-tight mb-2">Proyectos reales</h3>
-                            <p className="text-slate-600 font-medium text-[15px] leading-relaxed">Mira lo que ya construí: desde SaaS con IA hasta sistemas integrales de datos.</p>
+                            <h3 className="text-2xl lg:text-3xl font-bold text-[#1d1d1f] tracking-tight mb-3">Proyectos reales</h3>
+                            <p className="text-slate-600 text-base lg:text-[17px] leading-relaxed font-medium">Mira lo que ya construí: desde SaaS con IA hasta sistemas integrales de datos.</p>
                         </div>
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center text-[#2b8cee] shrink-0 shadow-sm border border-white/60 group-hover:bg-[#2b8cee] group-hover:text-white group-hover:border-[#2b8cee] transition-all duration-300">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-100 to-white flex items-center justify-center text-blue-600 shrink-0 shadow-lg border border-white/50 group-hover:scale-110 transition-all duration-300 relative z-10">
                             <span className="material-symbols-outlined">arrow_forward</span>
                         </div>
                     </a>
 
-                    {/* Testimonios Banner */}
-                    <a href="/testimonios" className="group flex flex-col sm:flex-row items-start sm:items-center justify-between bg-white/40 backdrop-blur-3xl rounded-[2.5rem] p-8 md:p-10 border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 h-full gap-6 relative overflow-hidden">
-                        <div className="flex-1">
-                            <div className="w-14 h-14 rounded-[1.2rem] bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center shadow-sm border border-white/60 mb-5 group-hover:scale-110 transition-transform duration-300">
-                                <span className="material-symbols-outlined text-[#2b8cee] text-2xl">forum</span>
+                    {/* Testimonios Banner — estilo "Decisiones a ciegas" */}
+                    <a href="/testimonios" className="group relative flex flex-col sm:flex-row items-start sm:items-center justify-between h-full overflow-hidden bg-gradient-to-br from-slate-900 via-[#0b1121] to-blue-950 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.2)] hover:-translate-y-2 transition-transform duration-500 p-8 md:p-10 gap-6">
+                        {/* Degradado suave */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-slate-800/40 via-[#0b1121]/20 to-blue-950/40 pointer-events-none rounded-[2.5rem]"></div>
+                        {/* Glow cyan */}
+                        <div className="absolute bottom-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-[40px] group-hover:bg-cyan-400/20 transition-all duration-700 pointer-events-none"></div>
+
+                        <div className="flex-1 relative z-10">
+                            <div className="w-16 h-16 rounded-[1.2rem] bg-white/5 flex items-center justify-center shadow-lg border border-white/10 mb-5 backdrop-blur-md relative z-10">
+                                <span className="material-symbols-outlined text-cyan-300 text-3xl">forum</span>
                             </div>
-                            <h3 className="text-2xl font-bold text-[#1d1d1f] tracking-tight mb-2">Casos de éxito</h3>
-                            <p className="text-slate-600 font-medium text-[15px] leading-relaxed">Descubre las experiencias de otros empresarios que transformaron sus operaciones.</p>
+                            <h3 className="text-2xl lg:text-3xl font-bold text-white tracking-tight mb-3">Casos de éxito</h3>
+                            <p className="text-slate-300 text-base lg:text-[17px] leading-relaxed font-medium">Descubre las experiencias de otros empresarios que transformaron sus operaciones.</p>
                         </div>
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center text-[#2b8cee] shrink-0 shadow-sm border border-white/60 group-hover:bg-[#2b8cee] group-hover:text-white group-hover:border-[#2b8cee] transition-all duration-300">
+                        <div className="w-12 h-12 rounded-full bg-white/5 text-cyan-300 flex items-center justify-center shrink-0 shadow-lg border border-white/10 group-hover:bg-cyan-400 group-hover:text-[#0b1121] group-hover:border-cyan-400 transition-all duration-300 relative z-10">
                             <span className="material-symbols-outlined">arrow_forward</span>
                         </div>
                     </a>
