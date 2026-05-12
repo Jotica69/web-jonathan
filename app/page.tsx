@@ -253,7 +253,7 @@ export default function Home() {
                 <div className="flex flex-col items-center lg:items-start mb-12">
                      <h3 className="text-xl md:text-2xl font-bold tracking-widest text-[#0071e3] uppercase flex items-center gap-4">
                          <span className="w-12 h-1 bg-gradient-to-r from-[#0071e3] to-cyan-400 rounded-full"></span>
-                         Servicios relacionados
+                         Servicios complementarios
                      </h3>
                 </div>
                 
@@ -384,49 +384,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. MECANISMO DE EXCLUSIÓN */}
-      <section id="exclusion" className="py-24 md:py-32 overflow-hidden bg-[#070b14] relative border-t border-white/5 shadow-[inset_0_20px_40px_rgba(0,0,0,0.4)]">
-        {/* Dynamic Dark Background Elements */}
-        <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none animate-pulse"></div>
-        <div className="absolute bottom-[-10%] left-[-10%] w-[800px] h-[800px] bg-[#0071e3]/10 rounded-full blur-[150px] pointer-events-none"></div>
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
-
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-8 reveal-on-scroll relative z-10 flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-20">
-            <div className="flex-1 text-left">
-                <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-blue-400/30 bg-blue-500/10 mb-8 shadow-[0_0_20px_rgba(0,113,227,0.2)] hover:bg-blue-500/20 transition-colors">
-                    <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_10px_#22d3ee]"></span>
-                    <span className="text-blue-300 text-xs md:text-sm font-bold tracking-widest uppercase">Nota importante</span>
-                </div>
-                
-                <h2 className="text-4xl md:text-5xl lg:text-[4.5rem] font-bold mb-8 text-white tracking-tighter leading-[1.05] drop-shadow-lg">
-                    Esto <br className="hidden md:block" />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-400 to-slate-200">no es para todos.</span>
-                </h2>
-                
-                <div className="text-[17px] md:text-[19px] text-slate-400 space-y-6 leading-relaxed font-medium max-w-xl">
-                    <p>La inteligencia artificial y las automatizaciones no son píldoras mágicas para negocios rotos. Son aceleradores para negocios que quieren ir más rápido.</p>
-                    <p className="text-slate-300">Trabajo exclusivamente con emprendedores y dueños de negocio que entienden que <span className="text-cyan-400 font-bold drop-shadow-[0_0_15px_rgba(34,211,238,0.4)]">la innovación es una obligación, no una opción</span>. Si estás dispuesto a transformar tu operación y dejar de ser un empleado en tu propia empresa, podemos trabajar juntos.</p>
-                </div>
-            </div>
-            
-            <div className="flex-1 w-full max-w-[500px] relative reveal-on-scroll lg:mt-0 mt-12 flex justify-center">
-                {/* Deep radial blue flare behind the image */}
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-500/30 rounded-full blur-[100px] pointer-events-none z-0 mix-blend-screen animate-pulse"></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-cyan-400/20 rounded-full blur-[60px] pointer-events-none z-0 mix-blend-screen"></div>
-                
-                {/* 3D Element Image with Bottom Fade Mask */}
-                <div className="relative z-10 w-full aspect-square max-w-[450px]" style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)' }}>
-                    <Image 
-                        src="/CristoElemento3D.png"
-                        alt="Innovación y tecnología 3D"
-                        fill
-                        className="object-contain filter drop-shadow-[0_20px_50px_rgba(0,113,227,0.3)] hover:-translate-y-4 transition-transform duration-700"
-                    />
-                </div>
-            </div>
-        </div>
-      </section>
-
       {/* 5. EL CAMINO DEFINIDO (Roadmap) */}
       <section id="roadmap" className="py-24 md:py-32 bg-[#f4f7fc] relative z-10 overflow-hidden">
         {/* Sutil grid de fondo */}
@@ -541,6 +498,49 @@ export default function Home() {
                             <p className="text-slate-600 text-[15px] leading-relaxed">Recuperás tu tiempo. Tu negocio empieza a funcionar con menos esfuerzo y listo para escalar.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      {/* 6. MECANISMO DE EXCLUSIÓN */}
+      <section id="exclusion" className="py-24 md:py-32 overflow-hidden bg-[#070b14] relative border-t border-white/5 shadow-[inset_0_20px_40px_rgba(0,0,0,0.4)]">
+        {/* Dynamic Dark Background Elements */}
+        <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none animate-pulse"></div>
+        <div className="absolute bottom-[-10%] left-[-10%] w-[800px] h-[800px] bg-[#0071e3]/10 rounded-full blur-[150px] pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
+
+        <div className="max-w-[1200px] mx-auto px-6 lg:px-8 reveal-on-scroll relative z-10 flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-20">
+            <div className="flex-1 text-left">
+                <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-blue-400/30 bg-blue-500/10 mb-8 shadow-[0_0_20px_rgba(0,113,227,0.2)] hover:bg-blue-500/20 transition-colors">
+                    <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_10px_#22d3ee]"></span>
+                    <span className="text-blue-300 text-xs md:text-sm font-bold tracking-widest uppercase">Nota importante</span>
+                </div>
+                
+                <h2 className="text-4xl md:text-5xl lg:text-[4.5rem] font-bold mb-8 text-white tracking-tighter leading-[1.05] drop-shadow-lg">
+                    Esto <br className="hidden md:block" />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-400 to-slate-200">no es para todos.</span>
+                </h2>
+                
+                <div className="text-[17px] md:text-[19px] text-slate-400 space-y-6 leading-relaxed font-medium max-w-xl">
+                    <p>La inteligencia artificial y las automatizaciones no son píldoras mágicas para negocios rotos. Son aceleradores para negocios que quieren ir más rápido.</p>
+                    <p className="text-slate-300">Trabajo exclusivamente con emprendedores y dueños de negocio que entienden que <span className="text-cyan-400 font-bold drop-shadow-[0_0_15px_rgba(34,211,238,0.4)]">la innovación es una obligación, no una opción</span>. Si estás dispuesto a transformar tu operación y dejar de ser un empleado en tu propia empresa, podemos trabajar juntos.</p>
+                </div>
+            </div>
+            
+            <div className="flex-1 w-full max-w-[500px] relative reveal-on-scroll lg:mt-0 mt-12 flex justify-center">
+                {/* Deep radial blue flare behind the image */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-500/30 rounded-full blur-[100px] pointer-events-none z-0 mix-blend-screen animate-pulse"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-cyan-400/20 rounded-full blur-[60px] pointer-events-none z-0 mix-blend-screen"></div>
+                
+                {/* 3D Element Image with Bottom Fade Mask */}
+                <div className="relative z-10 w-full aspect-square max-w-[450px]" style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)' }}>
+                    <Image 
+                        src="/CristoElemento3D.png"
+                        alt="Innovación y tecnología 3D"
+                        fill
+                        className="object-contain filter drop-shadow-[0_20px_50px_rgba(0,113,227,0.3)] hover:-translate-y-4 transition-transform duration-700"
+                    />
                 </div>
             </div>
         </div>
