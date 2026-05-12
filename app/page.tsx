@@ -256,44 +256,53 @@ export default function Home() {
                      </h3>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                    {/* Pilar 1 */}
-                    <div className="group relative bg-[#0b1121]/50 backdrop-blur-2xl border border-white/10 rounded-[2rem] p-8 hover:bg-[#0b1121]/80 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex flex-col h-full min-h-[360px]">
-                        {/* Minimalist Graphic Top */}
-                        <div className="w-16 h-16 rounded-[1.2rem] bg-gradient-to-br from-[#0071e3]/20 to-cyan-400/20 flex items-center justify-center border border-white/10 mb-8 relative z-10">
-                            <span className="material-symbols-outlined text-cyan-400 text-3xl">rocket_launch</span>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    {/* Pilar 1: Webs */}
+                    <div className="group relative w-full overflow-hidden bg-[#0b1121]/50 backdrop-blur-2xl rounded-[2.5rem] border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:shadow-[0_20px_50px_rgba(0,113,227,0.2)] transition-all duration-500 hover:-translate-y-2 flex flex-col h-full min-h-[440px]">
+                        {/* Image Mask Top */}
+                        <div className="absolute top-0 left-0 right-0 h-[60%] z-0" style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)' }}>
+                            <Image src="/Webs de Alta Conversión.png" alt="Webs de alta conversión" fill className="object-cover object-top opacity-70 group-hover:scale-110 transition-transform duration-1000 mix-blend-luminosity group-hover:mix-blend-normal" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#0b1121] via-transparent to-transparent"></div>
                         </div>
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-400/10 rounded-full blur-[40px] pointer-events-none group-hover:bg-cyan-400/20 transition-all duration-500"></div>
-
-                        {/* Text Bottom */}
-                        <div className="mt-auto relative z-10">
-                            <h4 className="text-xl md:text-[24px] font-extrabold mb-3 text-white tracking-tight leading-tight">Webs de alta conversión</h4>
+                        
+                        {/* Content Bottom */}
+                        <div className="relative z-10 p-8 md:p-10 flex flex-col justify-end h-full mt-auto">
+                            <div className="w-14 h-14 rounded-[1.2rem] bg-cyan-500/20 flex items-center justify-center border border-cyan-500/30 mb-6 backdrop-blur-md shadow-lg group-hover:bg-cyan-500/30 transition-colors">
+                                <span className="material-symbols-outlined text-cyan-400 text-2xl">rocket_launch</span>
+                            </div>
+                            <h4 className="text-xl md:text-[24px] font-extrabold mb-3 text-white tracking-tight leading-tight group-hover:text-cyan-400 transition-colors">Webs de alta conversión</h4>
                             <p className="text-slate-400 text-[15px] leading-relaxed font-medium">Páginas rápidas para que tus clientes te encuentren en Google y <span className="text-cyan-400 font-bold">te compren sin dar tantas vueltas</span>.</p>
                         </div>
                     </div>
 
-                    {/* Pilar 2 */}
-                    <div className="group relative bg-[#0b1121]/50 backdrop-blur-2xl border border-white/10 rounded-[2rem] p-8 hover:bg-[#0b1121]/80 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex flex-col h-full min-h-[360px]">
-                        <div className="w-16 h-16 rounded-[1.2rem] bg-gradient-to-br from-indigo-500/20 to-purple-500/20 flex items-center justify-center border border-white/10 mb-8 relative z-10">
-                            <span className="material-symbols-outlined text-indigo-400 text-3xl">movie_edit</span>
+                    {/* Pilar 2: Video */}
+                    <div className="group relative w-full overflow-hidden bg-[#0b1121]/50 backdrop-blur-2xl rounded-[2.5rem] border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:shadow-[0_20px_50px_rgba(0,113,227,0.2)] transition-all duration-500 hover:-translate-y-2 flex flex-col h-full min-h-[440px]">
+                        <div className="absolute top-0 left-0 right-0 h-[60%] z-0" style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)' }}>
+                            <Image src="/Celular.jpg" alt="Edición de Video" fill className="object-cover object-center opacity-70 group-hover:scale-110 transition-transform duration-1000 mix-blend-luminosity group-hover:mix-blend-normal" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#0b1121] via-transparent to-transparent"></div>
                         </div>
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/10 rounded-full blur-[40px] pointer-events-none group-hover:bg-indigo-500/20 transition-all duration-500"></div>
-
-                        <div className="mt-auto relative z-10">
-                            <h4 className="text-xl md:text-[24px] font-extrabold mb-3 text-white tracking-tight leading-tight">Edición de Video</h4>
+                        
+                        <div className="relative z-10 p-8 md:p-10 flex flex-col justify-end h-full mt-auto">
+                            <div className="w-14 h-14 rounded-[1.2rem] bg-indigo-500/20 flex items-center justify-center border border-indigo-500/30 mb-6 backdrop-blur-md shadow-lg group-hover:bg-indigo-500/30 transition-colors">
+                                <span className="material-symbols-outlined text-indigo-400 text-2xl">movie_edit</span>
+                            </div>
+                            <h4 className="text-xl md:text-[24px] font-extrabold mb-3 text-white tracking-tight leading-tight group-hover:text-indigo-400 transition-colors">Edición de Video</h4>
                             <p className="text-slate-400 text-[15px] leading-relaxed font-medium">Reels y TikToks editados para enganchar. <span className="text-indigo-400 font-bold">Vende más</span> con el mismo Instagram que ya tienes.</p>
                         </div>
                     </div>
 
-                    {/* Pilar 3 */}
-                    <div className="group relative bg-[#0b1121]/50 backdrop-blur-2xl border border-white/10 rounded-[2rem] p-8 hover:bg-[#0b1121]/80 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex flex-col h-full min-h-[360px]">
-                        <div className="w-16 h-16 rounded-[1.2rem] bg-gradient-to-br from-[#0071e3]/20 to-blue-500/20 flex items-center justify-center border border-white/10 mb-8 relative z-10">
-                            <span className="material-symbols-outlined text-blue-400 text-3xl">query_stats</span>
+                    {/* Pilar 3: Datos */}
+                    <div className="group relative w-full overflow-hidden bg-[#0b1121]/50 backdrop-blur-2xl rounded-[2.5rem] border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:shadow-[0_20px_50px_rgba(0,113,227,0.2)] transition-all duration-500 hover:-translate-y-2 flex flex-col h-full min-h-[440px]">
+                        <div className="absolute top-0 left-0 right-0 h-[60%] z-0" style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)' }}>
+                            <Image src="/Inteligencia Ejecutiva.png" alt="Análisis de Datos" fill className="object-cover object-top opacity-70 group-hover:scale-110 transition-transform duration-1000 mix-blend-luminosity group-hover:mix-blend-normal" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#0b1121] via-transparent to-transparent"></div>
                         </div>
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-[40px] pointer-events-none group-hover:bg-blue-500/20 transition-all duration-500"></div>
-
-                        <div className="mt-auto relative z-10">
-                            <h4 className="text-xl md:text-[24px] font-extrabold mb-3 text-white tracking-tight leading-tight">Análisis de Datos</h4>
+                        
+                        <div className="relative z-10 p-8 md:p-10 flex flex-col justify-end h-full mt-auto">
+                            <div className="w-14 h-14 rounded-[1.2rem] bg-blue-500/20 flex items-center justify-center border border-blue-500/30 mb-6 backdrop-blur-md shadow-lg group-hover:bg-blue-500/30 transition-colors">
+                                <span className="material-symbols-outlined text-blue-400 text-2xl">query_stats</span>
+                            </div>
+                            <h4 className="text-xl md:text-[24px] font-extrabold mb-3 text-white tracking-tight leading-tight group-hover:text-blue-400 transition-colors">Análisis de Datos</h4>
                             <p className="text-slate-400 text-[15px] leading-relaxed font-medium">Paneles visuales donde ves <span className="text-blue-400 font-bold">qué se vende, cuándo y a quién</span>. Decides con números, no con suposiciones.</p>
                         </div>
                     </div>
@@ -304,24 +313,26 @@ export default function Home() {
       </section>
 
       {/* EXPLORA MI ECOSISTEMA */}
-      <section className="py-24 md:py-32 bg-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50/50 rounded-full blur-[100px] pointer-events-none"></div>
+      <section className="py-24 md:py-32 bg-[#f4f7fc] relative overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#0071e30a_1px,transparent_1px),linear-gradient(to_bottom,#0071e30a_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-200/40 rounded-full blur-[120px] pointer-events-none mix-blend-multiply"></div>
+        
         <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10 reveal-on-scroll">
             <div className="mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">Todo mi ecosistema</h2>
-                <p className="text-xl text-slate-500 font-medium">Casos de éxito, proyectos y soluciones empaquetadas.</p>
+                <p className="text-xl text-slate-500 font-medium max-w-2xl">Casos de éxito, proyectos y soluciones empaquetadas listas para integrarse en tu operación.</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Left side: Image + Featured Solution */}
-                <div className="flex-1 w-full flex flex-col gap-6">
-                    <div className="relative w-full h-[400px] rounded-[2.5rem] overflow-hidden group shadow-[0_20px_50px_rgba(0,113,227,0.15)]">
-                        <Image src="/Celular.jpg" alt="Ecosistema de Soluciones" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                        <div className="absolute bottom-8 left-8 right-8">
-                            <h3 className="text-white text-3xl font-bold mb-2">Soluciones Listas</h3>
-                            <p className="text-slate-300 font-medium mb-4">Sistemas preconstruidos que puedes conectar hoy mismo a tu empresa.</p>
-                            <a href="/soluciones" className="inline-flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-full text-sm font-bold shadow-lg hover:bg-slate-100 transition-colors">
+                <div className="w-full flex flex-col">
+                    <div className="relative w-full h-full min-h-[400px] rounded-[2.5rem] overflow-hidden group shadow-[0_20px_50px_rgba(0,113,227,0.15)] flex flex-col justify-end">
+                        <Image src="/DashboardDatos.jpg" alt="Ecosistema de Soluciones" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#0b1121] via-[#0b1121]/40 to-transparent"></div>
+                        <div className="relative z-10 p-8 md:p-10">
+                            <h3 className="text-white text-3xl font-bold mb-3 tracking-tight">Soluciones Listas</h3>
+                            <p className="text-slate-300 font-medium mb-6 text-lg leading-relaxed">Sistemas preconstruidos que puedes conectar hoy mismo a tu empresa.</p>
+                            <a href="/soluciones" className="inline-flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-full text-sm font-bold shadow-lg hover:bg-slate-100 hover:scale-105 transition-all">
                                 Ver soluciones <span className="material-symbols-outlined text-base">arrow_forward</span>
                             </a>
                         </div>
@@ -329,31 +340,32 @@ export default function Home() {
                 </div>
 
                 {/* Right side: List of items */}
-                <div className="flex-1 w-full flex flex-col gap-6">
+                <div className="w-full flex flex-col gap-8">
                     {/* Proyectos Banner */}
-                    <a href="/proyectos" className="group flex items-center justify-between bg-[#f8fafc] rounded-[2rem] p-8 border border-slate-200 hover:border-[#0071e3]/30 hover:shadow-lg hover:bg-white transition-all duration-300 h-full">
+                    <a href="/proyectos" className="group flex flex-col sm:flex-row items-start sm:items-center justify-between bg-white rounded-[2.5rem] p-8 md:p-10 border border-slate-200 hover:border-[#0071e3]/30 hover:shadow-[0_20px_40px_rgba(0,113,227,0.08)] transition-all duration-300 h-full gap-6">
                         <div className="flex-1">
-                            <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-4">
-                                <span className="material-symbols-outlined">work</span>
+                            <div className="w-14 h-14 bg-blue-50 text-[#0071e3] rounded-2xl flex items-center justify-center mb-5 border border-blue-100 group-hover:bg-[#0071e3] group-hover:text-white transition-colors">
+                                <span className="material-symbols-outlined text-2xl">work</span>
                             </div>
-                            <h3 className="text-2xl font-bold text-[#1d1d1f] tracking-tight mb-2">Proyectos reales</h3>
-                            <p className="text-slate-500 font-medium text-sm md:text-base">Mira lo que ya construí: desde SaaS con IA hasta sistemas integrales de datos.</p>
+                            <h3 className="text-2xl font-bold text-[#1d1d1f] tracking-tight mb-2 group-hover:text-[#0071e3] transition-colors">Proyectos reales</h3>
+                            <p className="text-slate-500 font-medium text-[15px] leading-relaxed">Mira lo que ya construí: desde SaaS con IA hasta sistemas integrales de datos.</p>
                         </div>
-                        <div className="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors ml-6 shrink-0">
+                        <div className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-[#0071e3] group-hover:text-white transition-colors shrink-0 shadow-sm border border-slate-100 group-hover:border-[#0071e3]">
                             <span className="material-symbols-outlined">arrow_forward</span>
                         </div>
                     </a>
 
                     {/* Testimonios Banner */}
-                    <a href="/testimonios" className="group flex items-center justify-between bg-[#0b1121] rounded-[2rem] p-8 border border-[#0071e3]/30 hover:shadow-[0_20px_40px_rgba(0,113,227,0.15)] transition-all duration-300 h-full">
-                        <div className="flex-1">
-                            <div className="w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-xl flex items-center justify-center mb-4">
-                                <span className="material-symbols-outlined">forum</span>
+                    <a href="/testimonios" className="group flex flex-col sm:flex-row items-start sm:items-center justify-between bg-[#0b1121] rounded-[2.5rem] p-8 md:p-10 border border-[#0071e3]/30 hover:shadow-[0_20px_40px_rgba(0,113,227,0.2)] transition-all duration-300 h-full gap-6 relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-400/10 rounded-full blur-[40px] group-hover:bg-cyan-400/20 transition-colors"></div>
+                        <div className="flex-1 relative z-10">
+                            <div className="w-14 h-14 bg-cyan-500/20 text-cyan-400 rounded-2xl flex items-center justify-center mb-5 border border-cyan-500/30 group-hover:bg-cyan-400 group-hover:text-[#0b1121] transition-colors">
+                                <span className="material-symbols-outlined text-2xl">forum</span>
                             </div>
-                            <h3 className="text-2xl font-bold text-white tracking-tight mb-2">Casos de éxito</h3>
-                            <p className="text-slate-400 font-medium text-sm md:text-base">Descubre las experiencias de otros empresarios que transformaron sus operaciones.</p>
+                            <h3 className="text-2xl font-bold text-white tracking-tight mb-2 group-hover:text-cyan-400 transition-colors">Casos de éxito</h3>
+                            <p className="text-slate-400 font-medium text-[15px] leading-relaxed">Descubre las experiencias de otros empresarios que transformaron sus operaciones.</p>
                         </div>
-                        <div className="w-12 h-12 rounded-full bg-white/10 text-white flex items-center justify-center group-hover:bg-cyan-400 group-hover:text-slate-900 transition-colors ml-6 shrink-0">
+                        <div className="w-12 h-12 rounded-full bg-white/5 text-white flex items-center justify-center group-hover:bg-cyan-400 group-hover:text-[#0b1121] transition-colors shrink-0 relative z-10 border border-white/10 group-hover:border-cyan-400">
                             <span className="material-symbols-outlined">arrow_forward</span>
                         </div>
                     </a>
@@ -387,14 +399,18 @@ export default function Home() {
                 </div>
             </div>
             
-            <div className="flex-1 w-full max-w-[500px] relative reveal-on-scroll">
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-cyan-500/20 rounded-full blur-[80px] pointer-events-none z-0 mix-blend-screen animate-pulse"></div>
-                <div className="relative z-10 w-full aspect-square rounded-[3rem] overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+            <div className="flex-1 w-full max-w-[500px] relative reveal-on-scroll lg:mt-0 mt-12 flex justify-center">
+                {/* Deep radial blue flare behind the image */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-500/30 rounded-full blur-[100px] pointer-events-none z-0 mix-blend-screen animate-pulse"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-cyan-400/20 rounded-full blur-[60px] pointer-events-none z-0 mix-blend-screen"></div>
+                
+                {/* 3D Element Image with Bottom Fade Mask */}
+                <div className="relative z-10 w-full aspect-square max-w-[450px]" style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)' }}>
                     <Image 
-                        src="/DashboardDatos.jpg"
-                        alt="Análisis y escalabilidad"
+                        src="/CristoElemento3D.png"
+                        alt="Innovación y tecnología 3D"
                         fill
-                        className="object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
+                        className="object-contain filter drop-shadow-[0_20px_50px_rgba(0,113,227,0.3)] hover:-translate-y-4 transition-transform duration-700"
                     />
                 </div>
             </div>
@@ -402,53 +418,53 @@ export default function Home() {
       </section>
 
       {/* 5. EL CAMINO DEFINIDO (Roadmap) */}
-      <section id="roadmap" className="py-24 md:py-32 bg-[#f4f7fc] relative z-10 overflow-hidden">
-        {/* Dynamic Blue Grid Background */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#0071e31a_1px,transparent_1px),linear-gradient(to_bottom,#0071e31a_1px,transparent_1px)] bg-[size:40px_40px] opacity-40 mix-blend-multiply pointer-events-none"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-[600px] bg-blue-500/10 blur-[120px] pointer-events-none"></div>
+      <section id="roadmap" className="py-24 md:py-32 bg-[#0b1121] relative z-10 overflow-hidden border-t border-white/5">
+        {/* Dynamic Dark Grid Background */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-[600px] bg-[#0071e3]/10 blur-[150px] pointer-events-none mix-blend-screen"></div>
 
         <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16 md:mb-24 reveal-on-scroll">
-                <h2 className="text-4xl md:text-6xl font-semibold mb-6 text-[#1d1d1f] tracking-tighter">Así funciona el proceso</h2>
-                <p className="text-[19px] text-[#0071e3] font-medium max-w-2xl mx-auto">4 pasos claros. Sin sorpresas, sin letra pequeña.</p>
+                <h2 className="text-4xl md:text-6xl font-semibold mb-6 text-white tracking-tighter">Así funciona el proceso</h2>
+                <p className="text-[19px] text-cyan-400 font-medium max-w-2xl mx-auto drop-shadow-md">4 pasos claros. Sin sorpresas, sin letra pequeña.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 reveal-on-scroll relative">
                 {/* Connecting Line (Only visible on large screens) */}
-                <div className="hidden lg:block absolute top-12 left-[12%] w-[76%] h-[2px] bg-gradient-to-r from-blue-200 via-blue-400 to-cyan-200"></div>
+                <div className="hidden lg:block absolute top-12 left-[12%] w-[76%] h-[2px] bg-gradient-to-r from-blue-500/20 via-cyan-400/40 to-blue-500/20"></div>
                 
                 <div className="relative pt-8 md:pt-0">
-                    <div className="w-12 h-12 rounded-full bg-white border-[3px] border-blue-500 text-blue-600 flex items-center justify-center text-lg font-bold mb-6 mx-auto lg:mx-0 shadow-[0_0_20px_rgba(0,113,227,0.2)] relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">1</div>
-                    <div className="bg-white rounded-[2rem] p-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-slate-100 hover:-translate-y-2 transition-all duration-300 lg:mt-16 text-center lg:text-left h-full">
-                        <div className="text-[11px] uppercase tracking-widest font-bold text-blue-500 mb-3">Fase 1</div>
-                        <h4 className="font-bold text-slate-800 text-xl mb-3 tracking-tight">Entiendo tu negocio</h4>
-                        <p className="text-slate-500 text-[15px] leading-relaxed">Me siento contigo, entiendo cómo funciona tu operación y encuentro exactamente dónde estás perdiendo tiempo y dinero.</p>
+                    <div className="w-12 h-12 rounded-full bg-[#0f172a] border-[3px] border-blue-500 text-blue-400 flex items-center justify-center text-lg font-bold mb-6 mx-auto lg:mx-0 shadow-[0_0_20px_rgba(59,130,246,0.3)] relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">1</div>
+                    <div className="bg-[#141b2a]/80 backdrop-blur-xl rounded-[2.5rem] p-8 md:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.3)] border border-white/10 hover:-translate-y-2 hover:border-blue-500/30 transition-all duration-300 lg:mt-16 text-center lg:text-left h-full">
+                        <div className="text-[11px] uppercase tracking-widest font-bold text-blue-400 mb-3">Fase 1</div>
+                        <h4 className="font-bold text-white text-xl mb-3 tracking-tight">Entiendo tu negocio</h4>
+                        <p className="text-slate-400 text-[15px] leading-relaxed">Me siento contigo, entiendo cómo funciona tu operación y encuentro exactamente dónde estás perdiendo tiempo y dinero.</p>
                     </div>
                 </div>
 
                 <div className="relative pt-8 md:pt-0">
-                    <div className="w-12 h-12 rounded-full bg-white border-[3px] border-indigo-500 text-indigo-600 flex items-center justify-center text-lg font-bold mb-6 mx-auto lg:mx-0 shadow-[0_0_20px_rgba(99,102,241,0.2)] relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">2</div>
-                    <div className="bg-white rounded-[2rem] p-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-slate-100 hover:-translate-y-2 transition-all duration-300 lg:mt-16 text-center lg:text-left h-full">
-                        <div className="text-[11px] uppercase tracking-widest font-bold text-indigo-500 mb-3">Fase 2</div>
-                        <h4 className="font-bold text-slate-800 text-xl mb-3 tracking-tight">Diseño tu solución</h4>
-                        <p className="text-slate-500 text-[15px] leading-relaxed">Armo un plan a medida para tu negocio: qué automatizar, qué herramientas usar, cómo conectar todo.</p>
+                    <div className="w-12 h-12 rounded-full bg-[#0f172a] border-[3px] border-indigo-500 text-indigo-400 flex items-center justify-center text-lg font-bold mb-6 mx-auto lg:mx-0 shadow-[0_0_20px_rgba(99,102,241,0.3)] relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">2</div>
+                    <div className="bg-[#141b2a]/80 backdrop-blur-xl rounded-[2.5rem] p-8 md:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.3)] border border-white/10 hover:-translate-y-2 hover:border-indigo-500/30 transition-all duration-300 lg:mt-16 text-center lg:text-left h-full">
+                        <div className="text-[11px] uppercase tracking-widest font-bold text-indigo-400 mb-3">Fase 2</div>
+                        <h4 className="font-bold text-white text-xl mb-3 tracking-tight">Diseño tu solución</h4>
+                        <p className="text-slate-400 text-[15px] leading-relaxed">Armo un plan a medida para tu negocio: qué automatizar, qué herramientas usar, cómo conectar todo.</p>
                     </div>
                 </div>
 
                 <div className="relative pt-8 md:pt-0">
-                    <div className="w-12 h-12 rounded-full bg-white border-[3px] border-cyan-500 text-cyan-600 flex items-center justify-center text-lg font-bold mb-6 mx-auto lg:mx-0 shadow-[0_0_20px_rgba(6,182,212,0.2)] relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">3</div>
-                    <div className="bg-white rounded-[2rem] p-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-slate-100 hover:-translate-y-2 transition-all duration-300 lg:mt-16 text-center lg:text-left h-full">
-                        <div className="text-[11px] uppercase tracking-widest font-bold text-cyan-500 mb-3">Fase 3</div>
-                        <h4 className="font-bold text-slate-800 text-xl mb-3 tracking-tight">Lo construyo y lo activo</h4>
-                        <p className="text-slate-500 text-[15px] leading-relaxed">Desarrollo todo, lo conecto a tus sistemas, lo pruebo y lo dejo funcionando sin que tengas que hacer nada técnico.</p>
+                    <div className="w-12 h-12 rounded-full bg-[#0f172a] border-[3px] border-cyan-500 text-cyan-400 flex items-center justify-center text-lg font-bold mb-6 mx-auto lg:mx-0 shadow-[0_0_20px_rgba(6,182,212,0.3)] relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">3</div>
+                    <div className="bg-[#141b2a]/80 backdrop-blur-xl rounded-[2.5rem] p-8 md:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.3)] border border-white/10 hover:-translate-y-2 hover:border-cyan-500/30 transition-all duration-300 lg:mt-16 text-center lg:text-left h-full">
+                        <div className="text-[11px] uppercase tracking-widest font-bold text-cyan-400 mb-3">Fase 3</div>
+                        <h4 className="font-bold text-white text-xl mb-3 tracking-tight">Lo construyo y lo activo</h4>
+                        <p className="text-slate-400 text-[15px] leading-relaxed">Desarrollo todo, lo conecto a tus sistemas, lo pruebo y lo dejo funcionando sin que tengas que hacer nada técnico.</p>
                     </div>
                 </div>
 
                 <div className="relative pt-8 md:pt-0">
-                    <div className="w-12 h-12 rounded-full bg-white border-[3px] border-blue-400 text-blue-500 flex items-center justify-center text-lg font-bold mb-6 mx-auto lg:mx-0 shadow-[0_0_20px_rgba(96,165,250,0.2)] relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">4</div>
-                    <div className="bg-white rounded-[2rem] p-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-slate-100 hover:-translate-y-2 transition-all duration-300 lg:mt-16 text-center lg:text-left h-full">
-                        <div className="text-[11px] uppercase tracking-widest font-bold text-blue-400 mb-3">Fase 4</div>
-                        <h4 className="font-bold text-slate-800 text-xl mb-3 tracking-tight">Crecimiento continuo</h4>
-                        <p className="text-slate-500 text-[15px] leading-relaxed">Recuperás tu tiempo. Tu negocio empieza a funcionar con menos esfuerzo y listo para escalar.</p>
+                    <div className="w-12 h-12 rounded-full bg-[#0f172a] border-[3px] border-teal-400 text-teal-400 flex items-center justify-center text-lg font-bold mb-6 mx-auto lg:mx-0 shadow-[0_0_20px_rgba(45,212,191,0.3)] relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">4</div>
+                    <div className="bg-[#141b2a]/80 backdrop-blur-xl rounded-[2.5rem] p-8 md:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.3)] border border-white/10 hover:-translate-y-2 hover:border-teal-400/30 transition-all duration-300 lg:mt-16 text-center lg:text-left h-full">
+                        <div className="text-[11px] uppercase tracking-widest font-bold text-teal-400 mb-3">Fase 4</div>
+                        <h4 className="font-bold text-white text-xl mb-3 tracking-tight">Crecimiento continuo</h4>
+                        <p className="text-slate-400 text-[15px] leading-relaxed">Recuperás tu tiempo. Tu negocio empieza a funcionar con menos esfuerzo y listo para escalar.</p>
                     </div>
                 </div>
             </div>
@@ -456,9 +472,10 @@ export default function Home() {
       </section>
 
       {/* SOBRE MÍ */}
-      <section id="sobre-mi" className="py-20 md:py-28 bg-[#1d1d1f] relative overflow-hidden">
-        <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-[#0071e3]/10 rounded-full blur-[100px] pointer-events-none -translate-y-1/2"></div>
-        <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-cyan-400/10 rounded-full blur-[100px] pointer-events-none -translate-y-1/2"></div>
+      <section id="sobre-mi" className="py-20 md:py-28 bg-[#070b14] relative overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
+        <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#0071e3]/10 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 mix-blend-screen"></div>
+        <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-cyan-400/10 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 mix-blend-screen"></div>
 
         <div className="max-w-[1000px] mx-auto px-6 lg:px-8 relative z-10">
             <div className="bg-[#2d2d30]/30 backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-8 md:p-14 shadow-2xl reveal-on-scroll">
