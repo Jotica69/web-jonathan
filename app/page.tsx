@@ -257,54 +257,54 @@ export default function Home() {
                      </h3>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch">
                     {/* Pilar 1: Webs */}
-                    <div className="group relative w-full overflow-hidden bg-[#0b1121]/50 backdrop-blur-2xl rounded-[2.5rem] border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:shadow-[0_20px_50px_rgba(0,113,227,0.2)] transition-all duration-500 hover:-translate-y-2 flex flex-col h-full min-h-[440px]">
-                        {/* Image Mask Top */}
-                        <div className="absolute top-0 left-0 right-0 h-[60%] z-0" style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)' }}>
-                            <Image src="/Webs de Alta Conversión.png" alt="Webs de alta conversión" fill className="object-cover object-top opacity-70 group-hover:scale-110 transition-transform duration-1000 mix-blend-luminosity group-hover:mix-blend-normal" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#0b1121] via-transparent to-transparent"></div>
+                    <div className="group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                        {/* Imagen integrada arriba */}
+                        <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[2.5rem]">
+                            <Image src="/Webs de Alta Conversión.png" alt="Webs de alta conversión" fill className="object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent"></div>
                         </div>
-                        
-                        {/* Content Bottom */}
-                        <div className="relative z-10 p-8 md:p-10 flex flex-col justify-end h-full mt-auto">
-                            <div className="w-14 h-14 rounded-[1.2rem] bg-cyan-500/20 flex items-center justify-center border border-cyan-500/30 mb-6 backdrop-blur-md shadow-lg group-hover:bg-cyan-500/30 transition-colors">
-                                <span className="material-symbols-outlined text-cyan-400 text-2xl">rocket_launch</span>
+
+                        {/* Contenido */}
+                        <div className="relative z-10 p-8 md:p-10 flex flex-col flex-1">
+                            <div className="w-14 h-14 rounded-[1.2rem] bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center shadow-sm border border-white/60 mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <span className="material-symbols-outlined text-[#2b8cee] text-2xl">rocket_launch</span>
                             </div>
-                            <h4 className="text-xl md:text-[24px] font-extrabold mb-3 text-white tracking-tight leading-tight group-hover:text-cyan-400 transition-colors">Webs de alta conversión</h4>
-                            <p className="text-slate-400 text-[15px] leading-relaxed font-medium">Páginas rápidas para que tus clientes te encuentren en Google y <span className="text-cyan-400 font-bold">te compren sin dar tantas vueltas</span>.</p>
+                            <h4 className="text-xl md:text-[22px] font-extrabold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Webs de alta conversión</h4>
+                            <p className="text-slate-600 text-[15px] leading-relaxed font-medium">Páginas rápidas para que tus clientes te encuentren en Google y <span className="text-[#2b8cee] font-bold">te compren sin dar tantas vueltas</span>.</p>
                         </div>
                     </div>
 
                     {/* Pilar 2: Video */}
-                    <div className="group relative w-full overflow-hidden bg-[#0b1121]/50 backdrop-blur-2xl rounded-[2.5rem] border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:shadow-[0_20px_50px_rgba(0,113,227,0.2)] transition-all duration-500 hover:-translate-y-2 flex flex-col h-full min-h-[440px]">
-                        <div className="absolute top-0 left-0 right-0 h-[60%] z-0" style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)' }}>
-                            <Image src="/Celular.jpg" alt="Edición de Video" fill className="object-cover object-center opacity-70 group-hover:scale-110 transition-transform duration-1000 mix-blend-luminosity group-hover:mix-blend-normal" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#0b1121] via-transparent to-transparent"></div>
+                    <div className="group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                        <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[2.5rem]">
+                            <Image src="/Celular.jpg" alt="Edición de Video" fill className="object-cover object-center group-hover:scale-105 transition-transform duration-700" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent"></div>
                         </div>
-                        
-                        <div className="relative z-10 p-8 md:p-10 flex flex-col justify-end h-full mt-auto">
-                            <div className="w-14 h-14 rounded-[1.2rem] bg-indigo-500/20 flex items-center justify-center border border-indigo-500/30 mb-6 backdrop-blur-md shadow-lg group-hover:bg-indigo-500/30 transition-colors">
-                                <span className="material-symbols-outlined text-indigo-400 text-2xl">movie_edit</span>
+
+                        <div className="relative z-10 p-8 md:p-10 flex flex-col flex-1">
+                            <div className="w-14 h-14 rounded-[1.2rem] bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center shadow-sm border border-white/60 mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <span className="material-symbols-outlined text-[#2b8cee] text-2xl">movie_edit</span>
                             </div>
-                            <h4 className="text-xl md:text-[24px] font-extrabold mb-3 text-white tracking-tight leading-tight group-hover:text-indigo-400 transition-colors">Edición de Video</h4>
-                            <p className="text-slate-400 text-[15px] leading-relaxed font-medium">Reels y TikToks editados para enganchar. <span className="text-indigo-400 font-bold">Vende más</span> con el mismo Instagram que ya tienes.</p>
+                            <h4 className="text-xl md:text-[22px] font-extrabold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Edición de Video</h4>
+                            <p className="text-slate-600 text-[15px] leading-relaxed font-medium">Reels y TikToks editados para enganchar. <span className="text-[#2b8cee] font-bold">Vende más</span> con el mismo Instagram que ya tienes.</p>
                         </div>
                     </div>
 
                     {/* Pilar 3: Datos */}
-                    <div className="group relative w-full overflow-hidden bg-[#0b1121]/50 backdrop-blur-2xl rounded-[2.5rem] border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:shadow-[0_20px_50px_rgba(0,113,227,0.2)] transition-all duration-500 hover:-translate-y-2 flex flex-col h-full min-h-[440px]">
-                        <div className="absolute top-0 left-0 right-0 h-[60%] z-0" style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 40%, transparent 100%)' }}>
-                            <Image src="/Inteligencia Ejecutiva.png" alt="Análisis de Datos" fill className="object-cover object-top opacity-70 group-hover:scale-110 transition-transform duration-1000 mix-blend-luminosity group-hover:mix-blend-normal" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#0b1121] via-transparent to-transparent"></div>
+                    <div className="group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                        <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[2.5rem]">
+                            <Image src="/Inteligencia Ejecutiva.png" alt="Análisis de Datos" fill className="object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent"></div>
                         </div>
-                        
-                        <div className="relative z-10 p-8 md:p-10 flex flex-col justify-end h-full mt-auto">
-                            <div className="w-14 h-14 rounded-[1.2rem] bg-blue-500/20 flex items-center justify-center border border-blue-500/30 mb-6 backdrop-blur-md shadow-lg group-hover:bg-blue-500/30 transition-colors">
-                                <span className="material-symbols-outlined text-blue-400 text-2xl">query_stats</span>
+
+                        <div className="relative z-10 p-8 md:p-10 flex flex-col flex-1">
+                            <div className="w-14 h-14 rounded-[1.2rem] bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center shadow-sm border border-white/60 mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <span className="material-symbols-outlined text-[#2b8cee] text-2xl">query_stats</span>
                             </div>
-                            <h4 className="text-xl md:text-[24px] font-extrabold mb-3 text-white tracking-tight leading-tight group-hover:text-blue-400 transition-colors">Análisis de Datos</h4>
-                            <p className="text-slate-400 text-[15px] leading-relaxed font-medium">Paneles visuales donde ves <span className="text-blue-400 font-bold">qué se vende, cuándo y a quién</span>. Decides con números, no con suposiciones.</p>
+                            <h4 className="text-xl md:text-[22px] font-extrabold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Análisis de Datos</h4>
+                            <p className="text-slate-600 text-[15px] leading-relaxed font-medium">Paneles visuales donde ves <span className="text-[#2b8cee] font-bold">qué se vende, cuándo y a quién</span>. Decides con números, no con suposiciones.</p>
                         </div>
                     </div>
                 </div>
