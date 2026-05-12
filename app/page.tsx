@@ -432,22 +432,24 @@ export default function Home() {
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-slate-900 tracking-tighter">Así funciona el proceso</h2>
                 <p className="text-lg md:text-xl text-slate-500 font-medium max-w-2xl mx-auto">4 pasos claros. Sin sorpresas, sin letra pequeña.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 reveal-on-scroll relative items-stretch">
-                {/* Línea conectora animada (solo desktop) */}
-                <div className="hidden lg:block absolute top-[3.25rem] left-[12%] w-[76%] h-[2px] bg-slate-200/60 rounded-full overflow-hidden">
+
+            {/* Grid principal con alineación perfecta */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 reveal-on-scroll relative">
+                {/* Línea conectora animada (solo desktop). top-6 (24px) pasa exactamente por el centro del círculo de 48px */}
+                <div className="hidden lg:block absolute top-6 left-[12.5%] w-[75%] h-[2px] bg-slate-200/60 rounded-full overflow-hidden">
                     <div className="w-full h-full bg-gradient-to-r from-transparent via-[#2b8cee] to-transparent opacity-60 animate-[shimmer_3s_infinite]"></div>
                 </div>
 
                 {/* Fase 1 */}
-                <div className="relative pt-10 md:pt-0 h-full group" style={{ transitionDelay: '0ms' }}>
-                    <div className="relative z-10 mx-auto lg:mx-0 lg:absolute lg:top-8 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-fit mb-6 lg:mb-0">
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500">
-                            <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                                <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">1</span>
-                            </div>
+                <div className="flex flex-col items-center h-full group" style={{ transitionDelay: '0ms' }}>
+                    {/* Número centrado, mismo tamaño en todos los breakpoints */}
+                    <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500 mb-6 lg:mb-8">
+                        <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                            <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">1</span>
                         </div>
                     </div>
-                    <div className="relative h-full flex flex-col p-8 md:p-10 bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 group/card overflow-hidden lg:mt-14">
+                    {/* Card: altura completa, contenido distribuido verticalmente */}
+                    <div className="relative w-full flex-1 flex flex-col p-10 md:p-12 bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 group/card overflow-hidden">
                         <div className="absolute -top-10 -right-4 text-[150px] font-black text-black/[0.03] pointer-events-none group-hover/card:scale-110 transition-transform duration-700">01</div>
                         <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#2b8cee]/10 rounded-full blur-[40px] group-hover/card:bg-[#2b8cee]/20 transition-all duration-700"></div>
 
@@ -455,7 +457,7 @@ export default function Home() {
                             <MessageSquare className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
                         </div>
 
-                        <div className="mt-12 relative z-10">
+                        <div className="mt-10 relative z-10">
                             <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 1</div>
                             <h4 className="font-bold text-[#1d1d1f] text-xl mb-3 tracking-tight">Entiendo tu negocio</h4>
                             <p className="text-slate-600 text-[15px] leading-relaxed">Me siento contigo, entiendo cómo funciona tu operación y encuentro exactamente dónde estás perdiendo tiempo y dinero.</p>
@@ -464,15 +466,13 @@ export default function Home() {
                 </div>
 
                 {/* Fase 2 */}
-                <div className="relative pt-10 md:pt-0 h-full group" style={{ transitionDelay: '150ms' }}>
-                    <div className="relative z-10 mx-auto lg:mx-0 lg:absolute lg:top-8 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-fit mb-6 lg:mb-0">
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500">
-                            <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                                <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">2</span>
-                            </div>
+                <div className="flex flex-col items-center h-full group" style={{ transitionDelay: '150ms' }}>
+                    <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500 mb-6 lg:mb-8">
+                        <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                            <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">2</span>
                         </div>
                     </div>
-                    <div className="relative h-full flex flex-col p-8 md:p-10 bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 group/card overflow-hidden lg:mt-14">
+                    <div className="relative w-full flex-1 flex flex-col p-10 md:p-12 bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 group/card overflow-hidden">
                         <div className="absolute -top-10 -right-4 text-[150px] font-black text-black/[0.03] pointer-events-none group-hover/card:scale-110 transition-transform duration-700">02</div>
                         <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#2b8cee]/10 rounded-full blur-[40px] group-hover/card:bg-[#2b8cee]/20 transition-all duration-700"></div>
 
@@ -480,7 +480,7 @@ export default function Home() {
                             <Lightbulb className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
                         </div>
 
-                        <div className="mt-12 relative z-10">
+                        <div className="mt-10 relative z-10">
                             <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 2</div>
                             <h4 className="font-bold text-[#1d1d1f] text-xl mb-3 tracking-tight">Diseño tu solución</h4>
                             <p className="text-slate-600 text-[15px] leading-relaxed">Armo un plan a medida para tu negocio: qué automatizar, qué herramientas usar, cómo conectar todo.</p>
@@ -489,15 +489,13 @@ export default function Home() {
                 </div>
 
                 {/* Fase 3 */}
-                <div className="relative pt-10 md:pt-0 h-full group" style={{ transitionDelay: '300ms' }}>
-                    <div className="relative z-10 mx-auto lg:mx-0 lg:absolute lg:top-8 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-fit mb-6 lg:mb-0">
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500">
-                            <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                                <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">3</span>
-                            </div>
+                <div className="flex flex-col items-center h-full group" style={{ transitionDelay: '300ms' }}>
+                    <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500 mb-6 lg:mb-8">
+                        <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                            <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">3</span>
                         </div>
                     </div>
-                    <div className="relative h-full flex flex-col p-8 md:p-10 bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 group/card overflow-hidden lg:mt-14">
+                    <div className="relative w-full flex-1 flex flex-col p-10 md:p-12 bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 group/card overflow-hidden">
                         <div className="absolute -top-10 -right-4 text-[150px] font-black text-black/[0.03] pointer-events-none group-hover/card:scale-110 transition-transform duration-700">03</div>
                         <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#2b8cee]/10 rounded-full blur-[40px] group-hover/card:bg-[#2b8cee]/20 transition-all duration-700"></div>
 
@@ -505,7 +503,7 @@ export default function Home() {
                             <Rocket className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
                         </div>
 
-                        <div className="mt-12 relative z-10">
+                        <div className="mt-10 relative z-10">
                             <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 3</div>
                             <h4 className="font-bold text-[#1d1d1f] text-xl mb-3 tracking-tight">Lo construyo y lo activo</h4>
                             <p className="text-slate-600 text-[15px] leading-relaxed">Desarrollo todo, lo conecto a tus sistemas, lo pruebo y lo dejo funcionando sin que tengas que hacer nada técnico.</p>
@@ -514,15 +512,13 @@ export default function Home() {
                 </div>
 
                 {/* Fase 4 */}
-                <div className="relative pt-10 md:pt-0 h-full group" style={{ transitionDelay: '450ms' }}>
-                    <div className="relative z-10 mx-auto lg:mx-0 lg:absolute lg:top-8 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-fit mb-6 lg:mb-0">
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500">
-                            <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                                <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">4</span>
-                            </div>
+                <div className="flex flex-col items-center h-full group" style={{ transitionDelay: '450ms' }}>
+                    <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500 mb-6 lg:mb-8">
+                        <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                            <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">4</span>
                         </div>
                     </div>
-                    <div className="relative h-full flex flex-col p-8 md:p-10 bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 group/card overflow-hidden lg:mt-14">
+                    <div className="relative w-full flex-1 flex flex-col p-10 md:p-12 bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 group/card overflow-hidden">
                         <div className="absolute -top-10 -right-4 text-[150px] font-black text-black/[0.03] pointer-events-none group-hover/card:scale-110 transition-transform duration-700">04</div>
                         <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#2b8cee]/10 rounded-full blur-[40px] group-hover/card:bg-[#2b8cee]/20 transition-all duration-700"></div>
 
@@ -530,7 +526,7 @@ export default function Home() {
                             <TrendingUp className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
                         </div>
 
-                        <div className="mt-12 relative z-10">
+                        <div className="mt-10 relative z-10">
                             <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 4</div>
                             <h4 className="font-bold text-[#1d1d1f] text-xl mb-3 tracking-tight">Crecimiento continuo</h4>
                             <p className="text-slate-600 text-[15px] leading-relaxed">Recuperás tu tiempo. Tu negocio empieza a funcionar con menos esfuerzo y listo para escalar.</p>
