@@ -1,9 +1,7 @@
 # Design System: Jonathan Chávez
 
-**Project ID:** AQ.Ab8RN6Kwblw95aftJZtQHYwFK0VrAgoJ1S2COw2_BGrRMrg9pQ
-
 ## 1. Visual Theme & Atmosphere
-High-density, dark mode aesthetic using "glassmorphism" (semi-transparent panels with background blur). The atmosphere is serious, professional, and futuristic.
+High-density, aesthetic using "glassmorphism" (semi-transparent panels with background blur). The atmosphere is serious, professional, and futuristic.
 
 ## 2. Color Palette & Roles
 - **Primary:** #2b8cee (Action, accents, highlights)
@@ -11,7 +9,6 @@ High-density, dark mode aesthetic using "glassmorphism" (semi-transparent panels
 - **Panel Background:** White with 5% opacity and blur (Glass effect)
 - **Text Primary:** #f1f5f9 (White-ish)
 - **Text Secondary:** #94a3b8 (Slate gray)
-- **Alert/Danger:** #dc2626 (Obsolescence/Risk emphasis)
 
 ## 3. Typography Rules
 - **Display Font:** Space Grotesk (700 for headings, 400 for body)
@@ -22,17 +19,9 @@ High-density, dark mode aesthetic using "glassmorphism" (semi-transparent panels
 * **Cards:** Glass panels with subtle white borders (1px border-white/10).
 * **Inputs:** Dark backgrounds, primary color focus rings.
 
-## 5. Layout Principles
-Max-width 7xl containers, generous vertical whitespace (py-24), sticky headers.
-
-## 6. Design System Notes for Stitch Generation
-**Copy this block into every baton prompt:**
-
 **DESIGN SYSTEM (REQUIRED):**
-- Platform: Web, Desktop-first
-- Theme: Dark, Glassmorphic, High-End
+- Theme: Glassmorphism, High-End
 - Background: Deep Dark Blue (#101922) with Primary Blue gradients
 - Primary Accent: Bright Blue (#2b8cee)
 - Text Primary: White/Slate Mix
 - Font: Space Grotesk
-- Layout: Modern grid, wide gutters, sticky header

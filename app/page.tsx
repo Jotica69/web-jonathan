@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { GlassEffect, GlassFilter } from '@/components/ui/liquid-glass';
+import { MessageSquare, Lightbulb, Rocket, TrendingUp } from 'lucide-react';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -418,53 +419,73 @@ export default function Home() {
       </section>
 
       {/* 5. EL CAMINO DEFINIDO (Roadmap) */}
-      <section id="roadmap" className="py-24 md:py-32 bg-[#0b1121] relative z-10 overflow-hidden border-t border-white/5">
-        {/* Dynamic Dark Grid Background */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-[600px] bg-[#0071e3]/10 blur-[150px] pointer-events-none mix-blend-screen"></div>
-
+      <section id="roadmap" className="py-24 md:py-32 bg-white relative z-10 overflow-hidden">
         <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16 md:mb-24 reveal-on-scroll">
-                <h2 className="text-4xl md:text-6xl font-semibold mb-6 text-white tracking-tighter">Así funciona el proceso</h2>
-                <p className="text-[19px] text-cyan-400 font-medium max-w-2xl mx-auto drop-shadow-md">4 pasos claros. Sin sorpresas, sin letra pequeña.</p>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-slate-900 tracking-tighter">Así funciona el proceso</h2>
+                <p className="text-lg md:text-xl text-slate-500 font-medium max-w-2xl mx-auto">4 pasos claros. Sin sorpresas, sin letra pequeña.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 reveal-on-scroll relative">
                 {/* Connecting Line (Only visible on large screens) */}
-                <div className="hidden lg:block absolute top-12 left-[12%] w-[76%] h-[2px] bg-gradient-to-r from-blue-500/20 via-cyan-400/40 to-blue-500/20"></div>
-                
-                <div className="relative pt-8 md:pt-0">
-                    <div className="w-12 h-12 rounded-full bg-[#0f172a] border-[3px] border-blue-500 text-blue-400 flex items-center justify-center text-lg font-bold mb-6 mx-auto lg:mx-0 shadow-[0_0_20px_rgba(59,130,246,0.3)] relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">1</div>
-                    <div className="bg-[#141b2a]/80 backdrop-blur-xl rounded-[2.5rem] p-8 md:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.3)] border border-white/10 hover:-translate-y-2 hover:border-blue-500/30 transition-all duration-300 lg:mt-16 text-center lg:text-left h-full">
-                        <div className="text-[11px] uppercase tracking-widest font-bold text-blue-400 mb-3">Fase 1</div>
-                        <h4 className="font-bold text-white text-xl mb-3 tracking-tight">Entiendo tu negocio</h4>
-                        <p className="text-slate-400 text-[15px] leading-relaxed">Me siento contigo, entiendo cómo funciona tu operación y encuentro exactamente dónde estás perdiendo tiempo y dinero.</p>
+                <div className="hidden lg:block absolute top-12 left-[12%] w-[76%] h-[2px] bg-slate-100"></div>
+
+                {/* Fase 1 */}
+                <div className="relative pt-8 md:pt-0 group" style={{ transitionDelay: '0ms' }}>
+                    <div className="w-12 h-12 rounded-full bg-white border-2 border-slate-100 text-slate-900 flex items-center justify-center text-lg font-bold mx-auto lg:mx-0 relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 shadow-sm">
+                        1
+                    </div>
+                    <div className="bg-white backdrop-blur-xl rounded-2xl p-8 md:p-10 shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-2 transition-all duration-700 ease-out lg:mt-16 text-center lg:text-left h-full">
+                        <div className="w-14 h-14 rounded-2xl bg-[#2b8cee]/10 flex items-center justify-center mb-6 mx-auto lg:mx-0">
+                            <MessageSquare className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
+                        </div>
+                        <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 1</div>
+                        <h4 className="font-bold text-slate-900 text-xl mb-3 tracking-tight">Entiendo tu negocio</h4>
+                        <p className="text-slate-500 text-[15px] leading-relaxed">Me siento contigo, entiendo cómo funciona tu operación y encuentro exactamente dónde estás perdiendo tiempo y dinero.</p>
                     </div>
                 </div>
 
-                <div className="relative pt-8 md:pt-0">
-                    <div className="w-12 h-12 rounded-full bg-[#0f172a] border-[3px] border-indigo-500 text-indigo-400 flex items-center justify-center text-lg font-bold mb-6 mx-auto lg:mx-0 shadow-[0_0_20px_rgba(99,102,241,0.3)] relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">2</div>
-                    <div className="bg-[#141b2a]/80 backdrop-blur-xl rounded-[2.5rem] p-8 md:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.3)] border border-white/10 hover:-translate-y-2 hover:border-indigo-500/30 transition-all duration-300 lg:mt-16 text-center lg:text-left h-full">
-                        <div className="text-[11px] uppercase tracking-widest font-bold text-indigo-400 mb-3">Fase 2</div>
-                        <h4 className="font-bold text-white text-xl mb-3 tracking-tight">Diseño tu solución</h4>
-                        <p className="text-slate-400 text-[15px] leading-relaxed">Armo un plan a medida para tu negocio: qué automatizar, qué herramientas usar, cómo conectar todo.</p>
+                {/* Fase 2 */}
+                <div className="relative pt-8 md:pt-0 group" style={{ transitionDelay: '150ms' }}>
+                    <div className="w-12 h-12 rounded-full bg-white border-2 border-slate-100 text-slate-900 flex items-center justify-center text-lg font-bold mx-auto lg:mx-0 relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 shadow-sm">
+                        2
+                    </div>
+                    <div className="bg-white backdrop-blur-xl rounded-2xl p-8 md:p-10 shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-2 transition-all duration-700 ease-out lg:mt-16 text-center lg:text-left h-full">
+                        <div className="w-14 h-14 rounded-2xl bg-[#2b8cee]/10 flex items-center justify-center mb-6 mx-auto lg:mx-0">
+                            <Lightbulb className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
+                        </div>
+                        <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 2</div>
+                        <h4 className="font-bold text-slate-900 text-xl mb-3 tracking-tight">Diseño tu solución</h4>
+                        <p className="text-slate-500 text-[15px] leading-relaxed">Armo un plan a medida para tu negocio: qué automatizar, qué herramientas usar, cómo conectar todo.</p>
                     </div>
                 </div>
 
-                <div className="relative pt-8 md:pt-0">
-                    <div className="w-12 h-12 rounded-full bg-[#0f172a] border-[3px] border-cyan-500 text-cyan-400 flex items-center justify-center text-lg font-bold mb-6 mx-auto lg:mx-0 shadow-[0_0_20px_rgba(6,182,212,0.3)] relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">3</div>
-                    <div className="bg-[#141b2a]/80 backdrop-blur-xl rounded-[2.5rem] p-8 md:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.3)] border border-white/10 hover:-translate-y-2 hover:border-cyan-500/30 transition-all duration-300 lg:mt-16 text-center lg:text-left h-full">
-                        <div className="text-[11px] uppercase tracking-widest font-bold text-cyan-400 mb-3">Fase 3</div>
-                        <h4 className="font-bold text-white text-xl mb-3 tracking-tight">Lo construyo y lo activo</h4>
-                        <p className="text-slate-400 text-[15px] leading-relaxed">Desarrollo todo, lo conecto a tus sistemas, lo pruebo y lo dejo funcionando sin que tengas que hacer nada técnico.</p>
+                {/* Fase 3 */}
+                <div className="relative pt-8 md:pt-0 group" style={{ transitionDelay: '300ms' }}>
+                    <div className="w-12 h-12 rounded-full bg-white border-2 border-slate-100 text-slate-900 flex items-center justify-center text-lg font-bold mx-auto lg:mx-0 relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 shadow-sm">
+                        3
+                    </div>
+                    <div className="bg-white backdrop-blur-xl rounded-2xl p-8 md:p-10 shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-2 transition-all duration-700 ease-out lg:mt-16 text-center lg:text-left h-full">
+                        <div className="w-14 h-14 rounded-2xl bg-[#2b8cee]/10 flex items-center justify-center mb-6 mx-auto lg:mx-0">
+                            <Rocket className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
+                        </div>
+                        <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 3</div>
+                        <h4 className="font-bold text-slate-900 text-xl mb-3 tracking-tight">Lo construyo y lo activo</h4>
+                        <p className="text-slate-500 text-[15px] leading-relaxed">Desarrollo todo, lo conecto a tus sistemas, lo pruebo y lo dejo funcionando sin que tengas que hacer nada técnico.</p>
                     </div>
                 </div>
 
-                <div className="relative pt-8 md:pt-0">
-                    <div className="w-12 h-12 rounded-full bg-[#0f172a] border-[3px] border-teal-400 text-teal-400 flex items-center justify-center text-lg font-bold mb-6 mx-auto lg:mx-0 shadow-[0_0_20px_rgba(45,212,191,0.3)] relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">4</div>
-                    <div className="bg-[#141b2a]/80 backdrop-blur-xl rounded-[2.5rem] p-8 md:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.3)] border border-white/10 hover:-translate-y-2 hover:border-teal-400/30 transition-all duration-300 lg:mt-16 text-center lg:text-left h-full">
-                        <div className="text-[11px] uppercase tracking-widest font-bold text-teal-400 mb-3">Fase 4</div>
-                        <h4 className="font-bold text-white text-xl mb-3 tracking-tight">Crecimiento continuo</h4>
-                        <p className="text-slate-400 text-[15px] leading-relaxed">Recuperás tu tiempo. Tu negocio empieza a funcionar con menos esfuerzo y listo para escalar.</p>
+                {/* Fase 4 */}
+                <div className="relative pt-8 md:pt-0 group" style={{ transitionDelay: '450ms' }}>
+                    <div className="w-12 h-12 rounded-full bg-white border-2 border-slate-100 text-slate-900 flex items-center justify-center text-lg font-bold mx-auto lg:mx-0 relative z-10 lg:absolute lg:top-6 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 shadow-sm">
+                        4
+                    </div>
+                    <div className="bg-white backdrop-blur-xl rounded-2xl p-8 md:p-10 shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-2 transition-all duration-700 ease-out lg:mt-16 text-center lg:text-left h-full">
+                        <div className="w-14 h-14 rounded-2xl bg-[#2b8cee]/10 flex items-center justify-center mb-6 mx-auto lg:mx-0">
+                            <TrendingUp className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
+                        </div>
+                        <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 4</div>
+                        <h4 className="font-bold text-slate-900 text-xl mb-3 tracking-tight">Crecimiento continuo</h4>
+                        <p className="text-slate-500 text-[15px] leading-relaxed">Recuperás tu tiempo. Tu negocio empieza a funcionar con menos esfuerzo y listo para escalar.</p>
                     </div>
                 </div>
             </div>

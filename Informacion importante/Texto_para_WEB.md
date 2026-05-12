@@ -1,94 +1,108 @@
-**AUTOMATIZACIONES Y ECOSISTEMAS CON IA**
+# Automatizo tu negocio en Barrancabermeja
 
-**1\. HERO SECTION**
+**Cobranza, ventas, atención y pedidos que corren solos. Para que te enfoques en lo que importa: vender.**
 
-**H1:**
+[Escríbeme por WhatsApp]
 
-Automatizo negocios con IA en Barrancabermeja
 
-**Sub-headline:**
+## SERVICIO PRINCIPAL: Automatización Inteligente
 
-Tu negocio atendiendo clientes 24/7, sin sueldos extra, sin errores humanos. Todo conectado a WhatsApp.
+**Lo que hoy haces a mano, mañana se hace solo.**
 
-**\[Botón CTA Principal\]:**
-
-Escribime por WhatsApp
-
-**2\. SERVICIO PRINCIPAL: Automatizaciones con IA**
-
-**Encabezado:**
-
-Lo que hoy hacés a mano, mañana se hace solo
-
-**Desarrollo:**
-Cada hora que gastás en cobrar, responder mensajes, hacer seguimiento o tomar pedidos es una hora que no estás dedicando a hacer crecer tu negocio. Yo creo ecosistemas de IA que automatizan todo eso.
+Cada hora que gastas en cobrar, responder mensajes o tomar pedidos es una hora que no dedicas a vender. Yo te lo automatizo todo.
 
 **Lo que automatizo:**
 
-**Cobranza automática:**
-Recordatorios por WhatsApp con IA que adaptan el tono según el cliente. Recuperás tu plata más rápido sin mandar un solo mensaje.
+**Atención al cliente 24/7**
+Chatbots que responden, califican y cierran ventas por WhatsApp. Tu negocio atiende mientras duermes.
 
-**Atención al cliente 24/7:**
-Chatbots que responden, califican y cierran ventas por WhatsApp. Tu negocio atiende mientras dormís.
+**Seguimiento de ventas**
+El sistema registra quién te compra, qué compra y cuándo vuelve. Promos automáticas por WhatsApp para que regresen.
 
-**Seguimiento de ventas:**
-Sistemas que registran quién te compra, qué compra y cuándo vuelve. Promos automáticas por WhatsApp para que vuelvan.
+**Gestión de reservas y pedidos**
+Cero llamadas perdidas. Tus clientes reservan o piden por WhatsApp. Confirmación y recordatorio automático.
 
-**Gestión de reservas y pedidos:**
-Cero llamadas perdidas. Los clientes reservan o piden por WhatsApp, confirmación y recordatorio automático.
+**¿Tu proceso no está en esta lista?**
+Lo construyo a tu medida. Sin vueltas.
 
-**3\. SOLUCIONES SaaS (Productos propios)**
+*Operación sin esfuerzo. Sistemas que trabajan por ti.*
 
-**Mocia — Cobranza Inteligente:**
-Para prestamistas. Recordatorios automáticos por WhatsApp con IA. Recuperás tu plata más rápido sin esfuerzo.
 
-**QR Menu System:**
+## SOLUCIONES SaaS (Productos propios)
+
+**Mocia — Cobranza Inteligente**
+Para prestamistas. Recordatorios automáticos por WhatsApp. Recuperas tu plata más rápido y sin esfuerzo.
+
+**QR Menu System**
 Para restaurantes. Tus clientes piden solos escaneando un QR. El pedido llega directo a cocina, sin mesero, sin errores.
 
-**CRM Simple:**
-Para tiendas y retail. Sabés quién te compra, qué compra y cuándo vuelve. Historial automático y promos por WhatsApp.
+**CRM Simple — Gestión de Clientes**
+Para tiendas, barberías, consultorios. Sabes quién te compra, qué compra y cuándo vuelve. Historial automático y promos por WhatsApp.
 
-**Gestión de Reservas:**
-Para barberías y consultorios. Reserva por WhatsApp, confirmación y recordatorio automático. Cero llamadas perdidas.
 
-**4\. SERVICIOS COMPLEMENTARIOS**
+## SERVICIOS COMPLEMENTARIOS
 
-**Páginas web y landing pages:**
-Para que tus clientes te encuentren en Google y te compren.
+**Páginas web y landing pages**
+Para que tus clientes te encuentren en Google y te compren. Listo en 5-7 días.
 
-**Edición de video para redes:**
-Reels que enganchan en 3 segundos. Vendé más con el mismo Instagram.
+**Edición de video para redes**
+Reels que enganchan en 3 segundos. Vende más con el mismo Instagram. Entrega en 48 horas.
 
-**Dashboards de datos:**
-Para que sepas qué se vende, cuándo y a quién. Decisiones con datos, no con intuición.
+**Análisis de Datos**
+Para que sepas qué se vende, cuándo y a quién. Decisiones con datos, no con intuición. Listo en 10-15 días.
 
-**5\. PROYECTOS**
 
-Mostrar 4-6 proyectos reales con capturas:
-1. Mocia — Cobranza Inteligente (IA · WhatsApp · SaaS · Supabase)
-2. Dashboard Financiero (Python · FastAPI · UI/UX)
-3. Sitio Web Empresarial (HTML/CSS · Vercel)
-4. E-commerce — Tienda de Ropa (Vercel · Supabase)
-5. Render Arquitectónico 3D (Blender · 3D)
-6. Reel Viral — Marketing Digital (DaVinci · Edición)
+## LO QUE HE CONSTRUIDO
 
-**6\. CÓMO TRABAJO**
+Cada herramienta de esta página la desarrollé yo. No revendo software de otros.
 
-**Paso 1:** Me contás tu problema por WhatsApp
-**Paso 2:** Te envío propuesta en 24 horas
-**Paso 3:** Entrego y ajusto hasta que estés feliz
+**Productos SaaS**
+Mocia, QR Menu System y CRM Simple. Sistemas que desarrollé y están listos para adaptarse a tu negocio.
 
-**7\. SOBRE MÍ**
+**Proyectos reales**
+Dashboard financiero, sitios web empresariales, render 3D, reels de alto impacto. Todo funcional, todo real.
 
-Soy Jonathan Chávez. Vivo en Barrancabermeja. Creo ecosistemas de IA que le ahorran tiempo y plata a negocios locales. No soy una consultora grande — soy el que te resuelve lo técnico mientras vos vendés.
+[Ver proyectos]
 
-**8\. CONTACTO**
 
-**Botón de WhatsApp GRANDE:** +57 322 3663275
+## ASÍ FUNCIONA EL PROCESO
+
+Cuatro pasos, sin letra pequeña.
+
+**Fase 1 — Entiendo tu negocio**
+Hablamos de tu operación y encuentro exactamente dónde estás perdiendo tiempo y dinero.
+
+**Fase 2 — Diseño tu solución**
+Armo un plan a tu medida: qué automatizar, qué herramientas usar, cómo conectar todo.
+
+**Fase 3 — Construyo y activo**
+Desarrollo todo, lo conecto y lo dejo funcionando sin que tengas que hacer nada técnico.
+
+**Fase 4 — Creces sin mí**
+Recuperas tu tiempo. Tu negocio funciona con menos esfuerzo y está listo para escalar.
+
+
+## ¿ESTO ES PARA TI?
+
+Si tu negocio ya funciona y quieres que funcione muchisimo mejor, hablamos.
+
+
+## SOBRE MÍ
+
+Soy Jonathan Chávez. Vivo en Barrancabermeja. Construyo sistemas que le ahorran tiempo y plata a negocios locales.
+
+No soy una consultora grande. Soy el que te resuelve lo técnico mientras tú te dedicas a vender.
+
+
+## CONTACTO
+
+**Escríbeme por WhatsApp:** +57 322 3663275
 **Correo:** joticachavez69@gmail.com
-**"Respondo en menos de 1 hora"**
 
-**9\. FOOTER**
+*Respondo en menos de 1 hora.*
+
+
+---
 
 © 2026 Jonathan Chávez · Barrancabermeja, Santander
 WhatsApp · Email
