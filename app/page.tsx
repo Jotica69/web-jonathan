@@ -204,6 +204,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* VIDEO SECTION */}
+      <section className="relative w-full overflow-hidden bg-[#f4f7fc]">
+        <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10 mb-12">
+            <div className="reveal-on-scroll">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#1d1d1f] tracking-tighter leading-tight text-center">
+                    Operación sin esfuerzo.<br className="hidden md:block" />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2b8cee] to-cyan-500">Sistemas que trabajan por ti.</span>
+                </h2>
+            </div>
+        </div>
+        <div className="w-full h-[50vh] md:h-[60vh] lg:h-[500px] relative">
+            <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+                poster="/Video_pagina_alcaldia.jpg"
+            >
+                <source src="/Video_pagina_alcaldia.mp4" type="video/mp4" />
+            </video>
+        </div>
+      </section>
+
       {/* 3. AUTORIDAD IMPLÍCITA */}
       <section id="autoridad" className="py-24 md:py-32 overflow-hidden bg-[#f4f7fc] relative">
         {/* Dynamic Glowing Beams Background */}
@@ -211,44 +235,6 @@ export default function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#0071e31a_1px,transparent_1px),linear-gradient(to_bottom,#0071e31a_1px,transparent_1px)] bg-[size:40px_40px] opacity-[0.35] mix-blend-multiply pointer-events-none"></div>
 
         <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10">
-            
-            <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center mb-24">
-                {/* Content Column (Title & Top Description) */}
-                <div className="flex-1 max-w-2xl reveal-on-scroll relative z-10">
-                    <h2 className="text-4xl md:text-5xl lg:text-7xl lg:leading-[1.1] font-semibold mb-8 text-[#1d1d1f] tracking-tighter">
-                        Operación sin esfuerzo. <br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0071e3] to-cyan-500">Sistemas que trabajan por ti.</span>
-                    </h2>
-                    
-                    {/* Graphical element: Modern badge */}
-                    <div className="mt-10 flex items-center gap-4 bg-white/50 backdrop-blur-md border border-blue-100/60 p-2 pr-6 rounded-full w-fit shadow-sm hover:shadow-md transition-shadow">
-                        <div className="h-10 w-10 md:h-12 md:w-12 rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center shadow-inner">
-                             <span className="material-symbols-outlined text-white text-sm md:text-base">verified_user</span>
-                        </div>
-                        <span className="text-blue-900 font-bold text-xs md:text-sm tracking-widest uppercase">Resultados desde la primera semana</span>
-                    </div>
-                </div>
-
-                {/* Image Column */}
-                <div className="flex-1 w-full relative reveal-on-scroll flex justify-center items-center mt-8 lg:mt-0">
-                    {/* Glowing Splendor Azul */}
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] max-w-[600px] max-h-[600px] bg-[#0071e3]/20 rounded-full blur-[100px] pointer-events-none z-0 mix-blend-multiply animate-pulse"></div>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] max-w-[400px] max-h-[400px] bg-cyan-400/20 rounded-full blur-[80px] pointer-events-none z-0"></div>
-                    
-                    {/* The Image Wrapper */}
-                    <div className="relative z-10 w-full max-w-[420px] aspect-[4/5] drop-shadow-[0_20px_50px_rgba(0,113,227,0.25)]">
-                        <Image 
-                            src="/PeonBillete.png"
-                            alt="El fin de su preocupación operativa"
-                            fill
-                            className="object-contain transition-transform duration-1000 hover:scale-[1.03]"
-                            priority
-                        />
-                    </div>
-                </div>
-            </div>
-
-            {/* Bottom Row: Pilares Grid */}
             <div className="reveal-on-scroll">
                 <div className="flex flex-col items-center lg:items-start mb-12">
                      <h3 className="text-xl md:text-2xl font-bold tracking-widest text-[#0071e3] uppercase flex items-center gap-4">
