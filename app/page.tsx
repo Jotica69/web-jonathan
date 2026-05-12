@@ -82,28 +82,28 @@ export default function Home() {
             
             {/* TEXT COLUMN */}
             <div className="flex-1 max-w-3xl reveal-on-scroll z-20 relative">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-[1rem] bg-white/5 border border-white/10 text-blue-300 text-sm font-semibold mb-8 backdrop-blur-md shadow-lg ring-1 ring-white/5">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-[1rem] bg-white/5 border border-white/10 text-blue-300 text-sm font-semibold mb-8 backdrop-blur-md shadow-lg ring-1 ring-white/5 hero-animate-1">
                     <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
                     Barrancabermeja, Santander
                 </div>
-                <h1 className="text-[2.5rem] leading-[1.1] sm:text-4xl md:text-5xl lg:text-[56px] font-extrabold mb-6 text-white tracking-tight sm:leading-[1.08]">
+                <h1 className="text-[2.5rem] leading-[1.1] sm:text-4xl md:text-5xl lg:text-[56px] font-extrabold mb-6 text-white tracking-tight sm:leading-[1.08] hero-animate-2">
                     Automatizo negocios{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 inline-block">
                         con IA en Barrancabermeja
                     </span>
                 </h1>
                 
-                <p className="text-lg md:text-xl text-slate-300 font-medium mb-8 leading-relaxed max-w-2xl">
+                <p className="text-lg md:text-xl text-slate-300 font-medium mb-8 leading-relaxed max-w-2xl hero-animate-3">
                     Ahorras 20+ horas por semana automatizando procesos manuales en tu negocio. En menos de 15 días.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4">
-                    <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500 hover:text-white border border-emerald-500/20 px-8 py-4 rounded-full text-lg font-bold shadow-[0_0_30px_rgba(16,185,129,0.15)] hover:shadow-[0_0_40px_rgba(16,185,129,0.3)] hover:scale-[1.02] active:scale-95 transition-all group">
-                        <svg className="w-6 h-6 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                <div className="flex flex-col sm:flex-row gap-4 hero-animate-4">
+                    <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="btn-press inline-flex items-center justify-center gap-3 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500 hover:text-white border border-emerald-500/20 px-8 py-4 rounded-full text-lg font-bold shadow-[0_0_30px_rgba(16,185,129,0.15)] hover:shadow-[0_0_40px_rgba(16,185,129,0.3)] transition-all group">
+                        <svg className="w-6 h-6 fill-current group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
                         <span>Escribime por WhatsApp</span>
                     </a>
-                    <a href="/proyectos" className="inline-flex items-center justify-center gap-2 text-slate-300 hover:text-white font-semibold px-6 py-4 rounded-full border border-white/10 hover:border-white/20 transition-all text-base hover:bg-white/5">
-                        Ver proyectos reales <span className="material-symbols-outlined text-lg">arrow_forward</span>
+                    <a href="/proyectos" className="btn-press inline-flex items-center justify-center gap-2 text-slate-300 hover:text-white font-semibold px-6 py-4 rounded-full border border-white/10 hover:border-white/20 hover:bg-white/5 transition-all duration-300 text-base">
+                        Ver proyectos reales <span className="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
                     </a>
                 </div>
             </div>
@@ -148,10 +148,10 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 stagger-children">
                 {/* Tall Card 1: Pérdida por inacción */}
                 <div className="reveal-on-scroll">
-                    <div className="relative h-full flex flex-col p-10 md:p-12 bg-white/5 backdrop-blur-3xl rounded-[2.5rem] border border-white/20 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/10 transition-all duration-500 group overflow-hidden">
+                    <div className="card-lift relative h-full flex flex-col p-10 md:p-12 bg-white/5 backdrop-blur-3xl rounded-[2.5rem] border border-white/20 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/10 transition-colors duration-500 group overflow-hidden">
                         {/* Background glowing number */}
                         <div className="absolute -top-10 -right-4 text-[150px] font-black text-black/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">01</div>
                         <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-[40px] group-hover:bg-blue-400/40 transition-all duration-700"></div>
@@ -168,8 +168,8 @@ export default function Home() {
                 </div>
 
                 {/* Tall Card 2: Ceguera de datos */}
-                <div className="reveal-on-scroll" style={{ transitionDelay: '100ms' }}>
-                    <div className="relative h-full flex flex-col p-10 md:p-12 bg-gradient-to-br from-slate-900 via-[#0b1121] to-blue-950 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.2)] hover:-translate-y-2 transition-transform duration-500 group overflow-hidden">
+                <div className="reveal-on-scroll">
+                    <div className="card-lift relative h-full flex flex-col p-10 md:p-12 bg-gradient-to-br from-slate-900 via-[#0b1121] to-blue-950 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.2)] transition-all duration-500 group overflow-hidden">
                         <div className="absolute -top-10 -right-4 text-[150px] font-black text-white/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">02</div>
                         <div className="absolute bottom-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-[40px] group-hover:bg-cyan-400/20 transition-all duration-700"></div>
                         
@@ -185,8 +185,8 @@ export default function Home() {
                 </div>
 
                 {/* Tall Card 3: La pregunta incómoda */}
-                <div className="reveal-on-scroll" style={{ transitionDelay: '200ms' }}>
-                    <div className="relative h-full flex flex-col p-10 md:p-12 bg-[#0b1121]/80 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.15)] hover:-translate-y-2 transition-transform duration-500 group overflow-hidden">
+                <div className="reveal-on-scroll">
+                    <div className="card-lift relative h-full flex flex-col p-10 md:p-12 bg-[#0b1121]/80 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.15)] transition-all duration-500 group overflow-hidden">
                         <div className="absolute -top-10 -right-4 text-[150px] font-black text-white/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">03</div>
                         <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-500/10 to-transparent pointer-events-none"></div>
                         
@@ -246,9 +246,9 @@ export default function Home() {
                      </h3>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch stagger-children">
                     {/* Pilar 1: Webs */}
-                    <div className="group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                    <div className="reveal-on-scroll group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
                         {/* Imagen integrada arriba */}
                         <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[2.5rem]">
                             <Image src="/Webs de Alta Conversión.png" alt="Webs de alta conversión" fill className="object-cover object-top group-hover:scale-105 transition-transform duration-700" />
@@ -266,7 +266,7 @@ export default function Home() {
                     </div>
 
                     {/* Pilar 2: Video */}
-                    <div className="group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                    <div className="reveal-on-scroll group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
                         <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[2.5rem]">
                             <Image src="/Celular.jpg" alt="Edición de Video" fill className="object-cover object-center group-hover:scale-105 transition-transform duration-700" />
                             <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent"></div>
@@ -282,7 +282,7 @@ export default function Home() {
                     </div>
 
                     {/* Pilar 3: Datos */}
-                    <div className="group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                    <div className="reveal-on-scroll group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
                         <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[2.5rem]">
                             <Image src="/Inteligencia Ejecutiva.png" alt="Análisis de Datos" fill className="object-cover object-top group-hover:scale-105 transition-transform duration-700" />
                             <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent"></div>
@@ -322,7 +322,7 @@ export default function Home() {
                         <div className="relative z-10 p-8 md:p-10">
                             <h3 className="text-white text-3xl font-bold mb-3 tracking-tight">Soluciones Listas</h3>
                             <p className="text-slate-300 font-medium mb-6 text-lg leading-relaxed">Sistemas preconstruidos que puedes conectar hoy mismo a tu empresa.</p>
-                            <a href="/soluciones" className="inline-flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-full text-sm font-bold shadow-lg hover:bg-slate-100 hover:scale-105 transition-all">
+                            <a href="/soluciones" className="btn-press inline-flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-full text-sm font-bold shadow-lg hover:bg-slate-100 hover:scale-105 transition-all">
                                 Ver soluciones <span className="material-symbols-outlined text-base">arrow_forward</span>
                             </a>
                         </div>
@@ -330,9 +330,9 @@ export default function Home() {
                 </div>
 
                 {/* Right side: List of items */}
-                <div className="w-full flex flex-col gap-6 md:gap-8">
+                <div className="w-full flex flex-col gap-6 md:gap-8 stagger-children">
                     {/* Proyectos Banner — estilo "Tiempo que no vuelve" */}
-                    <a href="/proyectos" className="group relative flex flex-col sm:flex-row items-start sm:items-center justify-between h-full overflow-hidden bg-white/5 backdrop-blur-3xl rounded-[2.5rem] border border-white/20 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/10 transition-all duration-500 p-8 md:p-10 gap-6">
+                    <a href="/proyectos" className="reveal-on-scroll group relative flex flex-col sm:flex-row items-start sm:items-center justify-between h-full overflow-hidden bg-white/5 backdrop-blur-3xl rounded-[2.5rem] border border-white/20 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/10 transition-all duration-500 p-8 md:p-10 gap-6">
                         {/* Degradado suave */}
                         <div className="absolute inset-0 bg-gradient-to-br from-white/60 via-white/30 to-transparent pointer-events-none rounded-[2.5rem]"></div>
                         {/* Glow azul */}
@@ -351,7 +351,7 @@ export default function Home() {
                     </a>
 
                     {/* Testimonios Banner — estilo "Decisiones a ciegas" */}
-                    <a href="/testimonios" className="group relative flex flex-col sm:flex-row items-start sm:items-center justify-between h-full overflow-hidden bg-gradient-to-br from-slate-900 via-[#0b1121] to-blue-950 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.2)] hover:-translate-y-2 transition-transform duration-500 p-8 md:p-10 gap-6">
+                    <a href="/testimonios" className="reveal-on-scroll group relative flex flex-col sm:flex-row items-start sm:items-center justify-between h-full overflow-hidden bg-gradient-to-br from-slate-900 via-[#0b1121] to-blue-950 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.2)] hover:-translate-y-2 transition-transform duration-500 p-8 md:p-10 gap-6">
                         {/* Degradado suave */}
                         <div className="absolute inset-0 bg-gradient-to-br from-slate-800/40 via-[#0b1121]/20 to-blue-950/40 pointer-events-none rounded-[2.5rem]"></div>
                         {/* Glow cyan */}
@@ -389,14 +389,14 @@ export default function Home() {
             </div>
 
             {/* Grid principal con alineación perfecta */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 reveal-on-scroll relative">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 reveal-on-scroll relative stagger-children">
                 {/* Línea conectora animada (solo desktop). top-6 (24px) pasa exactamente por el centro del círculo de 48px */}
                 <div className="hidden lg:block absolute top-6 left-[12.5%] w-[75%] h-[2px] bg-slate-200/60 rounded-full overflow-hidden">
                     <div className="w-full h-full bg-gradient-to-r from-transparent via-[#2b8cee] to-transparent opacity-60 animate-[shimmer_3s_infinite]"></div>
                 </div>
 
                 {/* Fase 1 */}
-                <div className="flex flex-col items-center h-full group" style={{ transitionDelay: '0ms' }}>
+                <div className="reveal-on-scroll flex flex-col items-center h-full group">
                     {/* Número centrado, mismo tamaño en todos los breakpoints */}
                     <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500 mb-6 lg:mb-8">
                         <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
@@ -421,7 +421,7 @@ export default function Home() {
                 </div>
 
                 {/* Fase 2 */}
-                <div className="flex flex-col items-center h-full group" style={{ transitionDelay: '150ms' }}>
+                <div className="reveal-on-scroll flex flex-col items-center h-full group">
                     <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500 mb-6 lg:mb-8">
                         <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
                             <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">2</span>
@@ -444,7 +444,7 @@ export default function Home() {
                 </div>
 
                 {/* Fase 3 */}
-                <div className="flex flex-col items-center h-full group" style={{ transitionDelay: '300ms' }}>
+                <div className="reveal-on-scroll flex flex-col items-center h-full group">
                     <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500 mb-6 lg:mb-8">
                         <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
                             <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">3</span>
@@ -467,7 +467,7 @@ export default function Home() {
                 </div>
 
                 {/* Fase 4 */}
-                <div className="flex flex-col items-center h-full group" style={{ transitionDelay: '450ms' }}>
+                <div className="reveal-on-scroll flex flex-col items-center h-full group">
                     <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500 mb-6 lg:mb-8">
                         <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
                             <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">4</span>
@@ -586,7 +586,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 tracking-tight">¿Empezamos?</h2>
             <p className="text-lg md:text-xl text-slate-600 mb-8 font-medium">Contame tu problema por WhatsApp y te envío una propuesta en <strong className="text-slate-900">24 horas</strong>.</p>
             
-            <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-4 bg-emerald-50 text-emerald-600 hover:bg-emerald-500 hover:text-white border border-emerald-200 px-10 py-5 rounded-full text-xl font-bold shadow-[0_12px_40px_rgba(16,185,129,0.15)] hover:shadow-[0_12px_40px_rgba(16,185,129,0.3)] hover:scale-[1.02] active:scale-95 transition-all mb-8 group">
+            <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="btn-press inline-flex items-center justify-center gap-4 bg-emerald-50 text-emerald-600 hover:bg-emerald-500 hover:text-white border border-emerald-200 px-10 py-5 rounded-full text-xl font-bold shadow-[0_12px_40px_rgba(16,185,129,0.15)] hover:shadow-[0_12px_40px_rgba(16,185,129,0.3)] hover:scale-[1.02] transition-all mb-8 group">
                 <svg className="w-8 h-8 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
                 Escribime por WhatsApp
             </a>
