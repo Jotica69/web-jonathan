@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-1: 210 80% 55%;
+    --color-2: 190 80% 53%;
+    --color-3: 220 70% 40%;
+    --color-4: 210 40% 85%;
+    --color-5: 200 70% 45%;
+  }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: #030014; }
