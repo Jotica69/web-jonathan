@@ -4,6 +4,9 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { GlassEffect, GlassFilter } from '@/components/ui/liquid-glass';
 import { MessageSquare, Lightbulb, Rocket, TrendingUp } from 'lucide-react';
+import { BlurredStagger } from '@/components/ui/blurred-stagger-text';
+import { BlurFade } from '@/components/ui/blur-fade';
+import { TextScramble } from '@/components/ui/text-scramble';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -55,8 +58,8 @@ export default function Home() {
                     </button>
                 </div>
             </div>
+
         </div>
-        
         {mobileMenuOpen && (
             <div className="md:hidden glass-dark absolute top-full mt-4 w-full left-0 rounded-2xl border border-white/10 shadow-2xl overflow-hidden p-2">
                 <div className="px-2 pt-2 pb-4 space-y-1 bg-[#0b1121]/90 rounded-xl backdrop-blur-2xl">
@@ -81,35 +84,44 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-8 mt-10 md:mt-12">
             
             {/* TEXT COLUMN */}
-            <div className="flex-1 max-w-3xl reveal-on-scroll z-20 relative">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-[1rem] bg-white/5 border border-white/10 text-blue-300 text-sm font-semibold mb-8 backdrop-blur-md shadow-lg ring-1 ring-white/5 hero-animate-1">
-                    <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-                    Barrancabermeja, Santander
+            <div className="flex-1 max-w-3xl z-20 relative">
+                <BlurFade delay={0.1} className="mb-8">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-[1rem] bg-white/5 border border-white/10 text-blue-300 text-sm font-semibold backdrop-blur-md shadow-lg ring-1 ring-white/5">
+                        <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                        <TextScramble className="text-sm font-semibold text-blue-300" duration={1.2} speed={0.03}>
+                            Barrancabermeja, Santander
+                        </TextScramble>
+                    </div>
+                </BlurFade>
+
+                <div className="mb-6">
+                    <BlurredStagger
+                        text="Automatizo negocios con IA en Barrancabermeja"
+                        className="text-[2.5rem] leading-[1.1] sm:text-4xl md:text-5xl lg:text-[56px] font-extrabold text-white tracking-tight sm:leading-[1.08]"
+                    />
                 </div>
-                <h1 className="text-[2.5rem] leading-[1.1] sm:text-4xl md:text-5xl lg:text-[56px] font-extrabold mb-6 text-white tracking-tight sm:leading-[1.08] hero-animate-2">
-                    Automatizo negocios{" "}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 inline-block">
-                        con IA en Barrancabermeja
-                    </span>
-                </h1>
-                
-                <p className="text-lg md:text-xl text-slate-300 font-medium mb-8 leading-relaxed max-w-2xl hero-animate-3">
-                    Ahorras 20+ horas por semana automatizando procesos manuales en tu negocio. En menos de 15 días.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-4 hero-animate-4">
-                    <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="btn-press inline-flex items-center justify-center gap-3 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500 hover:text-white border border-emerald-500/20 px-8 py-4 rounded-full text-lg font-bold shadow-[0_0_30px_rgba(16,185,129,0.15)] hover:shadow-[0_0_40px_rgba(16,185,129,0.3)] transition-all group">
-                        <svg className="w-6 h-6 fill-current group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-                        <span>Escribime por WhatsApp</span>
-                    </a>
-                    <a href="/proyectos" className="btn-press inline-flex items-center justify-center gap-2 text-slate-300 hover:text-white font-semibold px-6 py-4 rounded-full border border-white/10 hover:border-white/20 hover:bg-white/5 transition-all duration-300 text-base">
-                        Ver proyectos reales <span className="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
-                    </a>
-                </div>
+
+                <BlurFade delay={0.5} className="mb-8">
+                    <p className="text-lg md:text-xl text-slate-300 font-medium leading-relaxed max-w-2xl">
+                        Ahorras 20+ horas por semana automatizando procesos manuales en tu negocio. En menos de 15 días.
+                    </p>
+                </BlurFade>
+
+                <BlurFade delay={0.7}>
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/573223663275" target="_blank" rel="noopener noreferrer" className="btn-press inline-flex items-center justify-center gap-3 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500 hover:text-white border border-emerald-500/20 px-8 py-4 rounded-full text-lg font-bold shadow-[0_0_30px_rgba(16,185,129,0.15)] hover:shadow-[0_0_40px_rgba(16,185,129,0.3)] transition-all group">
+                            <svg className="w-6 h-6 fill-current group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                            <span>Escribime por WhatsApp</span>
+                        </a>
+                        <a href="/proyectos" className="btn-press inline-flex items-center justify-center gap-2 text-slate-300 hover:text-white font-semibold px-6 py-4 rounded-full border border-white/10 hover:border-white/20 hover:bg-white/5 transition-all duration-300 text-base">
+                            Ver proyectos reales <span className="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                        </a>
+                    </div>
+                </BlurFade>
             </div>
 
             {/* IMAGE COLUMN */}
-            <div className="flex-1 w-full relative reveal-on-scroll flex justify-center lg:justify-end mt-10 lg:mt-0">
+            <BlurFade delay={0.3} className="flex-1 w-full relative flex justify-center lg:justify-end mt-10 lg:mt-0">
                 {/* Splendor Azul Behind Image */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[#0071e3]/40 rounded-full blur-[100px] pointer-events-none z-0 mix-blend-screen animate-pulse"></div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] bg-cyan-400/30 rounded-full blur-[80px] pointer-events-none z-0"></div>
@@ -123,7 +135,7 @@ export default function Home() {
                         priority
                     />
                 </div>
-            </div>
+            </BlurFade>
 
         </div>
       </section>
@@ -139,18 +151,18 @@ export default function Home() {
         <div className="absolute top-[40%] left-[20%] w-[500px] h-[500px] bg-cyan-400/10 rounded-full blur-[100px] pointer-events-none animate-blob animation-delay-4000"></div>
 
         <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10">
-            <div className="text-center max-w-4xl mx-auto mb-20 reveal-on-scroll">
+            <BlurFade className="text-center max-w-4xl mx-auto mb-20">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-8 text-[#1d1d1f] tracking-tighter leading-tight">
                     Lo que hoy haces a mano, <br className="hidden md:block" />mañana se hace solo.
                 </h2>
                 <div className="text-lg md:text-xl text-[#0071e3] font-medium leading-relaxed space-y-4 max-w-3xl mx-auto">
                     <p className="text-blue-900/60 text-base md:text-lg">Las tareas manuales están frenando tu crecimiento. Al implementar sistemas de Inteligencia Artificial, eliminas los cuellos de botella operativos y liberas tiempo para enfocarte en lo que realmente importa: vender y escalar.</p>
                 </div>
-            </div>
+            </BlurFade>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 stagger-children">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
                 {/* Tall Card 1: Pérdida por inacción */}
-                <div className="reveal-on-scroll">
+                <BlurFade delay={0.1}>
                     <div className="card-lift relative h-full flex flex-col p-10 md:p-12 bg-white/5 backdrop-blur-3xl rounded-[2.5rem] border border-white/20 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/10 transition-colors duration-500 group overflow-hidden">
                         {/* Background glowing number */}
                         <div className="absolute -top-10 -right-4 text-[150px] font-black text-black/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">01</div>
@@ -165,10 +177,10 @@ export default function Home() {
                             <p className="text-slate-600 text-base lg:text-[17px] leading-relaxed font-medium">Cada tarea que sigues haciendo a mano es tiempo valioso que <span className="text-[#0071e3] font-bold">podrías estar usando para vender más</span>. Y mientras tanto, la competencia ya automatizó sus procesos.</p>
                         </div>
                     </div>
-                </div>
+                </BlurFade>
 
                 {/* Tall Card 2: Ceguera de datos */}
-                <div className="reveal-on-scroll">
+                <BlurFade delay={0.2}>
                     <div className="card-lift relative h-full flex flex-col p-10 md:p-12 bg-gradient-to-br from-slate-900 via-[#0b1121] to-blue-950 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.2)] transition-all duration-500 group overflow-hidden">
                         <div className="absolute -top-10 -right-4 text-[150px] font-black text-white/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">02</div>
                         <div className="absolute bottom-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-[40px] group-hover:bg-cyan-400/20 transition-all duration-700"></div>
@@ -182,10 +194,10 @@ export default function Home() {
                             <p className="text-slate-300 text-base lg:text-[17px] leading-relaxed font-medium">Si no sabes cuál es tu producto estrella, cuánto vendiste esta semana o cuántos clientes perdiste, estás adivinando. Y adivinar es la forma más cara de gestionar un negocio.</p>
                         </div>
                     </div>
-                </div>
+                </BlurFade>
 
                 {/* Tall Card 3: La pregunta incómoda */}
-                <div className="reveal-on-scroll">
+                <BlurFade delay={0.3}>
                     <div className="card-lift relative h-full flex flex-col p-10 md:p-12 bg-[#0b1121]/80 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.15)] transition-all duration-500 group overflow-hidden">
                         <div className="absolute -top-10 -right-4 text-[150px] font-black text-white/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">03</div>
                         <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-500/10 to-transparent pointer-events-none"></div>
@@ -199,7 +211,7 @@ export default function Home() {
                             <p className="text-slate-300 text-base lg:text-[17px] leading-relaxed font-medium">Si tú no estás presente, ¿tu negocio sigue funcionando? Si la respuesta es no, no tienes una empresa estructurada, tienes un empleo que tú mismo te creaste.</p>
                         </div>
                     </div>
-                </div>
+                </BlurFade>
             </div>
         </div>
       </section>
@@ -221,12 +233,12 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/50 z-10"></div>
             {/* Texto centrado sobre el video */}
             <div className="absolute inset-0 z-20 flex items-center justify-center px-6">
-                <div className="reveal-on-scroll text-center">
+                <BlurFade className="text-center">
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tighter leading-tight drop-shadow-lg">
                         Operación sin esfuerzo.<br className="hidden md:block" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-200">Sistemas que trabajan por ti.</span>
                     </h2>
-                </div>
+                </BlurFade>
             </div>
         </div>
       </section>
@@ -238,17 +250,18 @@ export default function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#0071e31a_1px,transparent_1px),linear-gradient(to_bottom,#0071e31a_1px,transparent_1px)] bg-[size:40px_40px] opacity-[0.35] mix-blend-multiply pointer-events-none"></div>
 
         <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10">
-            <div className="reveal-on-scroll">
+            <BlurFade>
                 <div className="flex flex-col items-center lg:items-start mb-12">
                      <h3 className="text-xl md:text-2xl font-bold tracking-widest text-[#0071e3] uppercase flex items-center gap-4">
                          <span className="w-12 h-1 bg-gradient-to-r from-[#0071e3] to-cyan-400 rounded-full"></span>
                          Servicios complementarios
                      </h3>
                 </div>
+            </BlurFade>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch stagger-children">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch">
                     {/* Pilar 1: Webs */}
-                    <div className="reveal-on-scroll group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                    <BlurFade delay={0.1} className="group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
                         {/* Imagen integrada arriba */}
                         <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[2.5rem]">
                             <Image src="/Webs de Alta Conversión.png" alt="Webs de alta conversión" fill className="object-cover object-top group-hover:scale-105 transition-transform duration-700" />
@@ -263,10 +276,10 @@ export default function Home() {
                             <h4 className="text-xl md:text-[22px] font-extrabold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Webs de alta conversión</h4>
                             <p className="text-slate-600 text-[15px] leading-relaxed font-medium">Páginas rápidas para que tus clientes te encuentren en Google y <span className="text-[#2b8cee] font-bold">te compren sin dar tantas vueltas</span>.</p>
                         </div>
-                    </div>
+                    </BlurFade>
 
                     {/* Pilar 2: Video */}
-                    <div className="reveal-on-scroll group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                    <BlurFade delay={0.2} className="group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
                         <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[2.5rem]">
                             <Image src="/Celular.jpg" alt="Edición de Video" fill className="object-cover object-center group-hover:scale-105 transition-transform duration-700" />
                             <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent"></div>
@@ -279,10 +292,10 @@ export default function Home() {
                             <h4 className="text-xl md:text-[22px] font-extrabold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Edición de Video</h4>
                             <p className="text-slate-600 text-[15px] leading-relaxed font-medium">Reels y TikToks editados para enganchar. <span className="text-[#2b8cee] font-bold">Vende más</span> con el mismo Instagram que ya tienes.</p>
                         </div>
-                    </div>
+                    </BlurFade>
 
                     {/* Pilar 3: Datos */}
-                    <div className="reveal-on-scroll group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                    <BlurFade delay={0.3} className="group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
                         <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[2.5rem]">
                             <Image src="/Inteligencia Ejecutiva.png" alt="Análisis de Datos" fill className="object-cover object-top group-hover:scale-105 transition-transform duration-700" />
                             <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent"></div>
@@ -295,11 +308,9 @@ export default function Home() {
                             <h4 className="text-xl md:text-[22px] font-extrabold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Análisis de Datos</h4>
                             <p className="text-slate-600 text-[15px] leading-relaxed font-medium">Paneles visuales donde ves <span className="text-[#2b8cee] font-bold">qué se vende, cuándo y a quién</span>. Decides con números, no con suposiciones.</p>
                         </div>
-                    </div>
+                    </BlurFade>
                 </div>
             </div>
-
-        </div>
       </section>
 
       {/* EXPLORA MI ECOSISTEMA */}
