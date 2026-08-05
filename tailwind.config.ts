@@ -19,7 +19,8 @@ const config: Config = {
         "color-5": "hsl(var(--color-5))",
       },
       fontFamily: {
-        display: ["Inter", "sans-serif"]
+        display: ["var(--font-space-grotesk)", "sans-serif"],
+        editorial: ["var(--font-instrument-serif)", "serif"]
       },
       keyframes: {
         "gradient-border": {

@@ -18,7 +18,7 @@ export default function TestimoniosPage() {
     <>
       <GlassFilter />
       {/* Nav */}
-      <nav className="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50 glass-dark !bg-[#0b1121]/70 backdrop-blur-xl border border-white/10 rounded-[2rem] shadow-2xl">
+      <nav className="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50 rounded-[1.75rem] border border-white/10 bg-[#0b1121]/80 shadow-[0_24px_80px_-40px_rgba(7,11,20,0.9)] backdrop-blur-2xl">
         <div className="px-5 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16 md:h-20 items-center">
                 <Link href="/" className="flex items-center gap-2 cursor-pointer transition-transform hover:scale-105">
@@ -43,7 +43,7 @@ export default function TestimoniosPage() {
                 Testimonios
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white tracking-tighter">
-                Lo que dicen mis <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">clientes</span>
+                Lo que dicen mis <span className="text-cyan-200">clientes</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 font-medium max-w-2xl mx-auto leading-relaxed mb-12">
                 Próximamente encontrarás aquí las experiencias reales de empresarios locales que ya automatizaron sus procesos y recuperaron su tiempo.
