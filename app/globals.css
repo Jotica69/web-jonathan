@@ -10,6 +10,15 @@
     --color-4: 210 40% 85%;
     --color-5: 200 70% 45%;
   }
+
+  :focus-visible {
+    outline: 3px solid rgba(0, 113, 227, 0.55);
+    outline-offset: 3px;
+  }
+
+  section[id] {
+    scroll-margin-top: 96px;
+  }
 }
 
 /* Custom scrollbar */

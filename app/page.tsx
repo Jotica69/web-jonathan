@@ -77,7 +77,7 @@ export default function Home() {
         )}
       </nav>
 
-      <section className="relative pt-20 pb-20 lg:pt-28 lg:pb-32 bg-hero-dark overflow-hidden text-left z-0 flex flex-col justify-center min-h-[90vh] lg:min-h-screen">
+      <section id="contenido" className="relative pt-20 pb-20 lg:pt-28 lg:pb-32 bg-hero-dark overflow-hidden text-left z-0 flex flex-col justify-center min-h-[90dvh] lg:min-h-dvh">
         <div className="vertical-lines"></div>
         <div className="absolute top-1/4 left-0 w-[600px] h-[600px] border-t-2 border-dashed border-white/10 rounded-[100%] pointer-events-none opacity-50"></div>
         
@@ -148,7 +148,7 @@ export default function Home() {
         
         {/* Animated Blue/Purple Glows */}
         <div className="absolute top-[-10%] right-[-5%] w-[800px] h-[800px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none animate-blob"></div>
-        <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-[#9B51E0]/10 rounded-full blur-[100px] pointer-events-none animate-blob animation-delay-2000"></div>
+        <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none animate-blob animation-delay-2000"></div>
         <div className="absolute top-[40%] left-[20%] w-[500px] h-[500px] bg-cyan-400/10 rounded-full blur-[100px] pointer-events-none animate-blob animation-delay-4000"></div>
 
         <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10">
@@ -164,18 +164,18 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
                 {/* Tall Card 1: Pérdida por inacción */}
                 <BlurFade delay={0.1}>
-                    <div className="card-lift relative h-full flex flex-col p-10 md:p-12 bg-white/5 backdrop-blur-3xl rounded-[2.5rem] border border-white/20 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/10 transition-colors duration-500 group overflow-hidden">
+                    <div className="card-lift relative h-full flex flex-col p-10 md:p-12 bg-[#0b1121]/80 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.15)] transition-all duration-500 group overflow-hidden">
                         {/* Background glowing number */}
-                        <div className="absolute -top-10 -right-4 text-[150px] font-black text-black/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">01</div>
+                        <div className="absolute top-2 right-4 text-[150px] font-black leading-none text-white/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">01</div>
                         <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-[40px] group-hover:bg-blue-400/40 transition-all duration-700"></div>
                         
-                        <div className="w-16 h-16 rounded-[1.2rem] bg-gradient-to-br from-blue-100 to-white flex items-center justify-center shadow-lg border border-white/50 mb-auto relative z-10">
-                            <span className="material-symbols-outlined text-blue-600 text-3xl">timer_off</span>
+                        <div className="w-16 h-16 rounded-[1.2rem] bg-white/5 flex items-center justify-center shadow-lg border border-white/10 mb-auto relative z-10 backdrop-blur-md">
+                            <span className="material-symbols-outlined text-blue-400 text-3xl">timer_off</span>
                         </div>
                         
                         <div className="mt-16 relative z-10">
-                            <h3 className="text-2xl lg:text-3xl font-bold mb-5 text-[#1d1d1f] tracking-tight">Tiempo que no vuelve</h3>
-                            <p className="text-slate-600 text-base lg:text-[17px] leading-relaxed font-medium">Cada tarea que sigues haciendo a mano es tiempo valioso que <span className="text-[#0071e3] font-bold">podrías estar usando para vender más</span>. Y mientras tanto, la competencia ya automatizó sus procesos.</p>
+                            <h3 className="text-2xl lg:text-3xl font-bold mb-5 text-white tracking-tight">Tiempo que no vuelve</h3>
+                            <p className="text-slate-300 text-base lg:text-[17px] leading-relaxed font-medium">Cada tarea que sigues haciendo a mano es tiempo valioso que <span className="text-[#0071e3] font-bold">podrías estar usando para vender más</span>. Y mientras tanto, la competencia ya automatizó sus procesos.</p>
                         </div>
                     </div>
                 </BlurFade>
@@ -183,7 +183,7 @@ export default function Home() {
                 {/* Tall Card 2: Ceguera de datos */}
                 <BlurFade delay={0.2}>
                     <div className="card-lift relative h-full flex flex-col p-10 md:p-12 bg-gradient-to-br from-slate-900 via-[#0b1121] to-blue-950 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.2)] transition-all duration-500 group overflow-hidden">
-                        <div className="absolute -top-10 -right-4 text-[150px] font-black text-white/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">02</div>
+                        <div className="absolute top-2 right-4 text-[150px] font-black leading-none text-white/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">02</div>
                         <div className="absolute bottom-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-[40px] group-hover:bg-cyan-400/20 transition-all duration-700"></div>
                         
                         <div className="w-16 h-16 rounded-[1.2rem] bg-white/5 flex items-center justify-center shadow-lg border border-white/10 mb-auto relative z-10 backdrop-blur-md">
@@ -200,7 +200,7 @@ export default function Home() {
                 {/* Tall Card 3: La pregunta incómoda */}
                 <BlurFade delay={0.3}>
                     <div className="card-lift relative h-full flex flex-col p-10 md:p-12 bg-[#0b1121]/80 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.15)] transition-all duration-500 group overflow-hidden">
-                        <div className="absolute -top-10 -right-4 text-[150px] font-black text-white/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">03</div>
+                        <div className="absolute top-2 right-4 text-[150px] font-black leading-none text-white/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">03</div>
                         <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-500/10 to-transparent pointer-events-none"></div>
                         
                         <div className="w-16 h-16 rounded-[1.2rem] bg-white/5 flex items-center justify-center shadow-lg border border-white/10 mb-auto relative z-10 backdrop-blur-md">

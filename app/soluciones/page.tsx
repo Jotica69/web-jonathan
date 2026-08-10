@@ -35,7 +35,7 @@ export default function SolucionesPage() {
       </nav>
 
       {/* Hero */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-hero-dark relative overflow-hidden">
+      <section id="contenido" className="pt-32 pb-16 md:pt-40 md:pb-24 bg-hero-dark relative overflow-hidden">
         <div className="vertical-lines"></div>
         <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-blue-500/15 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10 text-center reveal-on-scroll">

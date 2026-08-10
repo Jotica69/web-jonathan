@@ -35,7 +35,7 @@ export default function TestimoniosPage() {
       </nav>
 
       {/* Hero */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-[#0b1121] relative overflow-hidden min-h-screen flex flex-col justify-center">
+      <section id="contenido" className="pt-32 pb-16 md:pt-40 md:pb-24 bg-[#0b1121] relative overflow-hidden min-h-dvh flex flex-col justify-center">
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-600/5 rounded-full blur-[150px] pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-500/5 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10 text-center reveal-on-scroll">
