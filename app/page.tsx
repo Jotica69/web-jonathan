@@ -161,51 +161,55 @@ export default function Home() {
                 </div>
             </BlurFade>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
-                {/* Card 1: Pérdida por inacción */}
-                <BlurFade delay={0.1} className="h-full">
-                    <div className="card-lift relative h-full flex flex-col p-8 md:p-10 bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_24px_60px_-32px_rgba(15,42,86,0.25)] transition-colors duration-500 group overflow-hidden">
-                        <div className="flex items-center justify-between mb-12">
-                            <div className="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center shadow-sm">
-                                <span className="material-symbols-outlined text-[#0071e3] text-3xl">timer_off</span>
-                            </div>
-                            <span className="text-sm font-bold tracking-widest text-slate-300">01</span>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+                {/* Tall Card 1: Pérdida por inacción */}
+                <BlurFade delay={0.1}>
+                    <div className="card-lift relative h-full flex flex-col p-10 md:p-12 bg-white/5 backdrop-blur-3xl rounded-[2.5rem] border border-white/20 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/10 transition-colors duration-500 group overflow-hidden">
+                        {/* Background glowing number */}
+                        <div className="absolute -top-10 -right-4 text-[150px] font-black text-black/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">01</div>
+                        <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-[40px] group-hover:bg-blue-400/40 transition-all duration-700"></div>
+                        
+                        <div className="w-16 h-16 rounded-[1.2rem] bg-gradient-to-br from-blue-100 to-white flex items-center justify-center shadow-lg border border-white/50 mb-auto relative z-10">
+                            <span className="material-symbols-outlined text-blue-600 text-3xl">timer_off</span>
                         </div>
-                        <div className="mt-auto">
-                            <h3 className="text-2xl font-bold mb-4 text-[#1d1d1f] tracking-tight">Tiempo que no vuelve</h3>
+                        
+                        <div className="mt-16 relative z-10">
+                            <h3 className="text-2xl lg:text-3xl font-bold mb-5 text-[#1d1d1f] tracking-tight">Tiempo que no vuelve</h3>
                             <p className="text-slate-600 text-base lg:text-[17px] leading-relaxed font-medium">Cada tarea que sigues haciendo a mano es tiempo valioso que <span className="text-[#0071e3] font-bold">podrías estar usando para vender más</span>. Y mientras tanto, la competencia ya automatizó sus procesos.</p>
                         </div>
                     </div>
                 </BlurFade>
 
-                {/* Card 2: Ceguera de datos (acento oscuro central) */}
-                <BlurFade delay={0.2} className="h-full">
-                    <div className="card-lift relative h-full flex flex-col p-8 md:p-10 bg-[#0b1121] rounded-[2rem] border border-[#0b1121] shadow-[0_24px_60px_-28px_rgba(11,17,33,0.55)] transition-colors duration-500 group overflow-hidden">
-                        <div className="flex items-center justify-between mb-12">
-                            <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center">
-                                <span className="material-symbols-outlined text-cyan-300 text-3xl">visibility_off</span>
-                            </div>
-                            <span className="text-sm font-bold tracking-widest text-white/25">02</span>
+                {/* Tall Card 2: Ceguera de datos */}
+                <BlurFade delay={0.2}>
+                    <div className="card-lift relative h-full flex flex-col p-10 md:p-12 bg-gradient-to-br from-slate-900 via-[#0b1121] to-blue-950 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.2)] transition-all duration-500 group overflow-hidden">
+                        <div className="absolute -top-10 -right-4 text-[150px] font-black text-white/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">02</div>
+                        <div className="absolute bottom-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-[40px] group-hover:bg-cyan-400/20 transition-all duration-700"></div>
+                        
+                        <div className="w-16 h-16 rounded-[1.2rem] bg-white/5 flex items-center justify-center shadow-lg border border-white/10 mb-auto relative z-10 backdrop-blur-md">
+                            <span className="material-symbols-outlined text-cyan-300 text-3xl">visibility_off</span>
                         </div>
-                        <div className="mt-auto">
-                            <h3 className="text-2xl font-bold mb-4 text-white tracking-tight">Decisiones a ciegas</h3>
+                        
+                        <div className="mt-16 relative z-10">
+                            <h3 className="text-2xl lg:text-3xl font-bold mb-5 text-white tracking-tight">Decisiones a ciegas</h3>
                             <p className="text-slate-300 text-base lg:text-[17px] leading-relaxed font-medium">Si no sabes cuál es tu producto estrella, cuánto vendiste esta semana o cuántos clientes perdiste, estás adivinando. Y adivinar es la forma más cara de gestionar un negocio.</p>
                         </div>
                     </div>
                 </BlurFade>
 
-                {/* Card 3: La pregunta incómoda */}
-                <BlurFade delay={0.3} className="h-full">
-                    <div className="card-lift relative h-full flex flex-col p-8 md:p-10 bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_24px_60px_-32px_rgba(15,42,86,0.25)] transition-colors duration-500 group overflow-hidden">
-                        <div className="flex items-center justify-between mb-12">
-                            <div className="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center shadow-sm">
-                                <span className="material-symbols-outlined text-[#0071e3] text-3xl">account_tree</span>
-                            </div>
-                            <span className="text-sm font-bold tracking-widest text-slate-300">03</span>
+                {/* Tall Card 3: La pregunta incómoda */}
+                <BlurFade delay={0.3}>
+                    <div className="card-lift relative h-full flex flex-col p-10 md:p-12 bg-[#0b1121]/80 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.15)] transition-all duration-500 group overflow-hidden">
+                        <div className="absolute -top-10 -right-4 text-[150px] font-black text-white/5 pointer-events-none group-hover:scale-110 transition-transform duration-700">03</div>
+                        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-500/10 to-transparent pointer-events-none"></div>
+                        
+                        <div className="w-16 h-16 rounded-[1.2rem] bg-white/5 flex items-center justify-center shadow-lg border border-white/10 mb-auto relative z-10 backdrop-blur-md">
+                            <span className="material-symbols-outlined text-blue-400 text-3xl">account_tree</span>
                         </div>
-                        <div className="mt-auto">
-                            <h3 className="text-2xl font-bold mb-4 text-[#1d1d1f] tracking-tight">Tu negocio depende de ti</h3>
-                            <p className="text-slate-600 text-base lg:text-[17px] leading-relaxed font-medium">Si tú no estás presente, ¿tu negocio sigue funcionando? Si la respuesta es no, no tienes una empresa estructurada, tienes un empleo que tú mismo te creaste.</p>
+                        
+                        <div className="mt-16 relative z-10">
+                            <h3 className="text-2xl lg:text-3xl font-bold mb-5 text-white tracking-tight">Tu negocio depende de ti</h3>
+                            <p className="text-slate-300 text-base lg:text-[17px] leading-relaxed font-medium">Si tú no estás presente, ¿tu negocio sigue funcionando? Si la respuesta es no, no tienes una empresa estructurada, tienes un empleo que tú mismo te creaste.</p>
                         </div>
                     </div>
                 </BlurFade>
@@ -233,7 +237,7 @@ export default function Home() {
                 <BlurFade className="text-center">
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tighter leading-tight drop-shadow-lg">
                         Operación sin esfuerzo.<br className="hidden md:block" />
-                        <span className="text-cyan-200">Sistemas que trabajan por ti.</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-200">Sistemas que trabajan por ti.</span>
                     </h2>
                 </BlurFade>
             </div>
@@ -258,44 +262,52 @@ export default function Home() {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch">
                     {/* Pilar 1: Webs */}
-                    <BlurFade delay={0.1} className="group relative w-full flex flex-col h-full bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_24px_60px_-32px_rgba(15,42,86,0.22)] hover:shadow-[0_28px_70px_-30px_rgba(0,113,227,0.3)] hover:-translate-y-1.5 transition-all duration-500 overflow-hidden">
-                        <div className="relative w-full aspect-[16/10] overflow-hidden">
+                    <BlurFade delay={0.1} className="group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                        {/* Imagen integrada arriba */}
+                        <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[2.5rem]">
                             <Image src="/Webs de Alta Conversión.png" alt="Webs de alta conversión" fill className="object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent"></div>
                         </div>
-                        <div className="relative z-10 p-8 flex flex-col flex-1">
-                            <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
-                                <span className="material-symbols-outlined text-[#0071e3] text-2xl">rocket_launch</span>
+
+                        {/* Contenido */}
+                        <div className="relative z-10 p-8 md:p-10 flex flex-col flex-1">
+                            <div className="w-14 h-14 rounded-[1.2rem] bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center shadow-sm border border-white/60 mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <span className="material-symbols-outlined text-[#2b8cee] text-2xl">rocket_launch</span>
                             </div>
-                            <h4 className="text-xl md:text-[22px] font-bold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Webs de alta conversión</h4>
-                            <p className="text-slate-600 text-[15px] leading-relaxed font-medium">Páginas rápidas para que tus clientes te encuentren en Google y <span className="text-[#0071e3] font-bold">te compren sin dar tantas vueltas</span>.</p>
+                            <h4 className="text-xl md:text-[22px] font-extrabold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Webs de alta conversión</h4>
+                            <p className="text-slate-600 text-[15px] leading-relaxed font-medium">Páginas rápidas para que tus clientes te encuentren en Google y <span className="text-[#2b8cee] font-bold">te compren sin dar tantas vueltas</span>.</p>
                         </div>
                     </BlurFade>
 
                     {/* Pilar 2: Video */}
-                    <BlurFade delay={0.2} className="group relative w-full flex flex-col h-full bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_24px_60px_-32px_rgba(15,42,86,0.22)] hover:shadow-[0_28px_70px_-30px_rgba(0,113,227,0.3)] hover:-translate-y-1.5 transition-all duration-500 overflow-hidden">
-                        <div className="relative w-full aspect-[16/10] overflow-hidden">
+                    <BlurFade delay={0.2} className="group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                        <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[2.5rem]">
                             <Image src="/Celular.jpg" alt="Edición de Video" fill className="object-cover object-center group-hover:scale-105 transition-transform duration-700" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent"></div>
                         </div>
-                        <div className="relative z-10 p-8 flex flex-col flex-1">
-                            <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
-                                <span className="material-symbols-outlined text-[#0071e3] text-2xl">movie_edit</span>
+
+                        <div className="relative z-10 p-8 md:p-10 flex flex-col flex-1">
+                            <div className="w-14 h-14 rounded-[1.2rem] bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center shadow-sm border border-white/60 mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <span className="material-symbols-outlined text-[#2b8cee] text-2xl">movie_edit</span>
                             </div>
-                            <h4 className="text-xl md:text-[22px] font-bold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Edición de Video</h4>
-                            <p className="text-slate-600 text-[15px] leading-relaxed font-medium">Reels y TikToks editados para enganchar. <span className="text-[#0071e3] font-bold">Vende más</span> con el mismo Instagram que ya tienes.</p>
+                            <h4 className="text-xl md:text-[22px] font-extrabold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Edición de Video</h4>
+                            <p className="text-slate-600 text-[15px] leading-relaxed font-medium">Reels y TikToks editados para enganchar. <span className="text-[#2b8cee] font-bold">Vende más</span> con el mismo Instagram que ya tienes.</p>
                         </div>
                     </BlurFade>
 
                     {/* Pilar 3: Datos */}
-                    <BlurFade delay={0.3} className="group relative w-full flex flex-col h-full bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_24px_60px_-32px_rgba(15,42,86,0.22)] hover:shadow-[0_28px_70px_-30px_rgba(0,113,227,0.3)] hover:-translate-y-1.5 transition-all duration-500 overflow-hidden">
-                        <div className="relative w-full aspect-[16/10] overflow-hidden">
+                    <BlurFade delay={0.3} className="group relative w-full flex flex-col h-full bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                        <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[2.5rem]">
                             <Image src="/Inteligencia Ejecutiva.png" alt="Análisis de Datos" fill className="object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent"></div>
                         </div>
-                        <div className="relative z-10 p-8 flex flex-col flex-1">
-                            <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
-                                <span className="material-symbols-outlined text-[#0071e3] text-2xl">query_stats</span>
+
+                        <div className="relative z-10 p-8 md:p-10 flex flex-col flex-1">
+                            <div className="w-14 h-14 rounded-[1.2rem] bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center shadow-sm border border-white/60 mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <span className="material-symbols-outlined text-[#2b8cee] text-2xl">query_stats</span>
                             </div>
-                            <h4 className="text-xl md:text-[22px] font-bold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Análisis de Datos</h4>
-                            <p className="text-slate-600 text-[15px] leading-relaxed font-medium">Paneles visuales donde ves <span className="text-[#0071e3] font-bold">qué se vende, cuándo y a quién</span>. Decide con números, no con suposiciones.</p>
+                            <h4 className="text-xl md:text-[22px] font-extrabold mb-3 text-[#1d1d1f] tracking-tight leading-tight">Análisis de Datos</h4>
+                            <p className="text-slate-600 text-[15px] leading-relaxed font-medium">Paneles visuales donde ves <span className="text-[#2b8cee] font-bold">qué se vende, cuándo y a quién</span>. Decide con números, no con suposiciones.</p>
                         </div>
                     </BlurFade>
                 </div>
@@ -313,16 +325,16 @@ export default function Home() {
                 <p className="text-xl text-slate-500 font-medium max-w-2xl">Casos de éxito, proyectos y soluciones empaquetadas listas para integrarse en tu operación.</p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Left side: Image + Featured Solution */}
                 <div className="w-full flex flex-col">
-                    <div className="relative w-full h-full min-h-[420px] rounded-[2rem] overflow-hidden group shadow-[0_24px_60px_-30px_rgba(11,17,33,0.5)] flex flex-col justify-end border border-slate-900/10">
+                    <div className="relative w-full h-full min-h-[400px] rounded-[2.5rem] overflow-hidden group shadow-[0_20px_50px_rgba(0,113,227,0.15)] flex flex-col justify-end">
                         <Image src="/DashboardDatos.jpg" alt="Ecosistema de Soluciones" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#0b1121]/95 via-[#0b1121]/25 to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#0b1121] via-[#0b1121]/40 to-transparent"></div>
                         <div className="relative z-10 p-8 md:p-10">
                             <h3 className="text-white text-3xl font-bold mb-3 tracking-tight">Soluciones Listas</h3>
                             <p className="text-slate-300 font-medium mb-6 text-lg leading-relaxed">Sistemas preconstruidos que puedes conectar hoy mismo a tu empresa.</p>
-                            <a href="/soluciones" className="btn-press inline-flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-full text-sm font-bold shadow-lg hover:bg-slate-100 transition-all">
+                            <a href="/soluciones" className="btn-press inline-flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-full text-sm font-bold shadow-lg hover:bg-slate-100 hover:scale-105 transition-all">
                                 Ver soluciones <span className="material-symbols-outlined text-base">arrow_forward</span>
                             </a>
                         </div>
@@ -330,31 +342,41 @@ export default function Home() {
                 </div>
 
                 {/* Right side: List of items */}
-                <div className="w-full flex flex-col gap-6 stagger-children">
-                    {/* Proyectos Banner */}
-                    <a href="/proyectos" className="reveal-on-scroll group relative flex flex-1 flex-col sm:flex-row items-start sm:items-center justify-between overflow-hidden bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_24px_60px_-32px_rgba(15,42,86,0.22)] hover:shadow-[0_28px_70px_-30px_rgba(0,113,227,0.3)] hover:-translate-y-1 transition-all duration-500 p-8 gap-6">
+                <div className="w-full flex flex-col gap-6 md:gap-8 stagger-children">
+                    {/* Proyectos Banner — estilo "Tiempo que no vuelve" */}
+                    <a href="/proyectos" className="reveal-on-scroll group relative flex flex-col sm:flex-row items-start sm:items-center justify-between h-full overflow-hidden bg-white/5 backdrop-blur-3xl rounded-[2.5rem] border border-white/20 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/10 transition-all duration-500 p-8 md:p-10 gap-6">
+                        {/* Degradado suave */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-white/60 via-white/30 to-transparent pointer-events-none rounded-[2.5rem]"></div>
+                        {/* Glow azul */}
+                        <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-[40px] group-hover:bg-blue-400/40 transition-all duration-700 pointer-events-none"></div>
+
                         <div className="flex-1 relative z-10">
-                            <div className="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center mb-5">
-                                <span className="material-symbols-outlined text-[#0071e3] text-3xl">work</span>
+                            <div className="w-16 h-16 rounded-[1.2rem] bg-gradient-to-br from-blue-100 to-white flex items-center justify-center shadow-lg border border-white/50 mb-5 relative z-10">
+                                <span className="material-symbols-outlined text-blue-600 text-3xl">work</span>
                             </div>
-                            <h3 className="text-2xl lg:text-[1.7rem] font-bold text-[#1d1d1f] tracking-tight mb-3">Proyectos reales</h3>
+                            <h3 className="text-2xl lg:text-3xl font-bold text-[#1d1d1f] tracking-tight mb-3">Proyectos reales</h3>
                             <p className="text-slate-600 text-base lg:text-[17px] leading-relaxed font-medium">Mira lo que ya construí: desde SaaS con IA hasta sistemas integrales de datos.</p>
                         </div>
-                        <div className="w-12 h-12 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-[#0071e3] shrink-0 group-hover:bg-[#0071e3] group-hover:text-white transition-all duration-300 relative z-10">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-100 to-white flex items-center justify-center text-blue-600 shrink-0 shadow-lg border border-white/50 group-hover:scale-110 transition-all duration-300 relative z-10">
                             <span className="material-symbols-outlined">arrow_forward</span>
                         </div>
                     </a>
 
-                    {/* Testimonios Banner */}
-                    <a href="/testimonios" className="reveal-on-scroll group relative flex flex-1 flex-col sm:flex-row items-start sm:items-center justify-between overflow-hidden bg-[#0b1121] rounded-[2rem] border border-[#0b1121] shadow-[0_24px_60px_-28px_rgba(11,17,33,0.5)] hover:-translate-y-1 transition-transform duration-500 p-8 gap-6">
+                    {/* Testimonios Banner — estilo "Decisiones a ciegas" */}
+                    <a href="/testimonios" className="reveal-on-scroll group relative flex flex-col sm:flex-row items-start sm:items-center justify-between h-full overflow-hidden bg-gradient-to-br from-slate-900 via-[#0b1121] to-blue-950 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-[0_20px_40px_rgba(0,113,227,0.2)] hover:-translate-y-2 transition-transform duration-500 p-8 md:p-10 gap-6">
+                        {/* Degradado suave */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-slate-800/40 via-[#0b1121]/20 to-blue-950/40 pointer-events-none rounded-[2.5rem]"></div>
+                        {/* Glow cyan */}
+                        <div className="absolute bottom-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-[40px] group-hover:bg-cyan-400/20 transition-all duration-700 pointer-events-none"></div>
+
                         <div className="flex-1 relative z-10">
-                            <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center mb-5">
+                            <div className="w-16 h-16 rounded-[1.2rem] bg-white/5 flex items-center justify-center shadow-lg border border-white/10 mb-5 backdrop-blur-md relative z-10">
                                 <span className="material-symbols-outlined text-cyan-300 text-3xl">forum</span>
                             </div>
-                            <h3 className="text-2xl lg:text-[1.7rem] font-bold text-white tracking-tight mb-3">Casos de éxito</h3>
+                            <h3 className="text-2xl lg:text-3xl font-bold text-white tracking-tight mb-3">Casos de éxito</h3>
                             <p className="text-slate-300 text-base lg:text-[17px] leading-relaxed font-medium">Descubre las experiencias de otros empresarios que transformaron sus operaciones.</p>
                         </div>
-                        <div className="w-12 h-12 rounded-full bg-white/10 text-cyan-300 flex items-center justify-center shrink-0 border border-white/10 group-hover:bg-cyan-400 group-hover:text-[#0b1121] group-hover:border-cyan-400 transition-all duration-300 relative z-10">
+                        <div className="w-12 h-12 rounded-full bg-white/5 text-cyan-300 flex items-center justify-center shrink-0 shadow-lg border border-white/10 group-hover:bg-cyan-400 group-hover:text-[#0b1121] group-hover:border-cyan-400 transition-all duration-300 relative z-10">
                             <span className="material-symbols-outlined">arrow_forward</span>
                         </div>
                     </a>
@@ -379,67 +401,103 @@ export default function Home() {
             </div>
 
             {/* Grid principal con alineación perfecta */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal-on-scroll relative stagger-children">
-                {/* Línea conectora (solo desktop) */}
-                <div className="hidden lg:block absolute top-6 left-[12.5%] w-[75%] h-px bg-slate-300/70" aria-hidden="true"></div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 reveal-on-scroll relative stagger-children">
+                {/* Línea conectora animada (solo desktop). top-6 (24px) pasa exactamente por el centro del círculo de 48px */}
+                <div className="hidden lg:block absolute top-6 left-[12.5%] w-[75%] h-[2px] bg-slate-200/60 rounded-full overflow-hidden">
+                    <div className="w-full h-full bg-gradient-to-r from-transparent via-[#2b8cee] to-transparent opacity-60 animate-[shimmer_3s_infinite]"></div>
+                </div>
 
                 {/* Fase 1 */}
                 <div className="reveal-on-scroll flex flex-col items-center h-full group">
-                    <div className="relative z-10 w-12 h-12 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center mb-6">
-                        <span className="text-sm font-bold text-[#0071e3]">1</span>
-                    </div>
-                    <div className="relative w-full flex-1 flex flex-col p-8 bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_24px_60px_-32px_rgba(15,42,86,0.22)] hover:shadow-[0_28px_70px_-30px_rgba(0,113,227,0.3)] hover:-translate-y-1.5 transition-all duration-500 overflow-hidden">
-                        <div className="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center mb-8">
-                            <MessageSquare className="w-7 h-7 text-[#0071e3]" strokeWidth={1.5} />
+                    {/* Número centrado, mismo tamaño en todos los breakpoints */}
+                    <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500 mb-6 lg:mb-8">
+                        <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                            <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">1</span>
                         </div>
-                        <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 1</div>
-                        <h4 className="font-bold text-[#1d1d1f] text-xl mb-3 tracking-tight">Entiendo tu negocio</h4>
-                        <p className="text-slate-600 text-[15px] leading-relaxed">Me siento contigo, entiendo cómo funciona tu operación y encuentro exactamente dónde estás perdiendo tiempo y dinero.</p>
+                    </div>
+                    {/* Card: altura completa, contenido distribuido verticalmente */}
+                    <div className="relative w-full flex-1 flex flex-col p-10 md:p-12 bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 group/card overflow-hidden">
+                        <div className="absolute -top-10 -right-4 text-[150px] font-black text-black/[0.03] pointer-events-none group-hover/card:scale-110 transition-transform duration-700">01</div>
+                        <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#2b8cee]/10 rounded-full blur-[40px] group-hover/card:bg-[#2b8cee]/20 transition-all duration-700"></div>
+
+                        <div className="w-16 h-16 rounded-[1.2rem] bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center shadow-sm border border-white/60 mb-auto relative z-10">
+                            <MessageSquare className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
+                        </div>
+
+                        <div className="mt-10 relative z-10">
+                            <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 1</div>
+                            <h4 className="font-bold text-[#1d1d1f] text-xl mb-3 tracking-tight">Entiendo tu negocio</h4>
+                            <p className="text-slate-600 text-[15px] leading-relaxed">Me siento contigo, entiendo cómo funciona tu operación y encuentro exactamente dónde estás perdiendo tiempo y dinero.</p>
+                        </div>
                     </div>
                 </div>
 
                 {/* Fase 2 */}
                 <div className="reveal-on-scroll flex flex-col items-center h-full group">
-                    <div className="relative z-10 w-12 h-12 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center mb-6">
-                        <span className="text-sm font-bold text-[#0071e3]">2</span>
-                    </div>
-                    <div className="relative w-full flex-1 flex flex-col p-8 bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_24px_60px_-32px_rgba(15,42,86,0.22)] hover:shadow-[0_28px_70px_-30px_rgba(0,113,227,0.3)] hover:-translate-y-1.5 transition-all duration-500 overflow-hidden">
-                        <div className="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center mb-8">
-                            <Lightbulb className="w-7 h-7 text-[#0071e3]" strokeWidth={1.5} />
+                    <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500 mb-6 lg:mb-8">
+                        <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                            <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">2</span>
                         </div>
-                        <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 2</div>
-                        <h4 className="font-bold text-[#1d1d1f] text-xl mb-3 tracking-tight">Diseño tu solución</h4>
-                        <p className="text-slate-600 text-[15px] leading-relaxed">Armo un plan a medida para tu negocio: qué automatizar, qué herramientas usar, cómo conectar todo.</p>
+                    </div>
+                    <div className="relative w-full flex-1 flex flex-col p-10 md:p-12 bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 group/card overflow-hidden">
+                        <div className="absolute -top-10 -right-4 text-[150px] font-black text-black/[0.03] pointer-events-none group-hover/card:scale-110 transition-transform duration-700">02</div>
+                        <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#2b8cee]/10 rounded-full blur-[40px] group-hover/card:bg-[#2b8cee]/20 transition-all duration-700"></div>
+
+                        <div className="w-16 h-16 rounded-[1.2rem] bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center shadow-sm border border-white/60 mb-auto relative z-10">
+                            <Lightbulb className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
+                        </div>
+
+                        <div className="mt-10 relative z-10">
+                            <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 2</div>
+                            <h4 className="font-bold text-[#1d1d1f] text-xl mb-3 tracking-tight">Diseño tu solución</h4>
+                            <p className="text-slate-600 text-[15px] leading-relaxed">Armo un plan a medida para tu negocio: qué automatizar, qué herramientas usar, cómo conectar todo.</p>
+                        </div>
                     </div>
                 </div>
 
                 {/* Fase 3 */}
                 <div className="reveal-on-scroll flex flex-col items-center h-full group">
-                    <div className="relative z-10 w-12 h-12 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center mb-6">
-                        <span className="text-sm font-bold text-[#0071e3]">3</span>
-                    </div>
-                    <div className="relative w-full flex-1 flex flex-col p-8 bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_24px_60px_-32px_rgba(15,42,86,0.22)] hover:shadow-[0_28px_70px_-30px_rgba(0,113,227,0.3)] hover:-translate-y-1.5 transition-all duration-500 overflow-hidden">
-                        <div className="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center mb-8">
-                            <Rocket className="w-7 h-7 text-[#0071e3]" strokeWidth={1.5} />
+                    <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500 mb-6 lg:mb-8">
+                        <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                            <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">3</span>
                         </div>
-                        <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 3</div>
-                        <h4 className="font-bold text-[#1d1d1f] text-xl mb-3 tracking-tight">Lo construyo y lo activo</h4>
-                        <p className="text-slate-600 text-[15px] leading-relaxed">Desarrollo todo, lo conecto a tus sistemas, lo pruebo y lo dejo funcionando sin que tengas que hacer nada técnico.</p>
+                    </div>
+                    <div className="relative w-full flex-1 flex flex-col p-10 md:p-12 bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 group/card overflow-hidden">
+                        <div className="absolute -top-10 -right-4 text-[150px] font-black text-black/[0.03] pointer-events-none group-hover/card:scale-110 transition-transform duration-700">03</div>
+                        <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#2b8cee]/10 rounded-full blur-[40px] group-hover/card:bg-[#2b8cee]/20 transition-all duration-700"></div>
+
+                        <div className="w-16 h-16 rounded-[1.2rem] bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center shadow-sm border border-white/60 mb-auto relative z-10">
+                            <Rocket className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
+                        </div>
+
+                        <div className="mt-10 relative z-10">
+                            <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 3</div>
+                            <h4 className="font-bold text-[#1d1d1f] text-xl mb-3 tracking-tight">Lo construyo y lo activo</h4>
+                            <p className="text-slate-600 text-[15px] leading-relaxed">Desarrollo todo, lo conecto a tus sistemas, lo pruebo y lo dejo funcionando sin que tengas que hacer nada técnico.</p>
+                        </div>
                     </div>
                 </div>
 
                 {/* Fase 4 */}
                 <div className="reveal-on-scroll flex flex-col items-center h-full group">
-                    <div className="relative z-10 w-12 h-12 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center mb-6">
-                        <span className="text-sm font-bold text-[#0071e3]">4</span>
-                    </div>
-                    <div className="relative w-full flex-1 flex flex-col p-8 bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_24px_60px_-32px_rgba(15,42,86,0.22)] hover:shadow-[0_28px_70px_-30px_rgba(0,113,227,0.3)] hover:-translate-y-1.5 transition-all duration-500 overflow-hidden">
-                        <div className="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center mb-8">
-                            <TrendingUp className="w-7 h-7 text-[#0071e3]" strokeWidth={1.5} />
+                    <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-[#2b8cee] to-cyan-400 p-[2px] shadow-md group-hover:shadow-[0_0_20px_rgba(43,140,238,0.3)] transition-shadow duration-500 mb-6 lg:mb-8">
+                        <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                            <span className="text-sm font-bold bg-gradient-to-br from-[#2b8cee] to-cyan-500 bg-clip-text text-transparent">4</span>
                         </div>
-                        <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 4</div>
-                        <h4 className="font-bold text-[#1d1d1f] text-xl mb-3 tracking-tight">Crecimiento continuo</h4>
-                        <p className="text-slate-600 text-[15px] leading-relaxed">Recupera tu tiempo. Tu negocio empieza a funcionar con menos esfuerzo y listo para escalar.</p>
+                    </div>
+                    <div className="relative w-full flex-1 flex flex-col p-10 md:p-12 bg-white/40 backdrop-blur-3xl rounded-[2.5rem] border border-white/50 shadow-[0_20px_40px_rgba(0,113,227,0.05)] hover:bg-white/50 hover:shadow-[0_20px_40px_rgba(43,140,238,0.1)] hover:-translate-y-2 transition-all duration-500 group/card overflow-hidden">
+                        <div className="absolute -top-10 -right-4 text-[150px] font-black text-black/[0.03] pointer-events-none group-hover/card:scale-110 transition-transform duration-700">04</div>
+                        <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#2b8cee]/10 rounded-full blur-[40px] group-hover/card:bg-[#2b8cee]/20 transition-all duration-700"></div>
+
+                        <div className="w-16 h-16 rounded-[1.2rem] bg-gradient-to-br from-[#2b8cee]/10 to-white flex items-center justify-center shadow-sm border border-white/60 mb-auto relative z-10">
+                            <TrendingUp className="w-7 h-7 text-[#2b8cee]" strokeWidth={1.5} />
+                        </div>
+
+                        <div className="mt-10 relative z-10">
+                            <div className="text-[11px] uppercase tracking-widest font-bold text-slate-400 mb-3">Fase 4</div>
+                            <h4 className="font-bold text-[#1d1d1f] text-xl mb-3 tracking-tight">Crecimiento continuo</h4>
+                            <p className="text-slate-600 text-[15px] leading-relaxed">Recupera tu tiempo. Tu negocio empieza a funcionar con menos esfuerzo y listo para escalar.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -462,7 +520,7 @@ export default function Home() {
                 
                 <h2 className="text-4xl md:text-5xl lg:text-[4.5rem] font-bold mb-8 text-white tracking-tighter leading-[1.05] drop-shadow-lg">
                     Esto <br className="hidden md:block" />
-                    <span className="text-slate-400">no es para todos.</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-400 to-slate-200">no es para todos.</span>
                 </h2>
                 
                 <div className="text-[17px] md:text-[19px] text-slate-400 space-y-6 leading-relaxed font-medium max-w-xl">
@@ -472,16 +530,18 @@ export default function Home() {
             </div>
             
             <div className="flex-1 w-full max-w-[500px] relative reveal-on-scroll lg:mt-0 mt-12 flex justify-center">
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-blue-500/20 rounded-full blur-[90px] pointer-events-none z-0"></div>
-                <div className="relative z-10 w-full max-w-[440px] rounded-[2rem] border border-white/10 bg-white/[0.04] backdrop-blur-sm p-6">
-                    <div className="relative w-full aspect-square" style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 72%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 72%, transparent 100%)' }}>
-                        <Image 
-                            src="/CristoElemento3D.png"
-                            alt="Innovación y tecnología 3D"
-                            fill
-                            className="object-contain hover:scale-[1.03] transition-transform duration-700"
-                        />
-                    </div>
+                {/* Deep radial blue flare behind the image */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-500/30 rounded-full blur-[100px] pointer-events-none z-0 mix-blend-screen"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-cyan-400/20 rounded-full blur-[60px] pointer-events-none z-0 mix-blend-screen"></div>
+                
+                {/* 3D Element Image with Bottom Fade Mask */}
+                <div className="relative z-10 w-full aspect-square max-w-[450px]" style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)' }}>
+                    <Image 
+                        src="/CristoElemento3D.png"
+                        alt="Innovación y tecnología 3D"
+                        fill
+                        className="object-contain filter drop-shadow-[0_20px_50px_rgba(0,113,227,0.3)] hover:-translate-y-4 transition-transform duration-700"
+                    />
                 </div>
             </div>
         </div>
@@ -496,8 +556,10 @@ export default function Home() {
         <div className="max-w-[1000px] mx-auto px-6 lg:px-8 relative z-10">
             <div className="bg-[#2d2d30]/30 backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-8 md:p-14 shadow-2xl reveal-on-scroll">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
-                    <div className="w-32 h-32 md:w-40 md:h-40 shrink-0 rounded-full relative overflow-hidden ring-2 ring-cyan-300/40 ring-offset-4 ring-offset-[#151d2e] shadow-[0_0_40px_rgba(0,113,227,0.25)]">
-                         <Image src="/FotoPersonal.jpg" alt="Jonathan Chavez" fill className="object-cover" />
+                    <div className="w-32 h-32 md:w-40 md:h-40 shrink-0 bg-gradient-to-br from-[#0071e3] to-cyan-400 rounded-full flex items-center justify-center p-1 shadow-[0_0_30px_rgba(0,113,227,0.3)] relative overflow-hidden">
+                        <div className="w-full h-full bg-[#1d1d1f] rounded-full flex items-center justify-center overflow-hidden relative">
+                             <Image src="/FotoPersonal.jpg" alt="Jonathan Chavez" fill className="object-cover" />
+                        </div>
                     </div>
                     <div className="text-center md:text-left flex-1">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold mb-4 uppercase tracking-widest">

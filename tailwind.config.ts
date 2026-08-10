@@ -19,7 +19,7 @@ const config: Config = {
         "color-5": "hsl(var(--color-5))",
       },
       fontFamily: {
-        display: ["Sora", "sans-serif"]
+        display: ["Inter", "sans-serif"]
       },
       keyframes: {
         "gradient-border": {
