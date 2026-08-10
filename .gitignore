@@ -20,3 +20,6 @@ git_search.txt
 init_repo_debug.bat
 skills-lock.json
 .vercel
+
+# Live mode local state
+.impeccable/
